@@ -27,10 +27,9 @@
 
 \chapter{Original Files}
 
-\section{AGC_BLOCK_TWO_SELF_CHECK.s)
+\section{AGC BLOCK TWO SELF CHECK}
 
-<<AGC_BLOCK_TWO_SELF_CHECK.s>>=
-
+<<src/AGC-BLOCK-TWO-SELF--CHECK.s>>=
 # Copyright:	Public domain.
 # Filename:	AGC_BLOCK_TWO_SELF_CHECK.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -544,9 +543,9 @@ LSTBNKCH	BBCON*			# * CONSTANT, LAST BANK.
 
 @
 
-\section{AGC_BLOCK_TWO_SELF-CHECK.s)
+\section{AGC BLOCK TWO SELF-CHECK}
 
-<<AGC_BLOCK_TWO_SELF-CHECK.s>>=
+<<src/AGC-BLOCK-TWO-SELF-CHECK.s>>=
 # Copyright:	Public domain.
 # Filename:	AGC_BLOCK_TWO_SELF-CHECK.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -1067,9 +1066,9 @@ LSTBNKCH	BBCON*			# * CONSTANT, LAST BANK.
 
 @
 
-\section{AGS_INITIALIZATION.s)
+\section{AGS INITIALIZATION}
 
-<<AGS_INITIALIZATION.s>>=
+<<src/AGS-INITIALIZATION.s>>=
 # Copyright:	Public domain.
 # Filename:	AGS_INITIALIZATION.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -1302,9 +1301,9 @@ S
 
 @
 
-\section{ALARM_AND_ABORT.s)
+\section{ALARM AND ABORT}
 
-<<ALARM_AND_ABORT.s>>=
+<<src/ALARM-AND-ABORT.s>>=
 # Copyright:    Public domain.
 # Filename:     ALARM_AND_ABORT.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -1538,9 +1537,9 @@ OCT14		OCT	14		# DON'T MOVE
 ABORT		EQUALS	BAILOUT		# *** TEMPORARY UNTIL ABORT CALLS OUT
 @
 
-\section{ANGLFIND.s)
+\section{ANGLFIND}
 
-<<ANGLFIND.s>>=
+<<src/ANGLFIND.s>>=
 # Copyright:	Public domain.
 # Filename:	ANGLFIND.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -2177,9 +2176,9 @@ NOGO		INHINT
 		
 @
 
-\section{AOSTASK_AND_AOSJOB.s)
+\section{AOSTASK AND AOSJOB}
 
-<<AOSTASK_AND_AOSJOB.s>>=
+<<src/AOSTASK-AND-AOSJOB.s>>=
 # Copyright:	Public domain.
 # Filename:	AOSTASK_AND_AOSJOB.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -3251,9 +3250,9 @@ PAXISADR	GENADR	PAXIS
 		
 @
 
-\section{AOTMARK.s)
+\section{AOTMARK}
 
-<<AOTMARK.s>>=
+<<src/AOTMARK.s>>=
 # Copyright:	Public domain.
 # Filename:	AOTMARK.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -3951,9 +3950,9 @@ SURFAGAN	CA	CURSOR
 		
 @
 
-\section{ASCENT_GUIDANCE.s)
+\section{ASCENT GUIDANCE}
 
-<<ASCENT_GUIDANCE.s>>=
+<<src/ASCENT-GUIDANCE.s>>=
 # Copyright:	Public domain.
 # Filename:	ASCENT_GUIDNCE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -4603,9 +4602,9 @@ CLOG2/32	2DEC	.0216608494
 
 @
 
-\section{ASSEMBLY_AND_OPERATION_INFORMATION.s)
+\section{ASSEMBLY AND OPERATION INFORMATION}
 
-<<ASSEMBLY_AND_OPERATION_INFORMATION.s>>=
+<<src/ASSEMBLY-AND-OPERATION-INFORMATION.s>>=
 # Copyright:	Public domain.
 # Filename:	ASSEMBLY_AND_OPERATION_INFORMATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -5649,9 +5648,9 @@ CLOG2/32	2DEC	.0216608494
 
 @
 
-\section{ATTITUDE_MANEUVER_ROUTINE.s)
+\section{ATTITUDE MANEUVER ROUTINE}
 
-<<ATTITUDE_MANEUVER_ROUTINE.s>>=
+<<src/ATTITUDE-MANEUVER-ROUTINE.s>>=
 # Copyright:	Public domain.
 # Filename:	ATTITUDE_MANEUVER_ROUTINE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -6681,9 +6680,9 @@ TOOBADI		EXIT
 
 @
 
-\section{AUTOMATIC_MANEUVERS.s)
+\section{AUTOMATIC MANEUVERS}
 
-<<AUTOMATIC_MANEUVERS.s>>=
+<<src/AUTOMATIC-MANEUVERS.s>>=
 # Copyright:	Public domain.
 # Filename:	AUTOMATIC_MANEUVERS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -7185,9 +7184,9 @@ JETADDR		2CADR	JETSLECT
 
 @
 
-\section{BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.s)
+\section{BURN BABY BURN--MASTER IGNITION ROUTINE}
 
-<<BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.s>>=
+<<src/BURN-BABY-BURN--MASTER-IGNITION-ROUTINE.s>>=
 # Copyright:	Public domain.
 # Filename:	BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -8249,9 +8248,9 @@ KILLDEAD	CA	TCTSKOVR
 LSTLIM		EQUALS	BIT5		# DEC 16
 @
 
-\section{CM_BODY_ATTITUDE.s)
+\section{CM BODY ATTITUDE}
 
-<<CM_BODY_ATTITUDE.s>>=
+<<src/CM-BODY-ATTITUDE.s>>=
 # Copyright:    Public domain.
 # Filename:     CM_BODY_ATTITUDE.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -8556,9 +8555,9 @@ REPOSADR	2CADR	REDOPOSE
 
 @
 
-\section{CM_ENTRY_DIGITAL_AUTOPILOT.s)
+\section{CM ENTRY DIGITAL AUTOPILOT}
 
-<<CM_ENTRY_DIGITAL_AUTOPILOT.s>>=
+<<src/CM-ENTRY-DIGITAL-AUTOPILOT.s>>=
 # Copyright:	Public domain.
 # Filename:	CM_ENTRY_DIGITAL_AUTOPILOT.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -9836,9 +9835,9 @@ KTRCS		=	HALF		#    KT = (.25) 2 = .5
 
 @
 
-\section{CONIC_SUBROUTINES.s)
+\section{CONIC SUBROUTINES}
 
-<<CONIC_SUBROUTINES.s>>=
+<<src/CONIC-SUBROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	CONIC_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -11763,9 +11762,9 @@ TWEEKIT		EQUALS	40D
 
 @
 
-\section{CONTRACT_AND_APPROVALS.s)
+\section{CONTRACT AND APPROVALS}
 
-<<CONTRACT_AND_APPROVALS.s>>=
+<<src/CONTRACT-AND-APPROVALS.s>>=
 # Copyright:	Public domain.
 # Filename:	CONTRACT_AND_APPROVALS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -11841,9 +11840,9 @@ TWEEKIT		EQUALS	40D
 
 @
 
-\section{CONTROLLED_CONSTANTS.s)
+\section{CONTROLLED CONSTANTS}
 
-<<CONTROLLED_CONSTANTS.s>>=
+<<src/CONTROLLED-CONSTANTS.s>>=
 # Copyright:	Public domain.
 # Filename:	CONTROLLED_CONSTANTS.agc
 # Purpose:	Part of the source code for Luminary 1A build 099.
@@ -12404,9 +12403,9 @@ WEARTH		2DEC	.973561595		# REV/CSEC B+23	= 7.29211494 E-5 RAD/SEC
 
 @
 
-\section{CSM_GEOMETRY.s)
+\section{CSM GEOMETRY}
 
-<<CSM_GEOMETRY.s>>=
+<<src/CSM-GEOMETRY.s>>=
 # Copyright:	Public domain.
 # Filename:	CSM_GEOMETRY.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -12827,9 +12826,9 @@ NB1NB2		2DEC	+.8431756920 B-1
 		
 @
 
-\section{DAPIDLER_PROGRAM.s)
+\section{DAPIDLER PROGRAM}
 
-<<DAPIDLER_PROGRAM.s>>=
+<<src/DAPIDLER-PROGRAM.s>>=
 # Copyright:	Public domain.
 # Filename:	DAPIDLER_PROGRAM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -13313,9 +13312,9 @@ MORECADR	2CADR	CHEKMORE
 
 @
 
-\section{DAP_INTERFACE_SUBROUTINES.s)
+\section{DAP INTERFACE SUBROUTINES}
 
-<<DAP_INTERFACE_SUBROUTINES.s>>=
+<<src/DAP-INTERFACE-SUBROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	DAP_INTERFACE_SUBROUTINES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -13494,9 +13493,9 @@ ALLCOAST	EXTEND			# SAVE Q FOR RETURN
 
 @
 
-\section{DISPLAY_INTERFACE_ROUTINES.s)
+\section{DISPLAY INTERFACE ROUTINES}
 
-<<DISPLAY_INTERFACE_ROUTINES.s>>=
+<<src/DISPLAY-INTERFACE-ROUTINES.s>>=
 # Copyright:    Public domain.
 # Filename:     DISPLAY_INTERFACE_ROUTINES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -14984,9 +14983,9 @@ CLOCKCON	OCT	24030
 
 @
 
-\section{DOWNLINK_LISTS.s)
+\section{DOWNLINK LISTS}
 
-<<DOWNLINK_LISTS.s>>=
+<<src/DOWNLINK-LISTS.s>>=
 # Copyright:	Public domain.
 # Filename:	DOWNLINK_LISTS.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -15399,9 +15398,9 @@ DNTABLE		GENADR	CMCSTADL
 
 @
 
-\section{DOWN_TELEMETRY_PROGRAM.s)
+\section{DOWN TELEMETRY PROGRAM}
 
-<<DOWN_TELEMETRY_PROGRAM.s>>=
+<<src/DOWN--TELEMETRY-PROGRAM.s>>=
 # Copyright:	Public domain.
 # Filename:	DOWN_TELEMETRY_PROGRAM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -15859,9 +15858,9 @@ WOTEST		CA	BIT7		# AT THE BEGINNING OF THE LIST THE WORD
 		
 @
 
-\section{DOWN-TELEMETRY_PROGRAM.s)
+\section{DOWN-TELEMETRY PROGRAM}
 
-<<DOWN-TELEMETRY_PROGRAM.s>>=
+<<src/DOWN-TELEMETRY-PROGRAM.s>>=
 # Copyright:    Public domain.
 # Filename:     DOWN-TELEMETRY_PROGRAM.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -16321,9 +16320,9 @@ SENDID		EXTEND			# ** ENTRANCE USED BY ERASABLE DUMP PROG. **
 
 @
 
-\section{ENTRY_LEXICON.s)
+\section{ENTRY LEXICON}
 
-<<ENTRY_LEXICON.s>>=
+<<src/ENTRY-LEXICON.s>>=
 # Copyright:    Public domain.
 # Filename:     ENTRY_LEXICON.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -16699,9 +16698,9 @@ SENDID		EXTEND			# ** ENTRANCE USED BY ERASABLE DUMP PROG. **
 
 @
 
-\section{ERASABLE_ASSIGNMENTS.s)
+\section{ERASABLE ASSIGNMENTS}
 
-<<ERASABLE_ASSIGNMENTS.s>>=
+<<src/ERASABLE-ASSIGNMENTS.s>>=
 # Copyright:	Public domain.
 # Filename:	ERASABLE_ASSIGNMENTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -20489,9 +20488,9 @@ END-E7		EQUALS	WHOCARES	# ***** LAST LOCATION IN E7
 
 @
 
-\section{EXECUTIVE.s)
+\section{EXECUTIVE}
 
-<<EXECUTIVE.s>>=
+<<src/EXECUTIVE.s>>=
 # Copyright:	Public domain.
 # Filename:	EXECUTIVE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -20991,9 +20990,9 @@ NEG100		OCT	77677
 
 @
 
-\section{EXTENDED_VERBS.s)
+\section{EXTENDED VERBS}
 
-<<EXTENDED_VERBS.s>>=
+<<src/EXTENDED-VERBS.s>>=
 # Copyright:	Public domain.
 # Filename:	EXTENDED_VERBS.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -22332,9 +22331,9 @@ RESTSRF		TC	DOWNFLAG
 		TCF	GOPIN
 @
 
-\section{FINDCDUW--GUIDAP_INTERFACE.s)
+\section{FINDCDUW--GUIDAP INTERFACE}
 
-<<FINDCDUW--GUIDAP_INTERFACE.s>>=
+<<src/FINDCDUW--GUIDAP-INTERFACE.s>>=
 # Copyright:	Public domain.
 # Filename:	FINDCDUW--GUIDAP_INTERFACE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23080,9 +23079,9 @@ DELERLIM	=	DAY/2MAX	# 	0 DEG LIMIT FOR LAG ANGLES, 1'S, PI
 # *** END OF FLY	.132 ***
 @
 
-\section{FIXED_FIXED_CONSTANT_POOL.s)
+\section{FIXED FIXED CONSTANT POOL}
 
-<<FIXED_FIXED_CONSTANT_POOL.s>>=
+<<src/FIXED-FIXED-CONSTANT-POOL.s>>=
 # Copyright:	Public domain.
 # Filename:	FIXED_FIXED_CONSTANT_POOL.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -23347,9 +23346,9 @@ BANKMASK	=	HI5
 
 @
 
-\section{FLAGWORD_ASSIGNMENTS.s)
+\section{FLAGWORD ASSIGNMENTS}
 
-<<FLAGWORD_ASSIGNMENTS.s>>=
+<<src/FLAGWORD-ASSIGNMENTS.s>>=
 # Copyright:	Public domain.
 # Filename:	FLAGWORD_ASSIGNMENTS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -24621,9 +24620,9 @@ AUTRATE1	=	BIT1			# (1,1)=	       10.0 DEG/SEC
 
 @
 
-\section{FRESH_START_AND_RESTART.s)
+\section{FRESH START AND RESTART}
 
-<<FRESH_START_AND_RESTART.s>>=
+<<src/FRESH-START-AND-RESTART.s>>=
 # Copyright:	Public domain.
 # Filename:	FRESH_START_AND_RESTART.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -26100,9 +26099,9 @@ THISVINT	SET	RVQ
 			
 @
 
-\section{GIMBAL_LOCK_AVOIDANCE.s)
+\section{GIMBAL LOCK AVOIDANCE}
 
-<<GIMBAL_LOCK_AVOIDANCE.s>>=
+<<src/GIMBAL-LOCK-AVOIDANCE.s>>=
 # Copyright:	Public domain.
 # Filename:	GIMBAL_LOCK_AVOIDANCE.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -26204,9 +26203,9 @@ QUADROT		2DEC	.1		# ROTATION MATRIX FROM S/C AXES TO CONTROL
 BIASCALE	2DEC	.0002543132	# = (450/180)(1/0.6)(1/16384)
 @
 
-\section{GROUND_TRACKING_DETERMINATION_PROGRAM.s)
+\section{GROUND TRACKING DETERMINATION PROGRAM}
 
-<<GROUND_TRACKING_DETERMINATION_PROGRAM.s>>=
+<<src/GROUND-TRACKING-DETERMINATION-PROGRAM.s>>=
 # Copyright:	Public domain.
 # Filename:	GROUND_TRACKING_DETERMINATION_PROGRAM.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -26413,9 +26412,9 @@ K.01		2DEC	.01
 
 @
 
-\section{HeaderTemplate.s)
+\section{HeaderTemplate}
 
-<<HeaderTemplate.s>>=
+<<src/HeaderTemplate.s>>=
 # Copyright:	Public domain.
 # Filename:	XXXXXXXX.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -26446,9 +26445,9 @@ K.01		2DEC	.01
 
 @
 
-\section{IMU_CALIBRATION_AND_ALIGNMENT.s)
+\section{IMU CALIBRATION AND ALIGNMENT}
 
-<<IMU_CALIBRATION_AND_ALIGNMENT.s>>=
+<<src/IMU-CALIBRATION-AND-ALIGNMENT.s>>=
 # Copyright:	Public domain.
 # Filename:	IMU_CALIBRATION_AND_ALIGNMENT.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -27850,9 +27849,9 @@ VN0629		VN	0629
 
 @
 
-\section{IMU_COMPENSATION_PACKAGE.s)
+\section{IMU COMPENSATION PACKAGE}
 
-<<IMU_COMPENSATION_PACKAGE.s>>=
+<<src/IMU-COMPENSATION-PACKAGE.s>>=
 # Copyright:	Public domain.
 # Filename:	IMU_COMPENSATION_PACKAGE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -28225,9 +28224,9 @@ LASTBIAS	TC	BANKCALL
 		
 @
 
-\section{IMU_MODE_SWITCHING_ROUTINES.s)
+\section{IMU MODE SWITCHING ROUTINES}
 
-<<IMU_MODE_SWITCHING_ROUTINES.s>>=
+<<src/IMU-MODE-SWITCHING-ROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	IMU_MODE_SWITCHING_ROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -29298,9 +29297,9 @@ POSTCOM		EXTEND			# C(MPAC,+1) IS MAGNITUDE OF DELTA SCALER.
 
 @
 
-\section{IMU_PERFORMANCE_TEST_2.s)
+\section{IMU PERFORMANCE TEST 2}
 
-<<IMU_PERFORMANCE_TEST_2.s>>=
+<<src/IMU-PERFORMANCE-TEST-2.s>>=
 # Copyright:	Public domain.
 # Filename:	IMU_PERFORMANCE_TEST_2.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -29724,9 +29723,9 @@ FINETIME	INHINT			# RETURNS WITH INTERRUPT INHIBITED
 		
 @
 
-\section{IMU_PERFORMANCE_TESTS_4.s)
+\section{IMU PERFORMANCE TESTS 4}
 
-<<IMU_PERFORMANCE_TESTS_4.s>>=
+<<src/IMU-PERFORMANCE-TESTS-4.s>>=
 # Copyright:	Public domain.
 # Filename:	IMU_PERFORMANCE_TESTS_4.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -30091,9 +30090,9 @@ GEORGEK		2DEC	.59737013
 
 @
 
-\section{INFLIGHT_ALIGNMENT_ROUTINES.s)
+\section{INFLIGHT ALIGNMENT ROUTINES}
 
-<<INFLIGHT_ALIGNMENT_ROUTINES.s>>=
+<<src/INFLIGHT-ALIGNMENT-ROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	INFLIGHT_ALIGNMENT_ROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -30400,9 +30399,9 @@ QTSN45		2DEC	.1768
 
 @
 
-\section{INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.s)
+\section{INPUT OUTPUT CHANNEL BIT DESCRIPTIONS}
 
-<<INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.s>>=
+<<src/INPUT-OUTPUT-CHANNEL-BIT-DESCRIPTIONS.s>>=
 # Copyright:	Public domain.
 # Filename:	INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -30629,9 +30628,9 @@ QTSN45		2DEC	.1768
 
 @
 
-\section{INTEGRATION_INITIALIZATION.s)
+\section{INTEGRATION INITIALIZATION}
 
-<<INTEGRATION_INITIALIZATION.s>>=
+<<src/INTEGRATION-INITIALIZATION.s>>=
 # Copyright:	Public domain.
 # Filename:	INTEGRATION_INITIALIZATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -31816,9 +31815,9 @@ GRP2PC		STQ	EXIT
 
 @
 
-\section{INTER-BANK_COMMUNICATION.s)
+\section{INTER-BANK COMMUNICATION}
 
-<<INTER-BANK_COMMUNICATION.s>>=
+<<src/INTER-BANK-COMMUNICATION.s>>=
 # Copyright:    Public domain.
 # Filename:     INTER-BANK_COMMUNICATION.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -32004,9 +32003,9 @@ SUPERSW		EXTEND
 
 @
 
-\section{INTERPRETER.s)
+\section{INTERPRETER}
 
-<<INTERPRETER.s>>=
+<<src/INTERPRETER.s>>=
 # Copyright:	Public domain.
 # Filename:	INTERPRETER.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -35068,9 +35067,9 @@ SW/		EQUALS	SWITCHES
  
 @
 
-\section{INTERPRETIVE_CONSTANT.s)
+\section{INTERPRETIVE CONSTANT}
 
-<<INTERPRETIVE_CONSTANT.s>>=
+<<src/INTERPRETIVE-CONSTANT.s>>=
 # Copyright:	Public domain.
 # Filename:	INTERPRETIVE_CONSTANT.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -35154,9 +35153,9 @@ HALFDP		=	XUNIT
 
 @
 
-\section{INTERPRETIVE_CONSTANTS.s)
+\section{INTERPRETIVE CONSTANTS}
 
-<<INTERPRETIVE_CONSTANTS.s>>=
+<<src/INTERPRETIVE-CONSTANTS.s>>=
 # Copyright:	Public domain.
 # Filename:	INTERPRETIVE_CONSTANTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -35245,9 +35244,9 @@ HALFDP		=	XUNIT
 
 @
 
-\section{INTERRUPT_LEAD_INS.s)
+\section{INTERRUPT LEAD INS}
 
-<<INTERRUPT_LEAD_INS.s>>=
+<<src/INTERRUPT-LEAD-INS.s>>=
 # Copyright:	Public domain.
 # Filename:	INTERRUPT_LEAD_INS.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -35378,9 +35377,9 @@ T5RUPT		EXTEND
 
 @
 
-\section{JET_SELECTION_LOGIC.s)
+\section{JET SELECTION LOGIC}
 
-<<JET_SELECTION_LOGIC.s>>=
+<<src/JET-SELECTION-LOGIC.s>>=
 # Copyright:	Public domain.
 # Filename:	JET_SELECTION_LOGIC.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -36315,9 +36314,9 @@ ENDSLECT	EQUALS
 
 @
 
-\section{KALCMANU_STEERING.s)
+\section{KALCMANU STEERING}
 
-<<KALCMANU_STEERING.s>>=
+<<src/KALCMANU-STEERING.s>>=
 # Copyright:	Public domain.
 # Filename:	KALCMANU_STEERING.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -36585,9 +36584,9 @@ LOADYZ		CA	CTHETA
 		TC	Q
 @
 
-\section{KALMAN_FILTER.s)
+\section{KALMAN FILTER}
 
-<<KALMAN_FILTER.s>>=
+<<src/KALMAN-FILTER.s>>=
 # Copyright:	Public domain.
 # Filename:	KALMAN_FILTER.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -36691,9 +36690,9 @@ NEGTORK		COM
 
 @
 
-\section{KEYRUPT_UPRUPT.s)
+\section{KEYRUPT UPRUPT}
 
-<<KEYRUPT_UPRUPT.s>>=
+<<src/KEYRUPT-UPRUPT.s>>=
 # Copyright:    Public domain.
 # Filename:     KEYRUPT_UPRUPT.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -36832,9 +36831,9 @@ ELRCODE		OCT	22
 
 @
 
-\section{LAMBERT_AIMPOINT_GUIDANCE.s)
+\section{LAMBERT AIMPOINT GUIDANCE}
 
-<<LAMBERT_AIMPOINT_GUIDANCE.s>>=
+<<src/LAMBERT-AIMPOINT-GUIDANCE.s>>=
 # Copyright:	Public domain.
 # Filename:	LAMBERT_AIMPOINT_GUIDANCE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -37006,9 +37005,9 @@ REVN1645	SET	CALL		# TRKMKCNT, TTOGO, +MGA
 
 @
 
-\section{LANDING_ANALOG_DISPLAYS.s)
+\section{LANDING ANALOG DISPLAYS}
 
-<<LANDING_ANALOG_DISPLAYS.s>>=
+<<src/LANDING-ANALOG-DISPLAYS.s>>=
 # Copyright:	Public domain.
 # Filename:	LANDING_ANALOG_DISPLAYS.agc
 # Purpose:	Part of the source code for Luminary, build 099. It
@@ -37547,9 +37546,9 @@ BITSET		=	PRIO6
 
 @
 
-\section{LATITUDE_LONGITUDE_SUBROUTINES.s)
+\section{LATITUDE LONGITUDE SUBROUTINES}
 
-<<LATITUDE_LONGITUDE_SUBROUTINES.s>>=
+<<src/LATITUDE-LONGITUDE-SUBROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	LATITUDE_LONGITUDE_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -37870,9 +37869,9 @@ SETREX		=	S2
 
 @
 
-\section{LEM_GEOMETRY.s)
+\section{LEM GEOMETRY}
 
-<<LEM_GEOMETRY.s>>=
+<<src/LEM-GEOMETRY.s>>=
 # Copyright:	Public domain.
 # Filename:	LEM_GEOMETRY.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -38084,9 +38083,9 @@ RRNBMPAC	STODL	20D		# SAVE SHAFT CDU IN 21.
 			
 @
 
-\section{LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.s)
+\section{LUNAR AND SOLAR EPHEMERIDES SUBROUTINES}
 
-<<LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.s>>=
+<<src/LUNAR-AND-SOLAR-EPHEMERIDES-SUBROUTINES.s>>=
 # Copyright:    Public domain.
 # Filename:     LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -38300,9 +38299,9 @@ ONEB4		2DEC	1.0 B-4
 
 @
 
-\section{LUNAR_LANDING_GUIDANCE_EQUATIONS.s)
+\section{LUNAR LANDING GUIDANCE EQUATIONS}
 
-<<LUNAR_LANDING_GUIDANCE_EQUATIONS.s>>=
+<<src/LUNAR-LANDING-GUIDANCE-EQUATIONS.s>>=
 # Copyright:	Public domain.
 # Filename:	LUNAR_LANDING_GUIDANCE_EQUATIONS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -39779,9 +39778,9 @@ DEPRCRIT	2DEC	-.02 B-1
 # **************************************************************************
 @
 
-\section{LUNAR_LANDMARK_SELECTION_FOR_CM.s)
+\section{LUNAR LANDMARK SELECTION FOR CM}
 
-<<LUNAR_LANDMARK_SELECTION_FOR_CM.s>>=
+<<src/LUNAR-LANDMARK-SELECTION-FOR-CM.s>>=
 # Copyright:	Public domain.
 # Filename:	LUNAR_LANDMARK_SELECTION_FOR_CM.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -39818,9 +39817,9 @@ DEPRCRIT	2DEC	-.02 B-1
 
 @
 
-\section{MAIN.s)
+\section{MAIN}
 
-<<MAIN.s>>=
+<<src/MAIN.s>>=
 # Copyright:	Public domain.
 # Filename:	MAIN.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -39991,9 +39990,9 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 @
 
-\section{MEASUREMENT_INCORPORATION.s)
+\section{MEASUREMENT INCORPORATION}
 
-<<MEASUREMENT_INCORPORATION.s>>=
+<<src/MEASUREMENT-INCORPORATION.s>>=
 # Copyright:	Public domain.
 # Filename:	MEASUREMENT_INCORPORATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -40499,9 +40498,9 @@ NORMZI		=	36D
 
 @
 
-\section{MYSUBS.s)
+\section{MYSUBS}
 
-<<MYSUBS.s>>=
+<<src/MYSUBS.s>>=
 # Copyright:	Public domain.
 # Filename:	MYSUBS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -40596,9 +40595,9 @@ DPADD2+		AD	NEGMAX		# CAN NOT OVERFLOW
 
 @
 
-\section{ORBITAL_INTEGRATION.s)
+\section{ORBITAL INTEGRATION}
 
-<<ORBITAL_INTEGRATION.s>>=
+<<src/ORBITAL-INTEGRATION.s>>=
 # Copyright:	Public domain.
 # Filename:	ORBITAL_INTEGRATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -41550,9 +41549,9 @@ TVEC		EQUALS	26D
 
 @
 
-\section{P11.s)
+\section{P11}
 
-<<P11.s>>=
+<<src/P11.s>>=
 # Copyright:    Public domain.
 # Filename:     P11.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -42477,9 +42476,9 @@ STIKBITS	OCT	00077
 2SATSTCK	2CADR	SATSTICK
 @
 
-\section{P12.s)
+\section{P12}
 
-<<P12.s>>=
+<<src/P12.s>>=
 # Copyright:	Public domain.
 # Filename:	P12.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -42727,9 +42726,9 @@ RDOTDNOM	2DEC	.059436 B-7	# 19.5 FPS
 
 @
 
-\section{P20-P25.s)
+\section{P20-P25}
 
-<<P20-P25.s>>=
+<<src/P20-P25.s>>=
 # Copyright:	Public domain.
 # Filename:	P20-P25.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -46261,9 +46260,9 @@ V67DEC2		2DEC	2 B-14
 
 @
 
-\section{P30_P37.s)
+\section{P30 P37}
 
-<<P30_P37.s>>=
+<<src/P30--P37.s>>=
 # Copyright:	Public domain.
 # Filename:	P30_P37.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -46459,9 +46458,9 @@ S30.1		STQ	DLOAD
 
 @
 
-\section{P30-P37.s)
+\section{P30-P37}
 
-<<P30-P37.s>>=
+<<src/P30-P37.s>>=
 # Copyright:	Public domain.
 # Filename:	P30-P37.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -47094,9 +47093,9 @@ P20FLGON	EXTEND
 
 @
 
-\section{P32-P33_P72-P73.s)
+\section{P32-P33 P72-P73}
 
-<<P32-P33_P72-P73.s>>=
+<<src/P32-P33-P72-P73.s>>=
 # Copyright:	Public domain.
 # Filename:	P32-P33_P72-P73.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -48507,9 +48506,9 @@ CDHMVR		STQ	VLOAD
 
 @
 
-\section{P32-P35_P72-P75.s)
+\section{P32-P35 P72-P75}
 
-<<P32-P35_P72-P75.s>>=
+<<src/P32-P35-P72-P75.s>>=
 # Copyright:	Public domain.
 # Filename:	P32-P35_P72-P75.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -49906,9 +49905,9 @@ COMPTGO		EXTEND
 
 @
 
-\section{P34-35_P74-75.s)
+\section{P34-35 P74-75}
 
-<<P34-35_P74-75.s>>=
+<<src/P34-35-P74-75.s>>=
 # Copyright:	Public domain.
 # Filename:	P34-35_P74-75.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -51650,9 +51649,9 @@ V06N90N		VN	00690
 		SBANK=	LOWSUPER
 @
 
-\section{P37_P70.s)
+\section{P37 P70}
 
-<<P37_P70.s>>=
+<<src/P37-P70.s>>=
 # Copyright:	Public domain.
 # Filename:	P37_P70.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -53605,9 +53604,9 @@ E3RTE		2DEC	121920. B-29
 
 @
 
-\section{P40-P47.s)
+\section{P40-P47}
 
-<<P40-P47.s>>=
+<<src/P40-P47.s>>=
 # Copyright:	Public domain.
 # Filename:	P40-P47.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -56039,9 +56038,9 @@ RCSDAPON	CAF	0.6SECT5	# 0.6 SEC ALLOWS TVCEXEC/ROLLDAP TO DIE
 
 @
 
-\section{P51-P53.s)
+\section{P51-P53}
 
-<<P51-P53.s>>=
+<<src/P51-P53.s>>=
 # Copyright:    Public domain.
 # Filename:     P51-P53.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -58257,9 +58256,9 @@ VNPLANV		VN	0688
 
 @
 
-\section{P61-P67.s)
+\section{P61-P67}
 
-<<P61-P67.s>>=
+<<src/P61-P67.s>>=
 # Copyright:    Public domain.
 # Filename:     P61-P67.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -59488,9 +59487,9 @@ S62.3		SETPD	SLOAD
 
 @
 
-\section{P70-P71.s)
+\section{P70-P71}
 
-<<P70-P71.s>>=
+<<src/P70-P71.s>>=
 # Copyright:	Public domain.
 # Filename:	P70-P71.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -59927,9 +59926,9 @@ ORBMANAD	ADRES	ORBMANUV
 
 @
 
-\section{P76.s)
+\section{P76}
 
-<<P76.s>>=
+<<src/P76.s>>=
 # Copyright:    Public domain.
 # Filename:     P76.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -60093,9 +60092,9 @@ P76SUB1		CLEAR   SLOAD
                 RVQ 
                 @\r\r
 
-\section{P-AXIS_RCS_AUTOPILOT.s)
+\section{P-AXIS RCS AUTOPILOT}
 
-<<P-AXIS_RCS_AUTOPILOT.s>>=
+<<src/P-AXIS-RCS-AUTOPILOT.s>>=
 # Copyright:	Public domain.
 # Filename:	P-AXIS_RCS_AUTOPILOT.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -61154,9 +61153,9 @@ QRAXIS		CS	OMEGARD
 QERRCALL	2CADR	CALLQERR
 @
 
-\section{PHASE_TABLE_MAINTENANCE.s)
+\section{PHASE TABLE MAINTENANCE}
 
-<<PHASE_TABLE_MAINTENANCE.s>>=
+<<src/PHASE-TABLE-MAINTENANCE.s>>=
 # Copyright:	Public domain.
 # Filename:	PHASE_TABLE_MAINTENANCE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -61565,9 +61564,9 @@ CHECKB		MASK	BIT12		# SINCE THIS IS OF TYPE B, THIS BIT SHOULD
 
 @
 
-\section{PINBALL_GAME_BUTTONS_AND_LIGHTS.s)
+\section{PINBALL GAME BUTTONS AND LIGHTS}
 
-<<PINBALL_GAME_BUTTONS_AND_LIGHTS.s>>=
+<<src/PINBALL-GAME-BUTTONS-AND-LIGHTS.s>>=
 # Copyright:	Public domain.
 # Filename:	PINBALL_GAME_BUTTONS_AND_LIGHTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -65351,9 +65350,9 @@ ENDPINS1	EQUALS
 
 @
 
-\section{PINBALL_NOUN_TABLES.s)
+\section{PINBALL NOUN TABLES}
 
-<<PINBALL_NOUN_TABLES.s>>=
+<<src/PINBALL-NOUN-TABLES.s>>=
 # Copyright:	Public domain.
 # Filename:	PINBALL_NOUN_TABLES.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -66223,9 +66222,9 @@ RUTMXTAB	OCT	16351			# 40	M/S, DP3, DP3
 
 @
 
-\section{PLANETARY_INERTIAL_ORIENTATION.s)
+\section{PLANETARY INERTIAL ORIENTATION}
 
-<<PLANETARY_INERTIAL_ORIENTATION.s>>=
+<<src/PLANETARY-INERTIAL-ORIENTATION.s>>=
 # Copyright:	Public domain.
 # Filename:	PLANETARY_INERTIAL_ORIENTATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -66618,9 +66617,9 @@ WEARTH		2DEC	.973561595	# REVS/CSEC B+23= 7.29211494 E-5  RAD/SEC
 
 @
 
-\section{POWERED_FLIGHT_SUBROUTINES.s)
+\section{POWERED FLIGHT SUBROUTINES}
 
-<<POWERED_FLIGHT_SUBROUTINES.s>>=
+<<src/POWERED-FLIGHT-SUBROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	POWERED_FLIGHT_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -66987,9 +66986,9 @@ SMCDURES	DLOAD	DMP
 
 @
 
-\section{Q_R-AXIS_RCS_AUTOPILOT.s)
+\section{Q R-AXIS RCS AUTOPILOT}
 
-<<Q_R-AXIS_RCS_AUTOPILOT.s>>=
+<<src/Q-R-AXIS-RCS-AUTOPILOT.s>>=
 # Copyright:	Public domain.
 # Filename:	Q_R-AXIS_RCS_AUTOPILOT.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -67852,9 +67851,9 @@ MAKERUPT	EXTEND
 		
 @
 
-\section{R30.s)
+\section{R30}
 
-<<R30.s>>=
+<<src/R30.s>>=
 # Copyright:    Public domain.
 # Filename:     R30.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68347,9 +68346,9 @@ MAXNM		2OCT	0106505603
 # There is no source code on this page --- HG 2009
 @
 
-\section{R31.s)
+\section{R31}
 
-<<R31.s>>=
+<<src/R31.s>>=
 # Copyright:	Public domain.
 # Filename:	R31.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -68642,9 +68641,9 @@ R34LOS		EXIT
 			R34ANG
 @
 
-\section{R60_62.s)
+\section{R60 62}
 
-<<R60_62.s>>=
+<<src/R60-62.s>>=
 # Copyright:	Public domain.
 # Filename:	R60_62.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -69034,9 +69033,9 @@ GOMOVE		TC	UPFLAG		# SET FOR 3-AXIS MANEUVER
 		
 @
 
-\section{R63.s)
+\section{R63}
 
-<<R63.s>>=
+<<src/R63.s>>=
 # Copyright:	Public domain.
 # Filename:	R63.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -69195,9 +69194,9 @@ DP1MIN		2DEC	6000
 
 @
 
-\section{RADAR_LEADIN_ROUTINES.s)
+\section{RADAR LEADIN ROUTINES}
 
-<<RADAR_LEADIN_ROUTINES.s>>=
+<<src/RADAR-LEADIN-ROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	RADAR_LEADIN_ROUTINES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -69303,9 +69302,9 @@ RDRLOCS		CADR	RRRANGE		# = 0
 
 @
 
-\section{RCS-CSM_DAP_EXECUTIVE_PROGRAMS.s)
+\section{RCS-CSM DAP EXECUTIVE PROGRAMS}
 
-<<RCS-CSM_DAP_EXECUTIVE_PROGRAMS.s>>=
+<<src/RCS-CSM-DAP-EXECUTIVE-PROGRAMS.s>>=
 # Copyright:	Public domain.
 # Filename:	RCS-CSM_DAP_EXECUTIVE_PROGRAMS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -69393,9 +69392,9 @@ QUADANGL	DEC	660		# = 7.25 DEGREES
 
 @
 
-\section{RCS-CSM_DIGITAL_AUTOPILOT.s)
+\section{RCS-CSM DIGITAL AUTOPILOT}
 
-<<RCS-CSM_DIGITAL_AUTOPILOT.s>>=
+<<src/RCS-CSM-DIGITAL-AUTOPILOT.s>>=
 # Copyright:	Public domain.
 # Filename:	RCS-CSM_DIGITAL_AUTOPILOT.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70374,9 +70373,9 @@ WRTN17		EXTEND			# GET SET TO COMPUTE TOTAL ASTRONAUT
  
 @
 
-\section{RCS_FAILURE_MONITOR.s)
+\section{RCS FAILURE MONITOR}
 
-<<RCS_FAILURE_MONITOR.s>>=
+<<src/RCS-FAILURE-MONITOR.s>>=
 # Copyright:	Public domain.
 # Filename:	RCS_FAILURE_MONITOR.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -70552,9 +70551,9 @@ VOPENED		INDEX	L			# A VALVE HAS JUST BEEN OPENED.
 		
 @
 
-\section{README.md)
+\section{README.md}
 
-<<README.md>>=
+<<src/README.md>>=
 Apollo-11
 =========
 proudindiv: See my [facebook post](https://www.facebook.com/gary.young.9480/posts/10207920379865840) for my experience with this type of code.
@@ -70638,9 +70637,9 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
         INSTRUMENTATION LABORATORY
 @
 
-\section{REENTRY_CONTROL.s)
+\section{REENTRY CONTROL}
 
-<<REENTRY_CONTROL.s>>=
+<<src/REENTRY-CONTROL.s>>=
 # Copyright:	Public domain.
 # Filename:	REENTRY_CONTROL.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72252,9 +72251,9 @@ LATSLOPE	EQUALS	1/12TH
 
 @
 
-\section{RESTARTS_ROUTINE.s)
+\section{RESTARTS ROUTINE}
 
-<<RESTARTS_ROUTINE.s>>=
+<<src/RESTARTS-ROUTINE.s>>=
 # Copyright:    Public domain.
 # Filename:     RESTARTS_ROUTINE.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -72592,9 +72591,9 @@ NOVACADR	GENADR	NOVAC
 
 @
 
-\section{RESTART_TABLES.s)
+\section{RESTART TABLES}
 
-<<RESTART_TABLES.s>>=
+<<src/RESTART-TABLES.s>>=
 # Copyright:	Public domain.
 # Filename:	RESTART_TABLES.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -73155,9 +73154,9 @@ NUFAZ+10	INCR	A			# SET TBASE AND STORE PHASE CORRECTLY
 
 @
 
-\section{RT8_OP_CODES.s)
+\section{RT8 OP CODES}
 
-<<RT8_OP_CODES.s>>=
+<<src/RT8-OP-CODES.s>>=
 # Copyright:    Public domain.
 # Filename:     RT8_OP_CODES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -73515,9 +73514,9 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 @
 
-\section{RTB_OP_CODES.s)
+\section{RTB OP CODES}
 
-<<RTB_OP_CODES.s>>=
+<<src/RTB-OP-CODES.s>>=
 # Copyright:	Public domain.
 # Filename:	RTB_OP_CODES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -73756,9 +73755,9 @@ VECSGNAG	TC	BANKCALL
 
 @
 
-\section{S-BAND_ANTENNA_FOR_CM.s)
+\section{S-BAND ANTENNA FOR CM}
 
-<<S-BAND_ANTENNA_FOR_CM.s>>=
+<<src/S-BAND-ANTENNA-FOR-CM.s>>=
 # Copyright:	Public domain.
 # Filename:	S-BAND_ANTENNA_FOR_CM.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73890,9 +73889,9 @@ R		EQUALS	RCM
 
 @
 
-\section{S-BAND_ANTENNA_FOR_LM.s)
+\section{S-BAND ANTENNA FOR LM}
 
-<<S-BAND_ANTENNA_FOR_LM.s>>=
+<<src/S-BAND-ANTENNA-FOR-LM.s>>=
 # Copyright:	Public domain.
 # Filename:	S-BAND_ANTENNA_FOR_LM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -74096,9 +74095,9 @@ URP		EQUALS	6D
 
 @
 
-\section{SERVICER207.s)
+\section{SERVICER207}
 
-<<SERVICER207.s>>=
+<<src/SERVICER207.s>>=
 # Copyright:    Public domain.
 # Filename:     SERVICER207.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -74905,9 +74904,9 @@ RESQ		2DEC*	40.6809913 E12 B-59*
 
 @
 
-\section{SERVICE_ROUTINES.s)
+\section{SERVICE ROUTINES}
 
-<<SERVICE_ROUTINES.s>>=
+<<src/SERVICE-ROUTINES.s>>=
 # Copyright:    Public domain.
 # Filename:     SERVICE_ROUTINES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -75181,9 +75180,9 @@ TRFAILON	INHINT
 
 @
 
-\section{SERVICER.s)
+\section{SERVICER}
 
-<<SERVICER.s>>=
+<<src/SERVICER.s>>=
 # Copyright:	Public domain.
 # Filename:	SERVICER.agc
 # Purpose:	Part of the source code for Luminary, build 099. It
@@ -76901,9 +76900,9 @@ SETPOS		XCH	Q		# SAVE INDEX IN Q
 
 @
 
-\section{SINGLE_PRECISION_SUBROUTINES.s)
+\section{SINGLE PRECISION SUBROUTINES}
 
-<<SINGLE_PRECISION_SUBROUTINES.s>>=
+<<src/SINGLE-PRECISION-SUBROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	SINGLE_PRECISION_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -76980,9 +76979,9 @@ ARG90		INDEX	A
 
 @
 
-\section{SPS_BACK-UP_RCS_CONTROL.s)
+\section{SPS BACK-UP RCS CONTROL}
 
-<<SPS_BACK-UP_RCS_CONTROL.s>>=
+<<src/SPS-BACK-UP-RCS-CONTROL.s>>=
 # Copyright:	Public domain.
 # Filename:	SPS_BACK-UP_RCS_CONTROL.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -77181,9 +77180,9 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 @
 
-\section{STABLE_ORBIT.s)
+\section{STABLE ORBIT}
 
-<<STABLE_ORBIT.s>>=
+<<src/STABLE-ORBIT.s>>=
 # Copyright:    Public domain.
 # Filename:     STABLE_ORBIT.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -77614,9 +77613,9 @@ V06N81SR	VN	0681
 # *** END OF COMEKISS.020 ***
 @
 
-\section{STAR_TABLES.s)
+\section{STAR TABLES}
 
-<<STAR_TABLES.s>>=
+<<src/STAR-TABLES.s>>=
 # Copyright:	Public domain.
 # Filename:	STAR_TABLES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -77812,9 +77811,9 @@ CATLOG		DEC	6970
 
 @
 
-\section{SXTMARK.s)
+\section{SXTMARK}
 
-<<SXTMARK.s>>=
+<<src/SXTMARK.s>>=
 # Copyright:	Public domain.
 # Filename:	SXTMARK.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -78519,9 +78518,9 @@ DIFCHK		INCR	MKNDX			# INCREMENT INDEX
 
 @
 
-\section{SYSTEM_TEST_STANDARD_LEAD_INS.s)
+\section{SYSTEM TEST STANDARD LEAD INS}
 
-<<SYSTEM_TEST_STANDARD_LEAD_INS.s>>=
+<<src/SYSTEM-TEST-STANDARD-LEAD-INS.s>>=
 # Copyright:	Public domain.
 # Filename:	SYSTEM_TEST_STANDARD_LEAD_INS.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -78671,9 +78670,9 @@ REDO		TC	NEWMODEX	# DISPLAY MM 07.
 		
 @
 
-\section{T4RUPT_PROGRAM.s)
+\section{T4RUPT PROGRAM}
 
-<<T4RUPT_PROGRAM.s>>=
+<<src/T4RUPT-PROGRAM.s>>=
 # Copyright:	Public domain.
 # Filename:	T4RUPT_PROGRAM.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -80143,9 +80142,9 @@ MAXPLS1		DEC	-164			# WAS -79
 
 @
 
-\section{T6-RUPT_PROGRAMS.s)
+\section{T6-RUPT PROGRAMS}
 
-<<T6-RUPT_PROGRAMS.s>>=
+<<src/T6-RUPT-PROGRAMS.s>>=
 # Copyright:	Public domain.
 # Filename:	T6-RUPT_PROGRAMS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -80311,9 +80310,9 @@ DOT6RUPT	LXCH	BANKRUPT	# (INTERRUPT LEAD INS CONTINUED)
 
 @
 
-\section{TAGS_FOR_RELATIVE_SETLOC.s)
+\section{TAGS FOR RELATIVE SETLOC}
 
-<<TAGS_FOR_RELATIVE_SETLOC.s>>=
+<<src/TAGS-FOR-RELATIVE-SETLOC.s>>=
 # Copyright:	Public domain.
 # Filename:	TAGS_FOR_RELATIVE_SETLOC.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -80752,9 +80751,9 @@ EBRN1		ECADR	RN1
 
 @
 
-\section{THE_LUNAR_LANDING.s)
+\section{THE LUNAR LANDING}
 
-<<THE_LUNAR_LANDING.s>>=
+<<src/THE-LUNAR-LANDING.s>>=
 # Copyright:	Public domain.
 # Filename:	THE_LUNAR_LANDING.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -81092,9 +81091,9 @@ V06N43*		VN	0643
 
 @
 
-\section{THROTTLE_CONTROL_ROUTINES.s)
+\section{THROTTLE CONTROL ROUTINES}
 
-<<THROTTLE_CONTROL_ROUTINES.s>>=
+<<src/THROTTLE-CONTROL-ROUTINES.s>>=
 # Copyright:	Public domain.
 # Filename:	THROTTLE_CONTROL_ROUTINES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -81321,9 +81320,9 @@ FEXTRA		=	BIT13		# FEXT +5.13309020 E+4
 # * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 @
 
-\section{TIME_OF_FREE_FALL.s)
+\section{TIME OF FREE FALL}
 
-<<TIME_OF_FREE_FALL.s>>=
+<<src/TIME-OF-FREE-FALL.s>>=
 # Copyright:	Public domain.
 # Filename:	TIME_OF_FREE_FALL.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -82036,9 +82035,9 @@ TFF1/4		EQUALS	HIDP1/4
 
 @
 
-\section{TJET_LAW.s)
+\section{TJET LAW}
 
-<<TJET_LAW.s>>=
+<<src/TJET-LAW.s>>=
 # Copyright:	Public domain.
 # Filename:	TJET_LAW.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -82560,9 +82559,9 @@ TJMIN		DEC	.005		# SMALLEST ALLOWABLE TIME.  .020 SEC AT 4.
 RUFRATE		DEC	.1444		# CORRESPONDS TO TARGET RATE OF 6.5 DEG/S.
 @
 
-\section{TPI_SEARCH.s)
+\section{TPI SEARCH}
 
-<<TPI_SEARCH.s>>=
+<<src/TPI-SEARCH.s>>=
 # Copyright:	Public domain.
 # Filename:	TPI_SEARCH.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -83122,9 +83121,9 @@ V06N72		VN	0672
 
 @
 
-\section{TRIM_GIMBAL_CNTROL_SYSTEM.s)
+\section{TRIM GIMBAL CNTROL SYSTEM}
 
-<<TRIM_GIMBAL_CNTROL_SYSTEM.s>>=
+<<src/TRIM-GIMBAL-CNTROL-SYSTEM.s>>=
 # Copyright:	Public domain.
 # Filename:	TRIM_GIMBAL_CNTROL_SYSTEM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -83749,9 +83748,9 @@ ROOTCYCL	TS	SCRATCH		# STORE X
 	
 @
 
-\section{TVCDAPS.s)
+\section{TVCDAPS}
 
-<<TVCDAPS.s>>=
+<<src/TVCDAPS.s>>=
 # Copyright:	Public domain.
 # Filename:	TVCDAPS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -84535,9 +84534,9 @@ E(-AT)		OCT	37535		#		     OR(1/A=8SEC, T=80MS)
 
 @
 
-\section{TVCEXECUTIVE.s)
+\section{TVCEXECUTIVE}
 
-<<TVCEXECUTIVE.s>>=
+<<src/TVCEXECUTIVE.s>>=
 # Copyright:	Public domain.
 # Filename:	TVCEXECUTIVE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -84813,9 +84812,9 @@ FCORFRAC	OCT	10000		# ONE-SHOT CORRECTION FRACTION
 
 @
 
-\section{TVCINITIALIZE.s)
+\section{TVCINITIALIZE}
 
-<<TVCINITIALIZE.s>>=
+<<src/TVCINITIALIZE.s>>=
 # Copyright:	Public domain.
 # Filename:	TVCINITIALIZE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -85232,9 +85231,9 @@ INITLOC2	2CADR	TVCINIT1
 
 @
 
-\section{TVCMASSPROP.s)
+\section{TVCMASSPROP}
 
-<<TVCMASSPROP.s>>=
+<<src/TVCMASSPROP.s>>=
 # Copyright:	Public domain.
 # Filename:	TVCMASSPROP.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -85476,9 +85475,9 @@ DXITFIX		DEC*	-1.88275 E-5 B+12*
 
 @
 
-\section{TVCRESTARTS.s)
+\section{TVCRESTARTS}
 
-<<TVCRESTARTS.s>>=
+<<src/TVCRESTARTS.s>>=
 # Copyright:	Public domain.
 # Filename:	TVCRESTARTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -85753,9 +85752,9 @@ TVCEXADR	OCT	37772		# (UNUSED TABLE LOC, FILL WITH 60MS, T5)
 
 @
 
-\section{TVCROLLDAP.s)
+\section{TVCROLLDAP}
 
-<<TVCROLLDAP.s>>=
+<<src/TVCROLLDAP.s>>=
 # Copyright:	Public domain.
 # Filename:	TVCROLLDAP.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -86375,9 +86374,9 @@ T6SCALE		=	PRIO31		# (B+3) (16 BITS/CS)  (100CS/SEC)
 
 @
 
-\section{TVCSTROKETEST.s)
+\section{TVCSTROKETEST}
 
-<<TVCSTROKETEST.s>>=
+<<src/TVCSTROKETEST.s>>=
 # Copyright:	Public domain.
 # Filename:	TVCSTROKETEST.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -86641,9 +86640,9 @@ REVUP		TS	REVS		# ALL REVERSALS EXCEPT LAST OF SET
 		
 @
 
-\section{UPDATE_PROGRAM.s)
+\section{UPDATE PROGRAM}
 
-<<UPDATE_PROGRAM.s>>=
+<<src/UPDATE-PROGRAM.s>>=
 # Copyright:    Public domain.
 # Filename:     UPDATE_PROGRAM.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -87200,9 +87199,9 @@ UPACTOFF	CS	BIT3
 
 @
 
-\section{WAITLIST.s)
+\section{WAITLIST}
 
-<<WAITLIST.s>>=
+<<src/WAITLIST.s>>=
 # Copyright:	Public domain.
 # Filename:	WAITLIST.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
