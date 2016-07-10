@@ -91,6 +91,30 @@ and I'll initially copy them here to keep them together.
       It probably took all night to print the original source listing once.
 \end{itemize}
 
+\section{References}
+
+\begin{itemize}
+\item \href{http://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule/}
+     {QUARTZ: "BURN, BABY! BURN!"}
+     The code that took America to the moon was just published to GitHub,
+     and it’s like a 1960s time capsule,
+     Written by
+     Keith Collins,
+     July 09, 2016.
+\item \href{https://www.youtube.com/watch?v=hyhI85Rd1kI}
+           {Apollo Guidance Computer emulation by Dean Koska}
+           This Palm Centro program is running the computer software used on the Apollo moon landings.
+           It utilizes Ron Burkey's Virtual AGC engine for the emulation (www.ibiblio.org/apollo).
+\item \href{http://www.ibiblio.org/apollo/}
+           {Virtual AGC Home Page - Ibiblio}
+\item \href{https://developers.slashdot.org/story/16/07/10/162241/assembly-code-that-took-america-to-the-moon-now-published-on-github}
+           {slashdot: Assembly Code That Took America to the Moon Now Published On GitHub}
+\item \href{http://www.ibiblio.org/apollo/NARA-SW/SkylabDataCards.pdf}
+           {Skylab quick-reference card}
+\item \href{http://www.ibiblio.org/apollo/links.html#Space_Guidance_Analysis_SGA_memos}
+           {Space Guidance Analysis (SGA) memos}
+\end{itemize}
+
 \begin{appendices}
 
 
@@ -70625,8 +70649,6 @@ VOPENED		INDEX	L			# A VALVE HAS JUST BEEN OPENED.
 <<src/README.md>>=
 Apollo-11
 =========
-proudindiv: See my [facebook post](https://www.facebook.com/gary.young.9480/posts/10207920379865840) for my experience with this type of code.
----------
 
 Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command Module (Comanche055) and Lunar Module (Luminary099). Digitized by the folks at Virtual AGC and MIT.
 
