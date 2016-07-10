@@ -1,5 +1,7 @@
 Apollo-11
 =========
+proudindiv: See my [facebook post](https://www.facebook.com/gary.young.9480/posts/10207920379865840) for my experience with this type of code.
+---------
 
 Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command Module (Comanche055) and Lunar Module (Luminary099). Digitized by the folks at Virtual AGC and MIT.
 
