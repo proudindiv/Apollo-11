@@ -11,7 +11,7 @@
 \colorlet{shadecolor}{green!8}
 \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
 
-\title{Reverse Engineering the Apollo 11 Code}
+\title{Reverse Engineering the Apollo 11 Guidance Computer (AGC) Source Code}
 \author{Gary Young}
 
 \begin{document}
@@ -21,6 +21,75 @@
 \tableofcontents
 \newpage
 
+\chapter{Introduction and Notes}
+
+I don't know how much time I'm going to spend on this,
+nor how far I'll take it, but I'll collect my notes here.
+I started putting comments on
+my \href{https://www.facebook.com/gary.young.9480/posts/10207920379865840}
+        {facebook account},
+and I'll initially copy them here to keep them together.
+
+\begin{quote}
+\begin{itemize}
+\item Original Apollo 11 guidance computer (AGC) source code,
+      I wrote programs like this in the same time period,
+      however I started using more abstraction
+      with macros and defines in the assembler.
+      (\href{https://github.com/chrislgarry/Apollo-11}{chrislgarry/Apollo-11})
+\item Today, I would create a literate program in noweb
+      to reverse engineer the code,
+      integrating the documentation and code
+      into a version of the Forth programming language.
+      Forth would be more compact to fit in the small memories
+      of the computers of those days,
+      but I would have to emulate the stack
+      because those old computers hadn't implemented them in the hardware yet. (\href{https://en.wikipedia.org/wiki/Forth_(programming_language)}{wikipedia})
+\item I wrote assemblers in forth to compile (assemble) this type of code
+      on machines before personal computers that didn't have operating systems.
+\item Such a macro-assembler could be written in several pages of machine code
+      almost directly from the processor reference card.
+\item I've cloned the Apollo-11 repository and
+      made my first change to the README.md:
+      (\href{https://github.com/proudindiv/Apollo-11/tree/master}{link})
+\item Well, I've got my first stub reverse engineering
+      of the Apollo-11 code in last night.
+      (\href{https://github.com/proudindiv/Apollo-11/blob/master/Apollo-11.pdf}{link})
+\item There were no file systems with 80 (or more) characters in a file name.
+      There were no file systems at all.
+      The source had to have been on punch cards or paper tape.
+      I worked at the Federal Reserve Bank in Seattle then on an IBM 360 main frame
+      and we had to order a select chain to put on the printer
+      for the characters that we could print.
+      We had 26 capital letters "A-Z", 10 digits "0-9", and 6 "special characters".
+      In our case the special characters were chosen for accounting applications:
+      "\$", "\#", "-", period, comma, and space.
+      (I think, I can't remember if we had the pound sign.)
+      Notice that there are no lower case letters.
+      That came later, at Bell Labs with UNIX and such, I think.
+\item There was no floating point arithmetic, only 16 bit integers,
+      from 0 to 65535, or -32767 to 0 to 32767 or possibly -32768 to 32767
+      depending on whether 0 has a sign and is different from minus zero.
+      Heck there may not have been an integer "divide" operation
+      implemented in the hardware, and probably not even a 16 bit integer multiply.
+      I'll have to look through the source to see.
+      We had to implement multiply and divide in software.
+      Also there was a distinction between "scientific" and "business" computers.
+      My memory is not too good on the details and I have no reference in front of me.
+\item Aha! I just looked at the first file in my "Apollo-11" book that I just started AND ...
+      "S-ZERO EQUALS NEG0" so plus zero and negative zero were two different numbers!
+\end{itemize}
+\end{quote}
+
+\begin{itemize}
+\item I could clone the entire repository and
+      then download it to my Intel Skull Canyon computer
+      from the internet in a fraction of a second.
+      It's 2MB, including all the boiler plate
+      that has been recently added.
+\item It takes about five seconds to typeset this book.
+      It probably took all night to print the original source listing once.
+\end{itemize}
 
 \begin{appendices}
 
