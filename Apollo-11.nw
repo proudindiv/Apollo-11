@@ -89,6 +89,17 @@ and I'll initially copy them here to keep them together.
       that has been recently added.
 \item It takes about five seconds to typeset this book.
       It probably took all night to print the original source listing once.
+\item The release of the Apollo 11 software and the extreme popularity,
+      with over 2000 clones already, has much larger significance than just a fad.
+      If you look at the IoT phenomenon and the computers that are used there,
+      the Apollo 11 software is a training guide and
+      and a huge inspiration on what can be done.
+      Imagine how you could program
+      a \href{https://www.amazon.com/dp/B014KK89BW}{self driving car}
+      modeling it on the Apollo 11.
+      The Apollo 11 software shows a new generation how computers work
+      at the low level and how they integrate into the real world.
+      The next huge changes to society aren't coming from the corporate world.
 \end{itemize}
 
 \section{References}
@@ -130,7 +141,7 @@ Files that are versions of each other:
 
 \section{complete program}
 
-<<cmAGC.s>>=
+<<Apollo-11.s>>=
 <<main headers>>
 <<comerase routine>>
 <<comaid routines>>
