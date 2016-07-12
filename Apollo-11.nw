@@ -126,7 +126,571 @@ Files that are versions of each other:
 \end{itemize}
 
 
+\chapter{Command Module’s (CM) Apollo Guidance Computer (AGC), for Apollo 11}
+
+\section{main program}
+
+<<cmAGC.s>>=
+<<main headers>>
+<<comerase routine>>
+<<comaid routines>>
+<<comekiss routines>>
+<<trouble routines>>
+<<tvcdaps routines>>
+<<chieftan routines>>
+@
+
+
+\section{main headers}
+
+<<main headers>>=
+<<contract and approvals>>
+<<assembly and operation information>>
+<<stags for relative setloc>>
+@
+
+\subsection{contract and approvals}
+
+<<contract and approvals>>=
+@
+
+\subsection{assembly and operation information}
+
+<<assembly and operation information>>=
+@
+
+\subsection{stags for relative setloc}
+
+<<stags for relative setloc>>=
+@
+
+
+\section{comerase routine}
+
+<<comerase routine>>=
+<<erasable assignments>>
+@
+
+\subsection{erasable assignments}
+
+<<erasable assignments>>=
+@
+
+
+\section{comaid routines}
+
+<<comaid routines>>=
+<<interrupt lead ins>>
+<<st4rupt program>>
+<<downlink lists>>
+<<fresh start and restart>>
+<<restart tables>>
+<<sctmark code>>
+<<extended verbs>>
+<<pinball noun tables>>
+<<csm geometry>>
+<<imu compensation package>>
+<<pinball game buttons and lights>>
+<<r60-62 code>>
+<<anglfind code>>
+<<gimbal lock avoidance>>
+<<kalcmanu steering>>
+<<system test standard lead ins>>
+<<imu calibration and alignment>>
+@
+
+\subsection{interrupt lead ins}
+
+<<interrupt lead ins>>=
+@
+
+\subsection{st4rupt program}
+
+<<st4rupt program>>=
+@
+
+\subsection{downlink lists}
+
+<<downlink lists>>=
+@
+
+\subsection{fresh start and restart}
+
+<<fresh start and restart>>=
+@
+
+\subsection{restart tables}
+
+<<restart tables>>=
+@
+
+\subsection{sctmark code}
+
+<<sctmark code>>=
+@
+
+\subsection{extended verbs}
+
+<<extended verbs>>=
+@
+
+\subsection{pinball noun tables}
+
+<<pinball noun tables>>=
+@
+
+\subsection{csm geometry}
+
+<<csm geometry>>=
+@
+
+\subsection{imu compensation package}
+
+<<imu compensation package>>=
+@
+
+\subsection{pinball game buttons and lights}
+
+<<pinball game buttons and lights>>=
+@
+
+\subsection{r60-62 code}
+
+<<r60-62 code>>=
+@
+
+\subsection{anglfind code}
+
+<<anglfind code>>=
+@
+
+\subsection{gimbal lock avoidance}
+
+<<gimbal lock avoidance>>=
+@
+
+\subsection{kalcmanu steering}
+
+<<kalcmanu steering>>=
+@
+
+\subsection{system test standard lead ins}
+
+<<system test standard lead ins>>=
+@
+
+\subsection{imu calibration and alignment}
+
+<<imu calibration and alignment>>=
+@
+
+
+\section{comekiss routines}
+
+<<comekiss routines>>=
+<<ground tracking determination program>>
+<<p34-35 p74-75 code>>
+<<r31 code>>
+<<p76 code>>
+<<r30 code>>
+<<stable orbit>>
+@
+
+\subsection{ground tracking determination program}
+
+<<ground tracking determination program>>=
+@
+
+\subsection{p34-35 p74-75 code}
+
+<<p34-35 p74-75 code>>=
+@
+
+\subsection{r31 code}
+
+<<r31 code>>=
+@
+
+\subsection{p76 code}
+
+<<p76 code>>=
+@
+
+\subsection{r30 code}
+
+<<r30 code>>=
+@
+
+\subsection{stable orbit}
+
+<<stable orbit>>=
+@
+
+
+\section{trouble routines}
+
+<<trouble routines>>=
+<<p11 code>>
+<<tpi search>>
+<<p20 p25 code>>
+<<p30 p37 code>>
+<<p32-p33 p72-p73 code>>
+<<p40-p47 code>>
+<<p51-p53 code>>
+<<lunar and solar ephemerides subroutines>>
+<<p61-p67 code>>
+<<servicer207 code>>
+<<entry lexicon>>
+<<reentry control>>
+<<cm body attitude>>
+<<p37 p70 code>>
+<<s-band antenna for cm>>
+<<lunar landmark selection for cm>>
+@
+
+\subsection{p11 code}
+
+<<p11 code>>=
+@
+
+\subsection{tpi search}
+
+<<tpi search>>=
+@
+
+\subsection{p20 p25 code}
+
+<<p20 p25 code>>=
+@
+
+\subsection{p30 p37 code}
+
+<<p30 p37 code>>=
+@
+
+\subsection{p32-p33 p72-p73 code}
+
+p32-p33 p72-p73 code>>=
+@
+
+\subsection{p40-p47 code}
+
+<<p40-p47 code>>=
+@
+
+\subsection{p51-p53 code}
+
+<<p51-p53 code>>=
+@
+
+\subsection{lunar and solar ephemerides subroutines}
+
+<<lunar and solar ephemerides subroutines>>=
+@
+
+\subsection{p61-p67 code}
+
+<<p61-p67 code>>=
+@
+
+\subsection{servicer207 code}
+
+<<servicer207 code>>=
+@
+
+\subsection{entry lexicon}
+
+<<entry lexicon>>=
+@
+
+\subsection{reentry control}
+
+<<reentry control>>=
+@
+
+\subsection{cm body attitude}
+
+<<cm body attitude>>=
+@
+
+\subsection{p37 p70 code}
+
+<<p37 p70 code>>=
+@
+
+\subsection{s-band antenna for cm}
+
+<<s-band antenna for cm>>=
+@
+
+\subsection{lunar landmark selection for cm}
+
+<<lunar landmark selection for cm>>=
+@
+
+
+\section{tvcdaps routines}
+
+<<tvcdaps routines>>=
+<<tvcinitialize code>>
+<<tvcexecutive code>>
+<<tvcmassprop code>>
+<<tvcrestarts code>>
+<<tvcdaps code>>
+<<tvcstroketest code>>
+<<tvcrolldap code>>
+<<mysubs code>>
+<<rcs-csm digital autopilot>>
+<<automatic maneuvers>>
+<<rcs-csm dap executive programs>>
+<<jet selection logic>>
+<<cm entry digital autopilot>>
+@
+
+\subsection{tvcinitialize code}
+
+<<tvcinitialize code>>=
+@
+
+\subsection{tvcexecutive code}
+
+<<tvcexecutive code>>=
+@
+
+\subsection{tvcmassprop code}
+
+<<tvcmassprop code>>=
+@
+
+\subsection{tvcrestarts code}
+
+<<tvcrestarts code>>=
+@
+
+\subsection{tvcdaps code}
+
+<<tvcdaps code>>=
+@
+
+\subsection{tvcstroketest code}
+
+<<tvcstroketest code>>=
+@
+
+\subsection{tvcrolldap code}
+
+<<tvcrolldap code>>=
+@
+
+\subsection{mysubs code}
+
+<<mysubs code>>=
+@
+
+\subsection{rcs-csm digital autopilot}
+
+<<rcs-csm digital autopilot>>=
+@
+
+\subsection{automatic maneuvers}
+
+<<automatic maneuvers>>=
+@
+
+\subsection{rcs-csm dap executive programs}
+
+<<rcs-csm dap executive programs>>=
+@
+
+\subsection{jet selection logic}
+
+<<jet selection logic>>=
+@
+
+\subsection{cm entry digital autopilot}
+
+<<cm entry digital autopilot>>=
+@
+
+
+\section{chieftan routines}
+
+<<chieftan routines>>=
+<<down-telemetry program>>
+<<inter-bank communication>>
+<<interpreter code>>
+<<fixed fixed constant pool>>
+<<interpretive constants>>
+<<single precision subroutines>>
+<<executive code>>
+<<waitlist code>>
+<<latitude longitude subroutines>>
+<<planetary inertial orientation>>
+<<measurement incorporation>>
+<<conic subroutines>>
+<<integration initialization>>
+<<orbital integration>>
+<<inflight alignment routines>>
+<<powered flight subroutines>>
+<<time of free fall>>
+<<star tables>>
+<<agc block two self check>>
+<<phase table maintenance>>
+<<restarts routine>>
+<<imu mode switching routines>>
+<<keyrupt uprupt>>
+<<display interface routines>>
+<<service routines>>
+<<alarm and abort>>
+<<update program>>
+<<rtb op codes>>
+@
+
+\subsection{down-telemetry program}
+
+<<down-telemetry program>>=
+@
+
+\subsection{inter-bank communication}
+
+<<inter-bank communication>>=
+@
+
+\subsection{interpreter code}
+
+<<interpreter code>>=
+@
+
+\subsection{fixed fixed constant pool}
+
+<<fixed fixed constant pool>>=
+@
+
+\subsection{interpretive constants}
+
+<<interpretive constants>>=
+@
+
+\subsection{single precision subroutines}
+
+<<single precision subroutines>>=
+@
+
+\subsection{executive code}
+
+<<executive code>>=
+@
+
+\subsection{waitlist code}
+
+<<waitlist code>>=
+@
+
+\subsection{latitude longitude subroutines}
+
+<<latitude longitude subroutines>>=
+@
+
+\subsection{planetary inertial orientation}
+
+<<planetary inertial orientation>>=
+@
+
+\subsection{measurement incorporation}
+
+<<measurement incorporation>>=
+@
+
+\subsection{conic subroutines}
+
+<<conic subroutines>>=
+@
+
+\subsection{integration initialization}
+
+<<integration initialization>>=
+@
+
+\subsection{orbital integration}
+
+<<orbital integration>>=
+@
+
+\subsection{inflight alignment routines}
+
+<<inflight alignment routines>>=
+@
+
+\subsection{powered flight subroutines}
+
+<<powered flight subroutines>>=
+@
+
+\subsection{time of free fall}
+
+<<time of free fall>>=
+@
+
+\subsection{star tables}
+
+<<star tables>>=
+@
+
+\subsection{agc block two self check}
+
+<<agc block two self check>>=
+@
+
+\subsection{phase table maintenance}
+
+<<phase table maintenance>>=
+@
+
+\subsection{restarts routine}
+
+<<restarts routine>>=
+@
+
+\subsection{imu mode switching routines}
+
+<<imu mode switching routines>>=
+@
+
+\subsection{keyrupt uprupt}
+
+<<keyrupt uprupt>>=
+@
+
+\subsection{display interface routines}
+
+<<display interface routines>>=
+@
+
+\subsection{service routines}
+
+<<service routines>>=
+@
+
+\subsection{alarm and abort}
+
+<<alarm and abort>>=
+@
+
+\subsection{update program}
+
+<<update program>>=
+@
+
+\subsection{rtb op codes}
+
+<<rtb op codes>>=
+@
+
+
 \begin{appendices}
+
+
+\chapter{labels}
 
 
 \chapter{Original Files}
