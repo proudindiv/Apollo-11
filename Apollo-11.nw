@@ -25292,10 +25292,19 @@ STIKBITS	OCT	00077
 
 <<tpi search>>=
 <<Page 551>>
+<<Page 552>>
+<<Page 553>>
+<<Page 554>>
+<<Page 555>>
+<<Page 556>>
+<<Page 557>>
+<<Page 558>>
+<<Page 559>>
+<<Page 560>>
+<<Page 561>>
 @
 
 <<Page 551>>=
-# Page 551
 # TPI SEARCH
 #
 # PROGRAM DESCRIPTION S17.1 AND S17.2
@@ -25350,7 +25359,9 @@ PIINVERS	2DEC	.3183098862
 
 SEC1THET	2DEC	.1944444444
 
-# Page 552
+@
+
+<<Page 552>>=
 SEC2THET	2DEC	.9166666667
 
 MANYFEET	2DEC	-1.0 B-2
@@ -25401,7 +25412,9 @@ S17.1		STQ	DLOAD
 		SL1 	ACOS
 		PDVL
 		VXV	DOT
-# Page 553		
+@
+
+<<Page 553>>=
 			RACT3
 			E2
 		PDDL	SIGN
@@ -25452,7 +25465,9 @@ S17.2		STQ	VLOAD			# COMPUTE SEARCH SECTOR LIMITS
 			TIMETHET
 		DLOAD				# SAVE START TIME AND GET END TIME
 			T
-# Page 554			
+@
+
+<<Page 554>>=
 		STORE	TF
 		STODL	TFO
 			IT
@@ -25503,7 +25518,9 @@ CONCAUL		DLOAD
 			TTPI
 		DAD	BON
 			TF
-# Page 555
+@
+
+<<Page 555>>=
 			AVFLAG
 			ADVCSM
 		STCALL	TDEC1
@@ -25554,7 +25571,9 @@ JUNCT3		VLOAD
 			XRS
 		STOVL	X1
 			VIPRIME
-# Page 556			
+@
+
+<<Page 556>>=
 		VSR*
 			0,2
 		STOVL	VVEC
@@ -25605,7 +25624,9 @@ INTERP		SET	DSU			# HP-HPO
 			X2
 		XSU,2	DDV
 			X1
-# Page 557			
+@
+
+<<Page 557>>=
 		DMP	SR*
 			DELTEE
 			0 	-1,2
@@ -25656,7 +25677,9 @@ ENDEN		VLOAD
 			TRANSANG		# COMPUTE OMEGA T, CENTRAL ANGLE
 		VLOAD	DOT
 			RACT3
-# Page 558
+@
+
+<<Page 558>>=
 			VIPRIME			# SG1
 		SIGN	BPL			# IF POSITIVE THEN SG1 = SG2 OTHERWISE
 			RELDELV
@@ -25708,7 +25731,9 @@ TRANSANG	STQ	SETPD
 			VVEC
 		NORM	DMPR			# PUSH LIST AT 02D
 			X1
-# Page 559
+@
+
+<<Page 559>>=
 		DMP	SRR*
 			02D
 			0 	-3,1
@@ -25759,7 +25784,9 @@ P17.1		TC	P20FLGON		#	SET UPDATE FLAG
 			KFLAG
 			+2
 		DEC	1			# DELTA H = 1 K NEGATIVE, KFLAG ON
-# Page 560
+@
+
+<<Page 560>>=
 		SXA,1	EXIT
 			OPTION2
 		CAF	V06N72			# DISPLAY PHI, DELTA H, SEARCH OPTION K
@@ -25810,7 +25837,9 @@ VNCOMP17	EXTEND
 		CS	MPAC			# RECYCLE WITH NEW TPI TIME
 		AD	BIT6			# OR PROCEED WITH NEW SEARCH OPTION
 		EXTEND
-# Page 561		
+@
+
+<<Page 561>>=
 		BZF	P17.1
 		TC	VNCOMP17 +3
 ALARUMS		SET	EXIT
@@ -90682,7 +90711,28 @@ RUFRATE		DEC	.1444		# CORRESPONDS TO TARGET RATE OF 6.5 DEG/S.
 #	This AGC program shall also be referred to as
 #			Colossus 2A
 
-<<tpi search>>
+# Page 551
+<<Page 551>>
+# Page 552
+<<Page 552>>
+# Page 553		
+<<Page 553>>
+# Page 554			
+<<Page 554>>
+# Page 555
+<<Page 555>>
+# Page 556			
+<<Page 556>>
+# Page 557			
+<<Page 557>>
+# Page 558
+<<Page 558>>
+# Page 559
+<<Page 559>>
+# Page 560
+<<Page 560>>
+# Page 561		
+<<Page 561>>
 @
 
 \section{TRIM GIMBAL CNTROL SYSTEM}
