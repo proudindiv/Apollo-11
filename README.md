@@ -32,7 +32,7 @@ To compile the noweb .nw files I use this user command in TeXstudio:
 noweb %.nw | pdflatex -synctex=1 -interaction=nonstopmode %.tex
 ```
 
-### Web References to the Apollow-11 Project:
+### Web References to the Apollo-11 Project:
 
 - [QUARTZ: "BURN, BABY! BURN!"](http://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule/)
      The code that took America to the moon was just published to GitHub,
