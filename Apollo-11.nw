@@ -262,8 +262,34 @@ Files that are versions of each other:
 \subsection{assembly and operation information}
 
 <<assembly and operation information>>=
-# Page 2
+<<Page CM0002>>
+<<Page CM0003>>
+<<Page CM0004>>
+<<Page CM0005>>
+<<Page CM0006>>
+<<Page CM0007>>
+<<Page CM0008>>
+<<Page CM0009>>
+<<Page CM0010>>
+<<Page CM0011>>
+<<Page CM0012>>
+<<Page CM0013>>
+<<Page CM0014>>
+<<Page CM0015>>
+<<Page CM0016>>
+<<Page CM0017>>
+<<Page CM0018>>
+<<Page CM0019>>
+<<Page CM0020>>
+<<Page CM0021>>
+<<Page CM0022>>
+<<Page CM0023>>
+<<Page CM0024>>
+<<Page CM0025>>
+<<Page CM0026>>
+@
 
+<<Page CM0002>>=
 # ASSEMBLY AND OPERATIONS INFORMATION
 # TAGS FOR RELATIVE SETLOC AND BLANK BANK CARDS
 # SUBROUTINE CALLS
@@ -313,7 +339,9 @@ Files that are versions of each other:
 #		S-BAND ANTENNA FOR CM
 #	TVCDAPS
 #		TVC INITIALIZE
-# Page 3
+@
+
+<<Page CM0003>>=
 #		TVC EXECUTIVE
 #		TVC MASSPROP
 #		TVC RESTARTS
@@ -364,12 +392,16 @@ Files that are versions of each other:
 #       MEMORY TYPE & AVAILABILITY DISPLAY
 #       COUNT TABLE
 #       PARAGRAPHS GENERATED FOR THIS ASSEMBLY
-# Page 4
+@
+
+<<Page CM0004>>=
 #       OCTAL LISTING
 #       OCCUPIED LOCATIONS TABLE
 #       SUBROS CALLED & PROGRAM STATUS
 
-# Page 5
+@
+
+<<Page CM0005>>=
 # VERB LIST FOR CSM
 
 # REGULAR VERBS
@@ -415,7 +447,9 @@ Files that are versions of each other:
 # 38
 # 39
 
-# Page 6
+@
+
+<<Page CM0006>>=
 
 # EXTENDED VERBS
 
@@ -467,7 +501,9 @@ Files that are versions of each other:
 # 85	REQUEST RENDEZVOUS PARAMETER DISPLAY NO. 2 (R34)
 # 86	REJECT RENDEZVOUS BACKUP SIGHTING MARK
 # 87	SET VHF RANGE FLAG
-# Page 7
+@
+
+<<Page CM0007>>=
 # 88	RESET VHF RANGE FLAG
 # 89	REQUEST RENDEZVOUS FINAL ATTITUDE ROUTINE (R63)
 # 90	REQUEST RENDEZVOUS OUT OF PLANE DISPLAY ROUTINE (R36)
@@ -481,7 +517,9 @@ Files that are versions of each other:
 # 98	ENABLE TRANSLUNAR INJECT
 # 99	PLEASE ENABLE ENGINE
 
-# Page 8
+@
+
+<<Page CM0008>>=
 # IN THE FOLLOWING NOUN LIST THE :NO LOAD: RESTRICTION MEANS THE NOUN
 # CONTAINS AT LEAST ONE COMPONENT WHICH CANNOT BE LOADED, I.E. OF
 # SCALE TYPE L (MIN/SEC) OR PP (2 INTEGERS).
@@ -533,14 +571,18 @@ Files that are versions of each other:
 # 25	CHECKLIST				3COMP	XXXXX. FOR EACH
 #	 (USED WITH PLEASE PERFORM ONLY)
 
-# Page 9
+@
+
+<<Page CM0009>>=
 
 # 26	PRIORITY/DELAY, ADRES, BBCON		3COMP	OCTAL ONLY FOR EACH
 # 27	SELF TEST ON/OFF SWITCH			1COMP	XXXXX.
 # 28	SPARE
 # 29	XSM LAUNCH AZIMUTH			1COMP	XXX.XX DEG		DEC ONLY
 
-# Page 10
+@
+
+<<Page CM0010>>=
 
 # 30	TARGET CODES				3COMP	XXXXX. FOR EACH
 # 31	TIME OF LANDING SITE			3COMP	00XXX. HRS		DEC ONLY
@@ -571,7 +613,9 @@ Files that are versions of each other:
 #							000XX. MIN		MUST LOAD 3 COMPS
 #							0XX.XX SEC
 
-# Page 11
+@
+
+<<Page CM0011>>=
 
 # MIXED NOUNS				   COMPONENTS	SCALE & DECIMAL POINT	RESTRICTIONS
 #
@@ -624,7 +668,9 @@ Files that are versions of each other:
 # 59	DELTA VELOCITY LOS			3COMP	XXXX.X FT/SEC FOR EA.	DEC ONLY
 # 60	GMAX,					3COMP	XXX.XX G		DEC ONLY
 
-# Page 12
+@
+
+<<Page CM0012>>=
 
 #	VPRED,						XXXXX. FT/SEC
 #	GAMMA EI					XXX.XX DEG
@@ -677,7 +723,9 @@ Files that are versions of each other:
 # 79	SPARE
 # 80	TIME FROM IGNITION/CUTOFF		3COMP	XXBXX  MIN/SEC		NO LOAD, DEC ONLY
 
-# Page 13
+@
+
+<<Page CM0013>>=
 
 #	VG						XXXXX. FT/SEC
 #	DELTA V (ACCUMULATED)				XXXXX. FT/SEC
@@ -713,7 +761,9 @@ Files that are versions of each other:
 #	RMS IN VELOCITY					XXXX.X FT/SEC
 #	RMS OPTION					XXXXX.
 
-# Page 14
+@
+
+<<Page CM0014>>=
 
 # REGISTERS AND SCALING  FOR NORMAL NOUNS
 #
@@ -760,7 +810,9 @@ Files that are versions of each other:
 # 38		TET		K
 # 39		T3TOT4		K
 
-# Page 15
+@
+
+<<Page CM0015>>=
 
 # REGISTERS AND SCALING FOR MIXED NOUNS
 #
@@ -813,7 +865,9 @@ Files that are versions of each other:
 # 58	1	POSTTPI		Q
 #	2	DELVTPI		S
 
-# Page 16
+@
+
+<<Page CM0016>>=
 
 #	3	DELVTPF		S
 # 59	1	DVLOS		S
@@ -866,7 +920,9 @@ Files that are versions of each other:
 #	2	T1TOT2		L
 #	3	T2TOT3		L
 
-# Page 17
+@
+
+<<Page CM0017>>=
 
 # 76	SPARE
 # 77	SPARE
@@ -919,7 +975,9 @@ Files that are versions of each other:
 # 96	1	CPHIX		D
 #	2	CPHIX +1	D
 
-# Page 18
+@
+
+<<Page CM0018>>=
 
 #	3	CPHIX +2	D
 # 97	1	DSPTEM1		C
@@ -932,7 +990,9 @@ Files that are versions of each other:
 #	2	WWVEL		YY
 #	3	WWOPT		C
 
-# Page 19
+@
+
+<<Page CM0019>>=
 
 # NOUN SCALES AND FORMATS
 #
@@ -986,7 +1046,9 @@ Files that are versions of each other:
 #
 # -K-
 
-# Page 20
+@
+
+<<Page CM0020>>=
 
 # TIME (HR, MIN, SEC)	00XXX. HR		DP	BIT 1 OF LOW REGISTER =
 #			000XX. MIN			  -2
@@ -1038,7 +1100,9 @@ Files that are versions of each other:
 #							 -7
 #							2   METERS/CENTI-SEC
 
-# Page 21
+@
+
+<<Page CM0021>>=
 
 # -T-								  -2
 # G			XXX.XX G		SP	BIT 1 = 10   G
@@ -1091,7 +1155,9 @@ Files that are versions of each other:
 #			(MAX 51532.)			2VS FEET/SEC
 #							(VS = 25766.1973)
 
-# Page 22
+@
+
+<<Page CM0022>>=
 
 # -VV-
 # POSITION8		XXXX.X NAUT MI		DP	BIT 1 OF LOW REGISTER =
@@ -1117,7 +1183,9 @@ Files that are versions of each other:
 
 # THAT-S ALL ON THE NOUNS.
 
-# Page 23
+@
+
+<<Page CM0023>>=
 
 # ALARM CODES FOR 504
 
@@ -1170,7 +1238,9 @@ Files that are versions of each other:
 # 00606		DV EXCEEDS MAXIMUM				P32,P72			                VARALARM
 # 00607	     *	NO SOLN FROM TIME-THETA OR TIME-RADIUS		TIMETHET,TIMERAD	                POODOO
 
-# Page 24
+@
+
+<<Page CM0024>>=
 
 # 00610      *	LAMBDA LESS THAN UNITY				P37			                POODOO
 # 00611		NO TIG FOR GIVEN ELEV ANGLE			P34,P74			                VARALARM
@@ -1215,7 +1285,9 @@ Files that are versions of each other:
 # 14777		IMU,ICDU,PIPA FAILS CAUSED THE ISSWNING	        T4RUPT			                VARALARM
 # 	     *	INDICATES ABORT TYPE.ALL OTHERS ARE NON-ABORTIVE
 
-# Page 25
+@
+
+<<Page CM0025>>=
 
 #               CHECKLIST CODES FOR 504
 
@@ -1238,7 +1310,9 @@ Files that are versions of each other:
 #		                  PERFORM DENOTES START OF END OF A TASK
 #		                  KEY IN DENOTES KEY IN OF DATA THRU THE DSKY
 
-# Page 26
+@
+
+<<Page CM0026>>=
 
 #          OPTION CODES FOR 504
 
@@ -86736,7 +86810,57 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 #	This AGC program shall also be referred to as
 #			Colossus 2A
 
-<<assembly and operation information>>
+# Page 2
+
+<<Page CM0002>>
+# Page 3
+<<Page CM0003>>
+# Page 4
+<<Page CM0004>>
+# Page 5
+<<Page CM0005>>
+# Page 6
+<<Page CM0006>>
+# Page 7
+<<Page CM0007>>
+# Page 8
+<<Page CM0008>>
+# Page 9
+<<Page CM0009>>
+# Page 10
+<<Page CM0010>>
+# Page 11
+<<Page CM0011>>
+# Page 12
+<<Page CM0012>>
+# Page 13
+<<Page CM0013>>
+# Page 14
+<<Page CM0014>>
+# Page 15
+<<Page CM0015>>
+# Page 16
+<<Page CM0016>>
+# Page 17
+<<Page CM0017>>
+# Page 18
+<<Page CM0018>>
+# Page 19
+<<Page CM0019>>
+# Page 20
+<<Page CM0020>>
+# Page 21
+<<Page CM0021>>
+# Page 22
+<<Page CM0022>>
+# Page 23
+<<Page CM0023>>
+# Page 24
+<<Page CM0024>>
+# Page 25
+<<Page CM0025>>
+# Page 26
+<<Page CM0026>>
 @
 
 \section{ATTITUDE MANEUVER ROUTINE}
