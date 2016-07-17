@@ -24,6 +24,10 @@
 \chapter{Introduction and Notes}
 
 \begin{quote}
+\#140 Apollo-11 sources as Literate Programs Jul 16 chrislgarry/Apollo-11
+
+\hrule
+
 I'm literating Apollo-11 for documentation, chunk and page descriptions and indexing, and memory label indexing. So far I've been working on this early experiment for a week, and the structure and contents will change drastically as my ideas evolve.
 
 I've started a typeset book for the Apollo-11 source in my clone at https://github.com/proudindiv/Apollo-11. The original sources were not "files" in any sense, but about 45 boxes of hollerith punch cards (2000 cards to a box) on a large cart, with the listings produced by the assembler which have been imaged. So I'm looking at the code as virtual card decks.
@@ -36,10 +40,18 @@ Thanks,
 
 Gary Young
 
-aka proudindiv.
+aka proudindiv
 
 Sat Jul 16, 2016
 \end{quote}
+
+So far, I'm
+breaking the code into chunks,
+organizing and structuring the chunks,
+indexing the memory labels and all references to them by chunks,
+making notes and comments, and
+adding the table of contents, bookmarks, chunk index, and general and label indices.
+I do the markup and noweb and \LaTeX {} do the typesetting.
 
 I don't know how much time I'm going to spend on this,
 nor how far I'll take it, but I'll collect my notes here.
@@ -113,7 +125,7 @@ and I'll initially copy them here to keep them together.
       with over 2000 clones already, has much larger significance than just a fad.
       If you look at the IoT phenomenon and the computers that are used there,
       the Apollo 11 software is a training guide and
-      and a huge inspiration on what can be done.
+      a huge inspiration on what can be done.
       Imagine how you could program
       a \href{https://www.amazon.com/dp/B014KK89BW}{self driving car}
       modeling it on the Apollo 11.
@@ -1341,7 +1353,7 @@ Files that are versions of each other:
 #						ORBIT TO PASS OVER LM
 @
 
-\subsection{stags for relative setloc}
+\subsection{tags for relative setloc}
 
 <<tags for relative setloc>>=
 <<Page CM0027>>
