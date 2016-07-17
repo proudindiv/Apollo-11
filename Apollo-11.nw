@@ -12,7 +12,7 @@
 \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
 
 \title{Reverse Engineering the Apollo 11 Guidance Computer (AGC) Source Code}
-\author{Gary Young \\ \\ \href{mailto:proudindiv@gmail.com}{proudindiv@gmail.com}}
+\author{Edited by Gary Young \\ \\ \href{mailto:proudindiv@gmail.com}{proudindiv@gmail.com}}
 
 \begin{document}
 \pagestyle{noweb}
