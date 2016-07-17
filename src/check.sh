@@ -1,3 +1,5 @@
+#!/bin/bash
+
 orig=Luminary099/AGC_BLOCK_TWO_SELF_CHECK.agc; new=AGC-BLOCK-TWO-SELF-CHECK.agc; echo "XX $orig XX"; diff $orig src/Luminary099/$new
 orig=Comanche055/AGC_BLOCK_TWO_SELF-CHECK.agc; new=AGC-BLOCK-TWO-SELF-CHECK.agc; echo "XX $orig XX"; diff $orig src/Comanche055/$new
 orig=Luminary099/AGS_INITIALIZATION.agc; new=AGS-INITIALIZATION.agc; echo "XX $orig XX"; diff $orig src/Luminary099/$new
