@@ -23,6 +23,24 @@
 
 \chapter{Introduction and Notes}
 
+\begin{quote}
+I'm literating Apollo-11 for documentation, chunk and page descriptions and indexing, and memory label indexing. So far I've been working on this early experiment for a week, and the structure and contents will change drastically as my ideas evolve.
+
+I've started a typeset book for the Apollo-11 source in my clone at https://github.com/proudindiv/Apollo-11. The original sources were not "files" in any sense, but about 45 boxes of hollerith punch cards (2000 cards to a box) on a large cart, with the listings produced by the assembler which have been imaged. So I'm looking at the code as virtual card decks.
+
+The main output is currently in my Apollo-11.pdf, which is better downloaded and examined because the github pdf viewer doesn't show the massive internal linkages.
+
+I just wanted to make this early announcement, so others were aware of and could think about it.
+
+Thanks,
+
+Gary Young
+
+aka proudindiv.
+
+Sat Jul 16, 2016
+\end{quote}
+
 I don't know how much time I'm going to spend on this,
 nor how far I'll take it, but I'll collect my notes here.
 I started putting comments on
