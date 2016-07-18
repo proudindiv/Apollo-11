@@ -8,7 +8,7 @@ orig=Comanche055/ANGLFIND.agc; new=ANGLFIND.agc; echo "XX $orig XX"; diff $orig 
 orig=Luminary099/AOSTASK_AND_AOSJOB.agc; new=AOSTASK-AND-AOSJOB.agc; echo "XX $orig XX"; diff $orig src/Luminary099/$new
 orig=Luminary099/AOTMARK.agc; new=AOTMARK.agc; echo "XX $orig XX"; diff $orig src/Luminary099/$new
 orig=Luminary099/ASCENT_GUIDANCE.agc; new=ASCENT-GUIDANCE.agc; echo "XX $orig XX"; diff $orig src/Luminary099/$new
-orig=Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc; new=ASSEMBLY-AND-OPERATION-INFORMATION.agc; echo "XX $orig XX"; diff $orig src/Comanche055/$new
+orig=Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc; new=CM0002INFO.agc; echo "XX $orig XX"; diff $orig src/Comanche055/$new
 orig=Luminary099/ATTITUDE_MANEUVER_ROUTINE.agc; new=ATTITUDE-MANEUVER-ROUTINE.agc; echo "XX $orig XX"; diff $orig src/Luminary099/$new
 orig=Comanche055/AUTOMATIC_MANEUVERS.agc; new=AUTOMATIC-MANEUVERS.agc; echo "XX $orig XX"; diff $orig src/Comanche055/$new
 orig=Luminary099/BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc; new=BURN-BABY-BURN--MASTER-IGNITION-ROUTINE.agc; echo "XX $orig XX"; diff $orig src/Luminary099/$new

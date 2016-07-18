@@ -11,7 +11,7 @@ ex=Comanche055/ANGLFIND.agc; in=Comanche055/ANGLFIND.agc; echo "XX $ex XX"; cp $
 ex=Luminary099/AOSTASK_AND_AOSJOB.agc; in=Luminary099/AOSTASK-AND-AOSJOB.agc; echo "XX $ex XX"; cp $in tmp/$ex
 ex=Luminary099/AOTMARK.agc; in=Luminary099/AOTMARK.agc; echo "XX $ex XX"; cp $in tmp/$ex
 ex=Luminary099/ASCENT_GUIDANCE.agc; in=Luminary099/ASCENT-GUIDANCE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc; in=Comanche055/ASSEMBLY-AND-OPERATION-INFORMATION.agc; echo "XX $ex XX"; cp $in tmp/$ex
+ex=Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc; in=Comanche055/CM0002INFO.agc; echo "XX $ex XX"; cp $in tmp/$ex
 ex=Luminary099/ATTITUDE_MANEUVER_ROUTINE.agc; in=Luminary099/ATTITUDE-MANEUVER-ROUTINE.agc; echo "XX $ex XX"; cp $in tmp/$ex
 ex=Comanche055/AUTOMATIC_MANEUVERS.agc; in=Comanche055/AUTOMATIC-MANEUVERS.agc; echo "XX $ex XX"; cp $in tmp/$ex
 ex=Luminary099/BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc; in=Luminary099/BURN-BABY-BURN--MASTER-IGNITION-ROUTINE.agc; echo "XX $ex XX"; cp $in tmp/$ex
