@@ -6879,7 +6879,7 @@ REVN1645	SET	CALL		# TRKMKCNT, TTOGO, +MGA
 ## of the first moonwalk, Don Eyles (one of the authors of this routine along
 ## with Peter Adler) has related to us a little interesting history behind the
 ## naming of the routine.
-## 
+##
 ## It traces back to 1965 and the Los Angeles riots, and was inspired 
 ## by disc jockey extraordinaire and radio station owner Magnificent Montague.
 ## Magnificent Montague used the phrase "Burn, baby! BURN!" when spinning the 
