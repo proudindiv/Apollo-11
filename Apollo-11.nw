@@ -36278,10 +36278,12 @@ VNPLANV		VN	0688
 
 <<lunar and solar ephemerides subroutines>>=
 <<Page CM0785>>
+<<Page CM0786>>
+<<Page CM0787>>
+<<Page CM0788>>
 @
 
 <<Page CM0785>>=
-# Page 785
 # LUNAR AND SOLAR EPHEMERIDES SUBROUTINES
 #
 # FUNCTIONAL DESCRIPTION
@@ -36339,7 +36341,9 @@ VNPLANV		VN	0688
 #	ERASABLE DATA LOAD.
 #
 # OUTPUT -- LSPOS
-# Page 786
+@
+
+<<Page CM0786>>=
 #
 #	1) 2D OF VAC AREA CONTAINS THE POSITION VECTOR OF THE SUN RELATIVE
 #	TO THE EARTH AT TIME INPUT BY THE USER IN METERS x B-38.
@@ -36393,7 +36397,9 @@ LSPOS		AXT,2			# COMPUTES POSITION VECTORS OF BOTH THE
 LUNPOS		AXT,1	GOTO		# COMPUTES THE POSITION VECTOR OF THE MOON
 			REM		# AND STORES IT IN MPAC.
 			LSTIME
-# Page 787
+@
+
+<<Page CM0787>>=
 LUNVEL		AXT,1	GOTO		# COMPUTES THE VELOCITY VECTOR OF THE MOON
 			VEM		# AND STORES IT IN MPAC.
 			LSTIME
@@ -36444,7 +36450,9 @@ VEM		AXT,1	PDDL		#					PD- 2
 			VECOEM
 VEMA		VXSC
 			0D
-# Page 788
+@
+
+<<Page CM0788>>=
 		STODL	4D		#					PD- 2
 		DSU	PUSH		#					PD- 4
 			ONEB4
@@ -42736,11 +42744,11 @@ R		EQUALS	RCM
 \subsection{lunar landmark selection for cm}
 
 <<lunar landmark selection for cm>>=
+# Page 936
 <<Page CM0936>>
 @
 
 <<Page CM0936>>=
-# Page 936
 
 # *** END OF TROUBLE .043 ***
 
@@ -45464,10 +45472,11 @@ T6SCALE		=	PRIO31		# (B+3) (16 BITS/CS)  (100CS/SEC)
 
 <<mysubs code>>=
 <<Page CM0999>>
+<<Page CM1000>>
+<<Page CM1001>>
 @
 
 <<Page CM0999>>=
-# Page 999
 		BANK	20
 		SETLOC	MYSUBS
 		BANK
@@ -45517,7 +45526,9 @@ TSK		TS	KMPAC
 DPADD+		AD	NEGMAX		# KMPAC GREATER THAN 0
 		TCF	TSK
 
-# Page 1000
+@
+
+<<Page CM1000>>=
 DPADD-		COM
 		AD	POSMAX		# KMPAC LESS THAN 0
 		TCF	TSK
@@ -45527,7 +45538,9 @@ DPADD2+		AD	NEGMAX		# CAN NOT OVERFLOW
 		CA	NEGMAX		# UPPER WAS = 0
 		TCF	TSK
 
-# Page 1001 (empty page)
+@
+
+<<Page CM1001>>=
 
 @
 
@@ -59281,10 +59294,29 @@ GRP2PC		STQ	EXIT
 
 <<orbital integration>>=
 <<Page CM1334>>
+<<Page CM1335>>
+<<Page CM1336>>
+<<Page CM1337>>
+<<Page CM1338>>
+<<Page CM1339>>
+<<Page CM1340>>
+<<Page CM1341>>
+<<Page CM1342>>
+<<Page CM1343>>
+<<Page CM1344>>
+<<Page CM1345>>
+<<Page CM1346>>
+<<Page CM1347>>
+<<Page CM1348>>
+<<Page CM1349>>
+<<Page CM1350>>
+<<Page CM1351>>
+<<Page CM1352>>
+<<Page CM1353>>
+<<Page CM1354>>
 @
 
 <<Page CM1334>>=
-# Page 1334
 # ORBITAL INTEGRATION
 
 # DELETE
@@ -59338,7 +59370,9 @@ KEPPREP		LXA,2	SETPD
 			0D
 			4D
 		SL*	SL*
-# Page 1335
+@
+
+<<Page CM1335>>=
 			8D,1
 			0,1		# S(-FS(1-2FS)-1/6...) (+17 OR +16)
 		DAD	PDDL		#					PL 6D
@@ -59360,7 +59394,9 @@ KEPPREP		LXA,2	SETPD
 		GOTO
 			KEPLERN
 
-# Page 1336
+@
+
+<<Page CM1336>>=
 FBR3		LXA,1	SSP
 			DIFEQCNT
 			S1
@@ -59378,7 +59414,9 @@ FBR3		LXA,1	SSP
 		STCALL	TET
 			KEPPREP
 
-# Page 1337
+@
+
+<<Page CM1337>>=
 # AGC ROUTINE TO COMPUTE ACCELERATION COMPONENTS.
 
 ACCOMP		LXA,1	LXA,2
@@ -59428,7 +59466,9 @@ ACCOMP		LXA,1	LXA,2
 			0
 		STORE	BETAV
 		STOVL	RPQV
-# Page 1338
+@
+
+<<Page CM1338>>=
 			2D
 		STORE	RPSV
 		BOF	VLOAD
@@ -59479,7 +59519,9 @@ GAMCOMP		VLOAD	VSR1
 			BETAV		# C(PDL+2) = ALMOST NORMED ALPHA
 		UNIT
 		STODL	BETAV
-# Page 1339
+@
+
+<<Page CM1339>>=
 			36D
 		STORE	BETAM
 		NORM	BDDV		# FORM NORMALIZED QUOTIENT ALPHAM/BETAM
@@ -59530,7 +59572,9 @@ GAMCOMP		VLOAD	VSR1
 			0
 			12D
 		NORM	ROUND
-# Page 1340
+@
+
+<<Page CM1340>>=
 			30D
 		BDDV	DMP*
 			2
@@ -59576,7 +59620,9 @@ INT-ABRT	EXIT
 		TC	P00DOO
 		OCT	00430
 
-# Page 1341
+@
+
+<<Page CM1341>>=
 # THE OBLATE ROUTINE COMPUTES THE ACCELERATION DUE TO OBLATENESS.  IT USES THE UNIT OF THE VEHICLE
 # POSITION VECTOR FOUND IN ALPHAV AND THE DISTANCE TO THE CENTER IN ALPHAM.  THIS IS ADDED TO THE SUM OF THE
 # DISTURBING ACCELERATIONS IN FV AND THE PROPER DIFEQ STAGE IS CALLED VIA X1.
@@ -59628,7 +59674,9 @@ COMTERM		STORE	UZ
 		PDDL	DMPR
 			2
 			5/128
-# Page 1342
+@
+
+<<Page CM1342>>=
 		BDSU
 		DMP*
 			J4REQ/J3,2
@@ -59679,7 +59727,9 @@ COMTERM		STORE	UZ
 QUALITY3	DSQ			# J22 TERM X R**4 IN 2D.  SCALED B61
 					# AS VECTOR.
 		PUSH	DMP		# STORE COSPHI**2 SCALED B2 IN 8D.
-# Page 1343		
+@
+
+<<Page CM1343>>=
 			5/8		# 5 SCALED B3
 		PDDL	SR2		# PUT 5 COSPHI**2, D5, IN 8D. GET
 					# COSPHI**2 D2 FROM 8D
@@ -59730,7 +59780,9 @@ QUALITY3	DSQ			# J22 TERM X R**4 IN 2D.  SCALED B61
 			FV
 			GOBAQUE
 		STORE	FV
-# Page 1344
+@
+
+<<Page CM1344>>=
 NBRANCH		SLOAD	LXA,1
 			DIFEQCNT
 			MPAC
@@ -59781,7 +59833,9 @@ CALLRECT	CALL
 			RECTIFY
 INTGRATE	VLOAD
 			TNUV
-# Page 1345			
+@
+
+<<Page CM1345>>=
 		STOVL	ZV
 			TDELTAV
 		STORE	YV
@@ -59835,7 +59889,9 @@ DOSWITCH	CALL
 		GOTO
 			INTGRATE
 
-# Page 1346			
+@
+
+<<Page CM1346>>=
 ORIGCHNG	STQ	CALL
 			ORIGEX
 			RECTIFY
@@ -59868,7 +59924,9 @@ ORIGCHNG	STQ	CALL
 			MOONFLAG
 			CLRMOON
 			SETMOON
-# Page 1347
+@
+
+<<Page CM1347>>=
 # THE RECTIFY SUBROUTINE IS CALLED BY THE INTEGRATION PROGRAM AND OCCASIONALLY BY THE MEASUREMENT INCORPORATION
 # ROUTINES TO ESTABLISH A NEW CONIC.
 
@@ -59894,7 +59952,9 @@ MINIRECT	STORE	VRECT
 		STORE	XKEP
 		RVQ
 
-# Page 1348
+@
+
+<<Page CM1348>>=
 # THE THREE DIFEQ ROUTINES -- DIFEQ+0, DIFEQ+12, DIFEQ+24 -- ARE ENTERED TO PROCESS THE CONTRIBUTIONS AT THE
 # BEGINNING, MIDDLE, AND END OF THE TIMESTEP, RESPECTIVELY.  THE UPDATING IS DONE BY THE NYSTROM METHOD.
 
@@ -59946,7 +60006,9 @@ DIFEQ+2		DLOAD	DMPR
 
 		CALL
 			GRP2PC
-# Page 1349
+@
+
+<<Page CM1349>>=
 		LXA,2	SSP
 			COLREG
 			S2
@@ -59997,7 +60059,9 @@ ENDSTATE	BOV	VLOAD
 			AMOVED
 		BON	GOTO
 			VINTFLAG
-# Page 1350
+@
+
+<<Page CM1350>>=
 			ATOPCSM
 			ATOPLEM
 AMOVED		SET	SSP
@@ -60046,11 +60110,15 @@ WMATEND		CLEAR	CLEAR
 		TC	ALARM
 		OCT	421
 		TC	INTPRET
-# Page 1351
+@
+
+<<Page CM1351>>=
 		GOTO
 			TESTLOOP	# FINISH INTEGRATING STATE VECTOR
 
-# Page 1352
+@
+
+<<Page CM1352>>=
 # ORBITAL ROUTINE FOR EXTRAPOLATION OF THE W MATRIX.  IT COMPUTES THE SECOND DERIVATIVE OF EACH COLUMN POSITION
 # VECTOR OF THE MATRIX AND CALLS THE NYSTROM INTEGRATION ROUTINES TO SOLVE THE DIFFERENTIAL EQUATIONS.  THE PROGRAM
 # USES A TABLE OF VEHICLE POSITION VECTORS COMPUTED DURING THE INTEGRATION OF THE VEHICLE'S POSITION AND VELOCITY.
@@ -60102,7 +60170,9 @@ DOW..1		VLOAD	VSR4
 			S2
 			34D
 		VSL*	RVQ
-# Page 1353
+@
+
+<<Page CM1353>>=
 			0 -8D,2	
 
 		SETLOC	ORBITAL1
@@ -60154,7 +60224,9 @@ OCT27		OCT	27
 		DEC	-4
 ASCALE		DEC	-7
 		DEC	-6
-# Page 1354
+@
+
+<<Page CM1354>>=
 		2DEC*	1.32715445 E16 B-54*	# S
 		
 		2DEC*	4.9027780 E8 B-30*	# M
@@ -70625,7 +70697,15 @@ SURFAGAN	CA	CURSOR
 \section{lem geometry}
 
 <<lem geometry>>=
-# Page 320
+<<page LM0320>>
+<<page LM0321>>
+<<page LM0322>>
+<<page LM0323>>
+<<page LM0324>>
+<<page LM0325>>
+@
+
+<<page LM0320>>=
 		BANK	23
 		SETLOC	LEMGEOM
 		BANK
@@ -70672,7 +70752,9 @@ SVDWN2		BOF	RVQ		# SW=1=AVETOMID DOING W-MATRIX INTEG.
 			TET
 		STORE	PIPTIME
 		RVQ
-# Page 321
+@
+
+<<page LM0321>>=
 SVDWN1		VLOAD	VSL*
 			TDELTAV
 			0 	-7,2
@@ -70689,7 +70771,9 @@ SVDWN1		VLOAD	VSL*
 		STORE	V-OTHER
 		RVQ
 		
-# Page 322
+@
+
+<<page LM0322>>=
 # THE FOLLOWING ROUTINE TAKES A HALF UNIT TARGET VECTOR REFERRED TO NAV BASE COORDINATES AND FINDS BOTH
 # GIMBAL ORIENTATIONS AT WHICH THE RR MIGHT SIGHT THE TARGET.  THE GIMBAL ANGLES CORRESPONDING TO THE PRESENT MODE
 # ARE LEFT IN MODEA AND THOSE WHICH WOULD BE USED AFTER A REMODE IN MODEB.  THIS ROUTINE ASSUMES MODE 1 IS TRUNNION
@@ -70726,7 +70810,9 @@ RRANGLES	STORE	32D
 		SR1
 		STCALL	COSTH
 			ARCTRIG
-# Page 323
+@
+
+<<page LM0323>>=
 		PUSH	DAD		# MODE 1 SHAFT TO 2.
 			LODPHALF
 		STOVL	6
@@ -70752,7 +70838,9 @@ RRANGLES	STORE	32D
 		TC	INTPRET
 		GOTO
 			S2
-# Page 324
+@
+
+<<page LM0324>>=
 # GIVEN RR TRUNNION AND SHAFT (T,S) IN TANGNB,+1, FIND THE ASSOCIATED
 # LINE OF SIGHT IN NAV BASE AXES.  THE HALF UNIT VECTOR, .5(SIN(S)COS(T),
 # -SIN(T),COS(S)COS(T)) IS LEFT IN MPAC AND 32D.
@@ -70802,7 +70890,9 @@ RRNBMPAC	STODL	20D		# SAVE SHAFT CDU IN 21.
 			CDULOGIC
 		GOTO
 			RRNB1
-# Page 325
+@
+
+<<page LM0325>>=
 # (This page has nothing on it.)
 
 			
@@ -76368,7 +76458,40 @@ FEXTRA		=	BIT13		# FEXT +5.13309020 E+4
 \section{lunar landing guidance equations}
 
 <<lunar landing guidance equations>>=
-# Page 798
+<<Page LM0798>>
+<<Page LM0799>>
+<<Page LM0800>>
+<<Page LM0801>>
+<<Page LM0802>>
+<<Page LM0803>>
+<<Page LM0804>>
+<<Page LM0805>>
+<<Page LM0806>>
+<<Page LM0807>>
+<<Page LM0808>>
+<<Page LM0809>>
+<<Page LM0810>>
+<<Page LM0811>>
+<<Page LM0812>>
+<<Page LM0813>>
+<<Page LM0814>>
+<<Page LM0815>>
+<<Page LM0816>>
+<<Page LM0817>>
+<<Page LM0818>>
+<<Page LM0819>>
+<<Page LM0820>>
+<<Page LM0821>>
+<<Page LM0822>>
+<<Page LM0823>>
+<<Page LM0824>>
+<<Page LM0825>>
+<<Page LM0826>>
+<<Page LM0827>>
+<<Page LM0828>>
+@
+
+<<Page LM0798>>=
 		EBANK=	E2DPS
 		COUNT*	$$/F2DPS
 
@@ -76412,7 +76535,9 @@ AFTRGUID	TCF	CGCALC		# BRAKQUAD
 		TCF	CGCALC		# APPRQUAD
 		TCF	STEER?		# VERTICAL
 		
-# Page 799
+@
+
+<<Page LM0799>>=
 # WINDOW VECTOR COMPUTATIONS:
 
 		TCF	EXGSUB		# IGNALG
@@ -76459,7 +76584,9 @@ LUNLAND		TC	PHASCHNG
 		OCT	05023		# GROUP 3:  PROTECT GUIDANCE WITH PRIO 21  
 		OCT	21000		#	JUST HIGHER THAN SERVICER'S PRIORITY
 
-# Page 800
+@
+
+<<Page LM0800>>=
 #*******************************************************************
 # GUILDENSTERN:  AUTO-MODES MONITOR (R13)
 #*******************************************************************
@@ -76511,7 +76638,9 @@ STRTP66A	TC	INTPRET
 		TS	FWEIGHT
 		TS	FWEIGHT +1
 VRTSTART	TS	WCHVERT
-# Page 801
+@
+
+<<Page LM0801>>=
 		CAF	TWO		# WCHPHASE = 2 ---> VERTICAL: P65,P66,P67
 		TS	WCHPHOLD
 		TS	WCHPHASE
@@ -76563,7 +76692,9 @@ RESTART?	CA	FLAGWRD1	# HAS THERE BEEN A RESTART?
 GUILDRET	CAF	ZERO
 		TS	RODCOUNT
 		
-# Page 802
+@
+
+<<Page LM0802>>=
  +2		EXTEND
  		DCA	TPIP
 		DXCH	TPIPOLD
@@ -76614,7 +76745,9 @@ STARTP64	TC	NEWMODEX
 # *********************************************************************************
 #
 #	TTFINCR COMPUTATIONS ARE AS FOLLOWS --
-# Page 803
+@
+
+<<Page LM0803>>=
 #		TTF/8 UPDATED FOR TIME SINCE LAST PASS:
 #			TTF/8 = TTF/8 + (TPIP - TPIPOLD)/8
 #		LANDING SITE VECTOR UPDATED FOR LUNAR ROTATION:
@@ -76660,7 +76793,9 @@ TTFINCR		TC	INTPRET
 		DCA	LANDTEMP +4
 		DXCH	LAND	 +4
 		
-# Page 804
+@
+
+<<Page LM0804>>=
 		TC	TDISPSET
 		TC	FASTCHNG	# SINCE REDESIG MAY CHANGE LANDTEMP
 
@@ -76711,7 +76846,9 @@ REDESIG		CA	FLAGWRD6	# IS REDFLAG SET?
 			YNBPIP
 		VAD	PUSH		# RESULTING VECTOR IS 1/2 REAL SIZE
 		
-# Page 805
+@
+
+<<Page LM0805>>=
 
 		DLOAD	DSU		# MAKE SURE REDESIGNATION IS NOT
 			0		# 	TOO CLOSE TO THE HORIZON.
@@ -76759,7 +76896,9 @@ REDES1		DLOAD	DSU
 #		RGU = CG (R - LAND)
 #		___   *   _   __   _
 #		VGU = CG (V - WM * R)
-# Page 806 actually starts one line earlier but that would separate the markers from their variables
+@
+
+<<Page LM0806>>=
 #
 #	HORIZONTAL VELOCITY FOR DISPLAY
 #
@@ -76808,7 +76947,9 @@ RGVGCALC	TC	INTPRET		# ENTER HERE TO RECOMPUTE RG AND VG
 		CA	FIXLOC		# RESET PUSH DOWN POINTER
 		TS	PUSHLOC
 
-# Page 807 
+@
+
+<<Page LM0807>>=
 		CA	MPAC		# COMPUTE LOOKANGLE ITSELF
 		DOUBLE
 		TC	BANKCALL
@@ -76860,7 +77001,9 @@ TTF/8CL		TC	INTPRETX
 		DCA	MPAC		# FETCH TTF/8 KEEPING IT IN MPAC
 		DXCH	TTF/8		# CORRECTED TTF/8
 
-# Page 808
+@
+
+<<Page LM0808>>=
 		TC	TDISPSET
 
 # 		(CONTINUE TO QUADGUID)
@@ -76907,7 +77050,9 @@ QUADGUID	CS	TTF/8
 		TS	28D		# COEFFICIENT FOR VDG TERM
 		AD	BUF
 		AD	POSMAX
-# Page 809
+@
+
+<<Page LM0809>>=
 		AD	BUF +1
 		AD	BUF +1
 		INDEX	FIXLOC
@@ -76958,7 +77103,9 @@ AFCCALC2	STODL	/AFC/		# MAGNITUDE OF AFC FOR THROTTLE
 			ZEROVECS
 AFCCALC3	SQRT	DAD
 			UNFC/2 +4
-# Page 810
+@
+
+<<Page LM0810>>=
 		BPL	BDSU
 			AFCCLEND
 			UNFC/2 +4
@@ -77009,7 +77156,9 @@ CGCALC		CAF	EBANK5
 		VSU	RTB
 			R
 			NORMUNIT
-# Page 811
+@
+
+<<Page LM0811>>=
 		VXV	RTB
 			LAND
 			NORMUNIT
@@ -77057,7 +77206,9 @@ EXSPOT1		EXTEND
 # (EXOVFLOW IS A SUBROUTINE OF EXBRAK AND EXNORM CALLED WHEN OVERFLOW OCCURRED ANYWHERE IN GUIDANCE.)
 
 EXGSUB		TC	INTPRET		# COMPUTE TRIM VELOCITY CORRECTION TERM.
-# Page 812
+@
+
+<<Page LM0812>>=
 		VLOAD	RTB
 			UNFC/2
 			NORMUNIT
@@ -77108,7 +77259,9 @@ EXNORM		TC	INTPRET
 		AD	POSMAX
 		TS	BUF +1
 		CS	BUF +1
-# Page 813
+@
+
+<<Page LM0813>>=
 		ADS	BUF +1		# RESULT IS 0 IF PROJ - PROJMIN NEGATIVE
 
 		CAF	FOUR
@@ -77159,7 +77312,9 @@ RATESTOP	CAF	BIT13		# ARE WE IN ATTITUDE-HOLD?
 		TCF	DISPEXIT
 
 GDUMP1		TC	THROTTLE
-# Page 814
+@
+
+<<Page LM0814>>=
 		TC	INTPRET
 		CALL
 			FINDCDUW -2
@@ -77207,7 +77362,9 @@ P64DISPS	CA	TREDES		# HAS TREDES REACHED ZERO?
 		TCF	GOTOP00H	# TERMINATE
 		TCF	P64CEED		# PROCEED	PERMIT REDESIGNATIONS
 		TCF	P64DISPS	# RECYCLE
-# Page 815
+@
+
+<<Page LM0815>>=
 		TCF	ENDLLJOB
 		
 P64CEED		CAF	ZERO
@@ -77250,7 +77407,9 @@ P65VERT		TC	INTPRET
 		V/SC	GOTO
 			TAUVERT
 			AFCCALC1
-# Page 816
+@
+
+<<Page LM0816>>=
 # **********************************************************
 # GUIDANCE FOR P66
 # **********************************************************
@@ -77301,7 +77460,9 @@ RODCOMP		INHINT
 
 		EXTEND			# SNAPSHOT TIME OF PIPA READING.
 		DCA	TIME2
-# Page 817
+@
+
+<<Page LM0817>>=
 		DXCH	THISTPIP
 		
 		CA	OLDPIPAX
@@ -77352,7 +77513,9 @@ ITRPNT1		VXSC	PDDL		# SCALE MPAC TO M/CS *2(-7) AND PUSH 	(6)
 			V
 		VAD	STADR		#					(0)
 		STOVL	24D		# STORE UPDATED VELOCITY IN 24-29D
-# Page 818
+@
+
+<<Page LM0818>>=
 			R
 		UNIT
 		STORE	14D
@@ -77403,7 +77566,9 @@ ITRPNT1		VXSC	PDDL		# SCALE MPAC TO M/CS *2(-7) AND PUSH 	(6)
 		DDV	DDV
 			MASS
 			SCALEFAC
-# Page 819
+@
+
+<<Page LM0819>>=
 		DAD	PDDL		#				(4)
 			0D
 			20D
@@ -77453,7 +77618,9 @@ VHORCOMP	VSL2	VAD
 
 BIT1H		OCT	00001
 SHFTFACT	2DEC	1 B-17
-# Page 820
+@
+
+<<Page LM0820>>=
 BIASFACT	2DEC	655.36 B-28
 
 # *********************************************************************************
@@ -77502,7 +77669,9 @@ REDESMON	EXTEND
 		
 		CCS	L		# N:	ANY LAST PASS?
 		TCF	COUNT'EM	#	Y: 	COUNT 'EM, RESET RUPT, TERMINATE
-# Page 821
+@
+
+<<Page LM0821>>=
 		CCS	ZERLINA		#	N: 	HAS ZERLINA REACHED ZERO YET?
 		TCF	PREMON1		#		N:	DIMINISH ZERLINA, CONTINUE
 RESETRPT	CAF	BIT12		#		Y:	RESET RUPT. TERMINATE
@@ -77545,7 +77714,9 @@ COUNT'EM	CAF	BIT13		# ARE WE IN ATTITUDE-HOLD?
 +AZBIT		=	BIT5
 -AZBIT		=	BIT6
 
-# Page 822
+@
+
+<<Page LM0822>>=
 ALL4BITS	OCT	00063
 AZEACH		DEC	.03491		# 2 DEGREES
 ELEACH		DEC	.00873		# 1/2 DEGREE
@@ -77589,7 +77760,9 @@ DESCBITS	MASK	BIT7		# COME HERE FROM MARKRUPT CODING WITH BIT
 #	LOC	DP	A(N)
 #	LOC+2	SP	PRECROOT	 PREC RQD OF ROOT (AS FRACT OF 1ST GUESS)
 #
-# Page 823
+@
+
+<<Page LM0823>>=
 # THE DP RESULT IS LEFT IN MPAC UPON EXIT, AND A SP COUNT OF THE ITERATIONS TO CONVERGENCE IS LEFT IN MPAC+2.
 # RETURN IS NORMALLY TO LOC(TC ROOTPSRS)+3.  IF ROOTPSRS FAILS TO CONVERGE TO IN 8 PASSES, RETURN IS TO LOC+1 AND
 # OUTPUTS ARE NOT TO BE TRUSTED.
@@ -77633,7 +77806,9 @@ ROOTPSRS	EXTEND
 		DXCH	DXCRIT		# CRITERION
 
 					# SET UP DER COF TABL
-# Page 824
+@
+
+<<Page LM0824>>=
 		EXTEND
 		INDEX	PWRPTR
 		DCA	3
@@ -77683,7 +77858,9 @@ ROOTLOOP	EXTEND
 		TC	USPRCADR
 		CADR	ABS		# YIELDS ABS(DX) IN MPAC
 		EXTEND
-# Page 825
+@
+
+<<Page LM0825>>=
 		DCS	DXCRIT
 		DAS	MPAC		# ABS(DX)-ABS(DXCRIT) IN MPAC
 
@@ -77732,7 +77909,9 @@ TDISPSET	CA	TTF/8
 		INCR	BBANK
 		INCR	BBANK
 		EBANK=	TTF/8
-# Page 826
+@
+
+<<Page LM0826>>=
 		AD	TTF/8
 		EXTEND
 		MP	TREDESCL
@@ -77782,7 +77961,9 @@ JDG2TTF		=	JBRFG*
 # LUNAR LANDING CONSTANTS
 # *************************************************************************************
 
-# Page 827
+@
+
+<<Page LM0827>>=
 TABLTTFL	ADRES	TABLTTF +3	# ADDRESS FOR REFERENCING TTF TABLE
 TTFSCALE	=	BIT12
 TSCALINV	=	BIT4
@@ -77808,7 +77989,9 @@ GSCALE		2DEC	100 B-11
 3/4DP		2DEC	.750
 DEPRCRIT	2DEC	-.02 B-1
 
-# Page 828
+@
+
+<<Page LM0828>>=
 # **************************************************************************
 # **************************************************************************
 @
@@ -92120,7 +92303,18 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 #	Assemble revision 001 of AGC program LMY99 by NASA 2021112-61
 #	16:27 JULY 14, 1969 
 
-<<lem geometry>>
+# Page 320
+<<page LM0320>>
+# Page 321
+<<page LM0321>>
+# Page 322
+<<page LM0322>>
+# Page 323
+<<page LM0323>>
+# Page 324
+<<page LM0324>>
+# Page 325
+<<page LM0325>>
 @
 
 \section{LUNAR AND SOLAR EPHEMERIDES SUBROUTINES}
@@ -92158,7 +92352,14 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 # Refer directly to the online document mentioned above for further
 # information.  Please report any errors to info@sandroid.org.
 
-<<lunar and solar ephemerides subroutines>>
+# Page 785
+<<Page CM0785>>
+# Page 786
+<<Page CM0786>>
+# Page 787
+<<Page CM0787>>
+# Page 788
+<<Page CM0788>>
 @
 
 \section{LUNAR LANDING GUIDANCE EQUATIONS}
@@ -92195,7 +92396,68 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 #	Assemble revision 001 of AGC program LMY99 by NASA 2021112-61
 #	16:27 JULY 14, 1969 
 
-<<lunar landing guidance equations>>
+# Page 798
+<<Page LM0798>>
+# Page 799
+<<Page LM0799>>
+# Page 800
+<<Page LM0800>>
+# Page 801
+<<Page LM0801>>
+# Page 802
+<<Page LM0802>>
+# Page 803
+<<Page LM0803>>
+# Page 804
+<<Page LM0804>>
+# Page 805
+<<Page LM0805>>
+# Page 806 actually starts one line earlier but that would separate the markers from their variables
+<<Page LM0806>>
+# Page 807 
+<<Page LM0807>>
+# Page 808
+<<Page LM0808>>
+# Page 809
+<<Page LM0809>>
+# Page 810
+<<Page LM0810>>
+# Page 811
+<<Page LM0811>>
+# Page 812
+<<Page LM0812>>
+# Page 813
+<<Page LM0813>>
+# Page 814
+<<Page LM0814>>
+# Page 815
+<<Page LM0815>>
+# Page 816
+<<Page LM0816>>
+# Page 817
+<<Page LM0817>>
+# Page 818
+<<Page LM0818>>
+# Page 819
+<<Page LM0819>>
+# Page 820
+<<Page LM0820>>
+# Page 821
+<<Page LM0821>>
+# Page 822
+<<Page LM0822>>
+# Page 823
+<<Page LM0823>>
+# Page 824
+<<Page LM0824>>
+# Page 825
+<<Page LM0825>>
+# Page 826
+<<Page LM0826>>
+# Page 827
+<<Page LM0827>>
+# Page 828
+<<Page LM0828>>
 @
 
 \section{LUNAR LANDMARK SELECTION FOR CM}
@@ -92231,7 +92493,8 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 #    This AGC program shall also be referred to as
 #            Colossus 2A
 
-<<lunar landmark selection for cm>>
+# Page 936
+<<Page CM0936>>
 @
 
 \section{MAIN}
@@ -92494,7 +92757,12 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 #	This AGC program shall also be referred to as
 #			Colossus 2A
 
-<<mysubs code>>
+# Page 999
+<<Page CM0999>>
+# Page 1000
+<<Page CM1000>>
+# Page 1001 (empty page)
+<<Page CM1001>>
 @
 
 \section{ORBITAL INTEGRATION}
@@ -92531,7 +92799,48 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 #	This AGC program shall also be referred to as
 #			Colossus 2A
 
-<<orbital integration>>
+# Page 1334
+<<Page CM1334>>
+# Page 1335
+<<Page CM1335>>
+# Page 1336
+<<Page CM1336>>
+# Page 1337
+<<Page CM1337>>
+# Page 1338
+<<Page CM1338>>
+# Page 1339
+<<Page CM1339>>
+# Page 1340
+<<Page CM1340>>
+# Page 1341
+<<Page CM1341>>
+# Page 1342
+<<Page CM1342>>
+# Page 1343		
+<<Page CM1343>>
+# Page 1344
+<<Page CM1344>>
+# Page 1345			
+<<Page CM1345>>
+# Page 1346			
+<<Page CM1346>>
+# Page 1347
+<<Page CM1347>>
+# Page 1348
+<<Page CM1348>>
+# Page 1349
+<<Page CM1349>>
+# Page 1350
+<<Page CM1350>>
+# Page 1351
+<<Page CM1351>>
+# Page 1352
+<<Page CM1352>>
+# Page 1353
+<<Page CM1353>>
+# Page 1354
+<<Page CM1354>>
 @
 
 \section{P11}
