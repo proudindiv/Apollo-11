@@ -197,6 +197,10 @@ Line 66 of Luminary099/AOTMARK.agc has junk control characters.
 
 <<tmpline line 66 of AOTMARK.agc>>=
 		TS	MARKSTAT        # STORE VAC ADR IN LOW 9 OF MARKSTAT
+
+In Comanche055/REENTRY\_CONTROL.agc there should be
+a new line "# Page 882 (page is empty)" added to the end.
+
 @
 
 \part{Apollo 11 Guidance Computers Source Code}
@@ -9666,6 +9670,7 @@ THISVINT	SET	RVQ
 <<Page CM0214>>
 <<Page CM0215>>
 <<Page CM0216>>
+<<Page CM0217>>
 <<Page CM0218>>
 <<Page CM0219>>
 <<Page CM0220>>
@@ -43518,7 +43523,6 @@ R		EQUALS	RCM
 \subsection{lunar landmark selection for cm}
 
 <<lunar landmark selection for cm>>=
-# Page 936
 <<Page CM0936>>
 @
 
@@ -43551,10 +43555,16 @@ R		EQUALS	RCM
 
 <<tvcinitialize code>>=
 <<Page CM0937>>
+<<Page CM0938>>
+<<Page CM0939>>
+<<Page CM0940>>
+<<Page CM0941>>
+<<Page CM0942>>
+<<Page CM0943>>
+<<Page CM0944>>
 @
 
 <<Page CM0937>>=
-# Page 937
 # NAME		TVCDAPON (TVC DAP INITIALIZATION AND STARTUP CALL)
 # LOG SECTION...TVCINITIALIZE			SUBROUTINE...DAPCSM
 # MODIFIED BY SCHLUNDT				21 OCTOBER 1968
@@ -43605,7 +43615,9 @@ MRCLEAN		CAF	NZERO		# NUMBER TO ZERO, LESS ONE  (MUST BE ODD)
 		DXCH	OMEGAYC		# FIRST (LAST) TWO LOCATIONS
 		CCS	CNTR
 		TCF	MRCLEAN +1
-# Page 938
+@
+
+<<Page CM0938>>=
 		EXTEND			# SET UP ANOTHER T5 RUPT TO CONTINUE
 		DCA	INITLOC2	#	INITIALIZATION AT TVCINIT1
 		DXCH	T5LOC		# THE PHSCHK2 ENTRY (REDOTVC) AT TVCDAPON
@@ -43656,7 +43668,9 @@ TVCINIT2	CS	CNTR		# PICK LM-OFF,-ON VALUE FOR FILTER PERIOD
 		TS	T5TVCDT
 		
 		CS	BIT15		# RESET SWTOVER FLAG
-# Page 939		
+@
+
+<<Page CM0939>>=
 		MASK	FLAGWRD9
 		TS	FLAGWRD9
 		
@@ -43707,7 +43721,9 @@ ATTINIT		CAE	DAPDATR1	# ATTITUDE-ERROR INITIALIZATION LOGIC
 		EXTEND
 		BZF	+8D		#	|ERROR| LESS THAN 1.5 DEG
 		EXTEND
-# Page 940
+@
+
+<<Page CM0940>>=
 		BZMF	+3		#	|ERROR| > 1.5 DEG, AND NEG
 		CA	ATTLIM		#	|ERROR| > 1.5 DEG, AND POS
 		TCF	+2
@@ -43755,7 +43771,9 @@ TVCINIT4	CAF	ZERO		# SET TVCPHASE TO INDICATE TVCDAPON-THRU-
 		DXCH	T5LOC
 		CAE	T5TVCDT		# (ALLOW TIME FOR RESTART COMPUTATIONS)
 		TS	TIME5
-# Page 941
+@
+
+<<Page CM0941>>=
 ENDTVCIN	TCF	RESUME
 
 PRESWTCH	TCR	SWICHOVR	# ENTRY FROM V46
@@ -43805,7 +43823,9 @@ MCLEANJR	CA	ZERO
 		DXCH	YDELOFF
 		
 		CA	LBCFADR
-# Page 942
+@
+
+<<Page CM0942>>=
 		TS	COEFFADR
 		TC	LOADCOEF
 
@@ -43855,7 +43875,9 @@ LOADCOEF	EXTEND			# LOAD DAP FILTER COEFFICIENTS
 		TS	N10 	+14D
 
 		TC	Q
-# Page 943
+@
+
+<<Page CM0943>>=
 S40.15		CAE	IXX		# GAIN COMPUTATIONS (1/CONACC, VARK)
 		EXTEND			# ENTERED FROM TVCINITIALIZE AND TVCEXEC
 		MP	2PI/M		#	2PI/M SCALED 1/(B+8 N M)
@@ -43904,7 +43926,9 @@ LBN10		DEC	+.99999		# N10	LOW BANDWIDTH FILTER COEFFICIENTS
 
 CSMCFADR	GENADR	CSMN10		# CSM ONLY COEFFICIENTS ADDRESS
 HBCFADR		GENADR	HBN10		# HIGH BANDWIDTH COEFFICIENTS ADDRESS
-# Page 944
+@
+
+<<Page CM0944>>=
 LBCFADR		GENADR	LBN10		# LOW BANDWIDTH COEFFICIENTS ADDRESS
 
 NZERO		DEC	51		# MUST BE ODD FOR MRCLEAN
@@ -54597,9 +54621,7 @@ BANKMASK	=	HI5
 \subsection{interpretive constants}
 
 <<interpretive constants>>=
-# Page 1205
 <<Page CM1205>>
-# Page 1206
 <<Page CM1206>>
 @
 
@@ -57020,99 +57042,52 @@ NORMZI		=	36D
 \subsection{conic subroutines}
 
 <<conic subroutines>>=
-# Page 1262
 <<Page CM1262>>
-# Page 1263
 <<Page CM1263>>
-# Page 1264
 <<Page CM1264>>
-# Page 1265
 <<Page CM1265>>
-# Page 1266
 <<Page CM1266>>
-# Page 1267
 <<Page CM1267>>
-# Page 1268
 <<Page CM1268>>
-# Page 1269
 <<Page CM1269>>
-# Page 1270
 <<Page CM1270>>
-# Page 1271
 <<Page CM1271>>
-# Page 1272
 <<Page CM1272>>
-# Page 1273
 <<Page CM1273>>
-# Page 1274
 <<Page CM1274>>
-# Page 1275
 <<Page CM1275>>
-# Page 1276
 <<Page CM1276>>
-# Page 1277
 <<Page CM1277>>
-# Page 1278
 <<Page CM1278>>
-# Page 1279
 <<Page CM1279>>
-# Page 1280
 <<Page CM1280>>
-# Page 1281			
 <<Page CM1281>>
-# Page 1282
 <<Page CM1282>>
-# Page 1283
 <<Page CM1283>>
-# Page 1284
 <<Page CM1284>>
-# Page 1285
 <<Page CM1285>>
-# Page 1286
 <<Page CM1286>>
-# Page 1287
 <<Page CM1287>>
-# Page 1288
 <<Page CM1288>>
-# Page 1289
 <<Page CM1289>>
-# Page 1290
 <<Page CM1290>>
-# Page 1291
 <<Page CM1291>>
-# Page 1292
 <<Page CM1292>>
-# Page 1293
 <<Page CM1293>>
-# Page 1294
 <<Page CM1294>>
-# Page 1295
 <<Page CM1295>>
-# Page 1296
 <<Page CM1296>>
-# Page 1297
 <<Page CM1297>>
-# Page 1298
 <<Page CM1298>>
-# Page 1299
 <<Page CM1299>>
-# Page 1300
 <<Page CM1300>>
-# Page 1301
 <<Page CM1301>>
-# Page 1302
 <<Page CM1302>>
-# Page 1303
 <<Page CM1303>>
-# Page 1304
 <<Page CM1304>>
-# Page 1305
 <<Page CM1305>>
-# Page 1306
 <<Page CM1306>>
-# Page 1307
 <<Page CM1307>>
-# Page 1308
 <<Page CM1308>>
 @
 
@@ -65292,11 +65267,8 @@ POSTCOM		EXTEND			# C(MPAC,+1) IS MAGNITUDE OF DELTA SCALER.
 \subsection{keyrupt uprupt}
 
 <<keyrupt uprupt>>=
-# Page 1449
 <<Page CM1449>>
-# Page 1450
 <<Page CM1450>>
-# Page 1451
 <<Page CM1451>>
 @
 
@@ -70937,41 +70909,23 @@ S
 \section{aotmark routine}
 
 <<aotmark routine>>=
-# Page 244
 <<Page LM0244>>
-# Page 245
 <<Page LM0245>>
-# Page 246
 <<Page LM0246>>
-# Page 247
 <<Page LM0247>>
-# Page 248
 <<Page LM0248>>
-# Page 249
 <<Page LM0249>>
-# Page 250
 <<Page LM0250>>
-# Page 251
 <<Page LM0251>>
-# Page 252
 <<Page LM0252>>
-# Page 253
 <<Page LM0253>>
-# Page 254
 <<Page LM0254>>
-# Page 255
 <<Page LM0255>>
-# Page 256
 <<Page LM0256>>
-# Page 257
 <<Page LM0257>>
-# Page 258
 <<Page LM0258>>
-# Page 259
 <<Page LM0259>>
-# Page 260
 <<Page LM0260>>
-# Page 261
 <<Page LM0261>>
 @
 
@@ -84678,7 +84632,7 @@ LSTBNKCH	BBCON*			# * CONSTANT, LAST BANK.
 
 @
 
-\subsection{rtb op codes}
+\section{rtb op codes}
 
 <<rtb op codes>>=
 <<Page LM1397>>
@@ -88223,9 +88177,7 @@ RUFRATE		DEC	.1444		# CORRESPONDS TO TARGET RATE OF 6.5 DEG/S.
 \section{kalman filter}
 
 <<kalman filter>>=
-# Page 1470
 <<Page LM1470>>
-# Page 1471
 <<Page LM1471>>
 @
 
@@ -98555,7 +98507,22 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 #    This AGC program shall also be referred to as
 #            Colossus 2A
 
-<<tvcinitialize code>>
+# Page 937
+<<Page CM0937>>
+# Page 938
+<<Page CM0938>>
+# Page 939		
+<<Page CM0939>>
+# Page 940
+<<Page CM0940>>
+# Page 941
+<<Page CM0941>>
+# Page 942
+<<Page CM0942>>
+# Page 943
+<<Page CM0943>>
+# Page 944
+<<Page CM0944>>
 @
 
 \section{TVCMASSPROP}
