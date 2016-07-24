@@ -6765,17 +6765,6 @@ REVN1645	SET	CALL		# TRKMKCNT, TTOGO, +MGA
 
 # *** END OF LEMP30S .103 ***
 
-## At the get-together of the AGC developers celebrating the 40th anniversary
-## of the first moonwalk, Don Eyles (one of the authors of this routine along
-## with Peter Adler) has related to us a little interesting history behind the
-## naming of the routine.
-##
-## It traces back to 1965 and the Los Angeles riots, and was inspired 
-## by disc jockey extraordinaire and radio station owner Magnificent Montague.
-## Magnificent Montague used the phrase "Burn, baby! BURN!" when spinning the 
-## hottest new records. Magnificent Montague was the charismatic voice of
-## soul music in Chicago, New York, and Los Angeles from the mid-1950s to 
-## the mid-1960s.
 # BURN, BABY, BURN -- MASTER IGNITION ROUTINE
 
 		BANK	36

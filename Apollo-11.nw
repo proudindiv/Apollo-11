@@ -1424,7 +1424,6 @@ PINBALL4	EQUALS
 CSI/CDH1	EQUALS
 INTPRET2	EQUALS
 IMUCAL1		EQUALS
-
 @ %def FFTAG1 FFTAG2 FFTAG3 FFTAG4 FFTAG7 FFTAG8 FFTAG9 FFTAG10 FFTAG12
 @ %def P30SUBS STOPRAT P23S FFTAG5 FFTAG6 DAPS9 FFTAG13 DLAYJOB RESTART
 @ %def VERB37 CONICS1 PINBALL4 CSI/CDH1 INTPRET2 IMUCAL1
@@ -75944,18 +75943,12 @@ REVN1645	SET	CALL		# TRKMKCNT, TTOGO, +MGA
 <<Page LM0751>>
 @
 
+\href{https://en.wikipedia.org/wiki/Honi_soit_qui_mal_y_pense}
+     {HONI SOIT QUI MAL Y PENS}:
+
+"May he be shamed who thinks badly of it"
+
 <<Page LM0731>>=
-## At the get-together of the AGC developers celebrating the 40th anniversary
-## of the first moonwalk, Don Eyles (one of the authors of this routine along
-## with Peter Adler) has related to us a little interesting history behind the
-## naming of the routine.
-##
-## It traces back to 1965 and the Los Angeles riots, and was inspired 
-## by disc jockey extraordinaire and radio station owner Magnificent Montague.
-## Magnificent Montague used the phrase "Burn, baby! BURN!" when spinning the 
-## hottest new records. Magnificent Montague was the charismatic voice of
-## soul music in Chicago, New York, and Los Angeles from the mid-1950s to 
-## the mid-1960s.
 # BURN, BABY, BURN -- MASTER IGNITION ROUTINE
 
 		BANK	36
@@ -91039,6 +91032,17 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 #	16:27 JULY 14, 1969 
 
 # Page 731
+## At the get-together of the AGC developers celebrating the 40th anniversary
+## of the first moonwalk, Don Eyles (one of the authors of this routine along
+## with Peter Adler) has related to us a little interesting history behind the
+## naming of the routine.
+##
+## It traces back to 1965 and the Los Angeles riots, and was inspired 
+## by disc jockey extraordinaire and radio station owner Magnificent Montague.
+## Magnificent Montague used the phrase "Burn, baby! BURN!" when spinning the 
+## hottest new records. Magnificent Montague was the charismatic voice of
+## soul music in Chicago, New York, and Los Angeles from the mid-1950s to 
+## the mid-1960s.
 <<Page LM0731>>
 # Page 732
 <<Page LM0732>>
@@ -97978,6 +97982,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 # Page 27
 <<Page CM0027>>
+
 # Page 28
 
 <<Page CM0028>>
