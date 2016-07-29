@@ -71043,7 +71043,6 @@ AGSRND1		2OCT	0000060000
 		2OCT	0000060000
 AGSRND2		2OCT	0000037777
 		2OCT	0000037777
-S
 @
 
 <<Page LM0210>>=
@@ -93161,7 +93160,6 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 <<Page LM0380>>
 # Page 381
 <<Page LM0381>>
-@
 @
 
 \section{IMU PERFORMANCE TESTS 4}
