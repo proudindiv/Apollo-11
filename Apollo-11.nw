@@ -159,6 +159,76 @@ and I'll initially copy them here to keep them together.
       but they were hard to keep consistent because of card insertions and replacements.
 \end{itemize}
 
+\begin{quote}
+proudindiv:
+
+Did you notice Comanche055.binsource and Luminary099.binsource in the rburkey2005/virtualagc repo? I'm thinking of running their assembler on the sources and comparing, or writing my own simple assembler. Do you think we should bring those files into chrislgarry/Apollo-11?
+\end{quote}
+
+\begin{quote}
+wopian:
+
+I would disagree with adding those files.
+
+This repo is a historical archive of the Apollo 11 source code, VirtualAGC was made to compile the Apollo 11 code (and will be pulling the .agc files from here once they've all been checked)
+
+Scroll down on \#38
+\end{quote}
+
+\begin{quote}
+ proudindiv:
+
+But with that argument, the historical Apollo 11 source code is defined by the jpg images linked to in the chrislgarry/master README.md file. The added 51 files from the VirtualAGC are required if you are going to match the images. They are also required if you are going to compile the source code and fly the Apollo-11 to the moon. There are issues with the encoding used in the VirtualAGC transcriptions representing the original source code, but adding the 51 files doesn't change that issue.
+
+I'm sorry, I went back and re-read your comment, and realize that you were talking about the two .binsource files. Those files are a modern creation from the original sources, and as such can be excluded from the historical archive. They are better placed in a modern analysis of the historical code, and I agree with you on excluding them.
+
+But with your argument, we need to remove the file "HeaderTemplate.agc" and discuss the "MAIN.agc" files and splitting the source lines (cards) into 174 files (plus two MAIN.agc files) instead of only 2 files representing the original card decks. See VirtualAGC's Programmer's Manual for what I am talking about.
+
+Thanks for the link to \#38, I hadn't seen that but had inferred the information in the discussion. I'm a long retired programmer and was programming on similar style programs in the later 1960's. I became interested in the Apollo-11 code when it was announced because it brings back lots of memories. Reading the code is very intimate because I can see what the original programmers were thinking. I started my Literate version of the code to give me a structure to reverse engineer in modern terms what was in it. We'll see how long I work with it and keep up the effort.
+
+Gary Young
+aka proudindiv
+
+\end{quote}
+
+\begin{quote}
+chrislgarry:
+
+@wopian yep that's my stance as well. @proudindiv yes I did plan on doing something with main.agc since its purpose is to be a wrapper to organize all of the assembly files for compliation, but it slipped my mind. We could simply just remove it if there is no original logic in there. I haven't looked yet. I also agree with splitting into the original number of files so we don't have multiple original assembly files in one digital assembly file here. And removal of header template if it's not original.
+\end{quote}
+
+\#38:
+
+\begin{quote}
+ohommes:
+
+It is crucial to split out the code for the Command Module and the Lunar Module. I have worked closely with Ron Burkey and many others in the world to transcribe the source code for the 40th anniversary of the lunar landing for Apollo 11 over a period of many weeks. Without thinking to much about the source code build names; for the Command Module (CM) the names are starting with a "C" (e.g. Colossus238 and Comanche055 ) and the Lunar Module (LM) started with "L" (e.g. Luminary). There are however many exceptions to this Like Artemis and Sundance, Sundial and Sunburst but having the code split is a must. There are MANY difference crucial for the landing versus the orbit only and reentry for the CM. The original source listings that we made available on sourcecode.google.com and at biblio had these significant distinctions. Combining them in one location does not even make them compile anymore with yaYUL from Ron Burkey. Hope to see this fixed soon.
+\end{quote}
+
+\begin{quote}
+ohommes:
+
+For sure I support that setup by original build-name. I worked on the transcription painstakingly with many others to support the 40th anniversary of the Moon Landings.
+
+In 2009, the year of the 40th anniversary of Apollo 11, a size-able group of Apollo enthusiast from all across the world transcribed both Comanche055 and Luminary099 from pictures taken of each page.
+
+This process started by Ron Burkey, who travelled to make photographs of each page of the code on site since we could not take the actual hardcopy. Then a process started where each individual of this project checked out a block of pages and transcribed the assemble code with comments. The images contained both the binary code and the assembly mnemonics with comments.
+
+Once transcribed the process of verification started:
+
+\begin{itemize}
+    \item The first pass was to compile the code with yaYUL from Ron Burkey. The binary code was then verified agains the binary code on the printout.
+    \item The second stage was visual re-inspection for the comments.
+    \item The third stage was the verification of the memory bank which was done by running the actual code in yaAGC and by running the original Checksum verification program with Verb 91 (V91E) the checksum (including the so called bugger word) if correct is the same value as the bank number. I think it would be interesting for people to know these verification steps and how this process took many weeks with the deadline of the 40th anniversay of Apollo 11.
+\end{itemize}
+\end{quote}
+
+\begin{quote}
+ chrislgarry:
+
+@ohommes @corvuscrypto first, thanks for sharing your thoughts and the effort you guys put. Very much appreciated. I created this repo two years ago when I saw the original Apollo 11 source online bundled with Virtual AGC. I wanted the original Apollo 11 source just for viewing, so I extracted it and uploaded it to a repo for myself. Recently, somebody found my repo and shared it online, and here we are. Although Virtual AGC is awesome, I never was and am still not interested in Virtual AGC here in this repo. I am interested in the original Apollo 11 source only. I didn't know about the Virtual AGC repo until the other day when Ron shared the link with me and candidly stated "It probably would have helped if I had actually included this information on my website rather than keeping it to myself. :-)." This repo was meant to be for my own interest, but here we are, and now I am doing my best to maintain it as a repo for simply viewing the code. The community has already cleaned up a bunch of typos from digitization, and I suspect a lot more work in that area. We may get it to the point where it is truly reflective of the hard copies, which is my goal. The rekindled interest is tremendous, and I want to keep that going. Such a historical artifact as this deserves it's own repo without all the extras to build it in a VM, and I'm very appreciative of all the hard work that went into digitization, and is still going into it right now.
+\end{quote}
+
 \section{References}
 
 \begin{itemize}
@@ -181,7 +251,7 @@ and I'll initially copy them here to keep them together.
            {Programmer's Manual AGC Assembly Language}
 \item \href{http://www.ibiblio.org/apollo/NARA-SW/SkylabDataCards.pdf}
            {Skylab quick-reference card}
-\item \href{http://www.ibiblio.org/apollo/links.html#Space_Guidance_Analysis_SGA_memos}
+\item \href{http://www.ibiblio.org/apollo/links.html\#Space_Guidance_Analysis_SGA_memos}
            {Space Guidance Analysis (SGA) memos}
 \item \href{http://web.archive.org/web/20101024223709/http://forth.gsfc.nasa.gov/}
            {Space-Related Applications of Forth}
@@ -364,138 +434,201 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 
 \chapter{Miscellaneous Files}
 
+\section{Internal vs External File Names}
+
+<<src/generic.sh>>=
+
+sys=Comanche055;
+
+ex=AGC_BLOCK_TWO_SELF-CHECK;                in=CM1394SELF;  eval $cmd
+ex=ALARM_AND_ABORT;                         in=CM1493ALARM; eval $cmd
+ex=ANGLFIND;                                in=CM0399ANGL;  eval $cmd
+ex=ASSEMBLY_AND_OPERATION_INFORMATION;      in=CM0002ASM;   eval $cmd
+ex=AUTOMATIC_MANEUVERS;                     in=CM1025MANVR; eval $cmd
+ex=CM_BODY_ATTITUDE;                        in=CM0883BODY;  eval $cmd
+ex=CM_ENTRY_DIGITAL_AUTOPILOT;              in=CM1063AUTO;  eval $cmd
+ex=CONIC_SUBROUTINES;                       in=CM1262CONIC; eval $cmd
+ex=CONTRACT_AND_APPROVALS;                  in=CM0037APPRV; eval $cmd
+ex=CSM_GEOMETRY;                            in=CM0285GEOM;  eval $cmd
+ex=DISPLAY_INTERFACE_ROUTINES;              in=CM1452DISP;  eval $cmd
+ex=DOWNLINK_LISTS;                          in=CM0170DOWN;  eval $cmd
+ex=DOWN-TELEMETRY_PROGRAM;                  in=CM1093TELEM; eval $cmd
+ex=ENTRY_LEXICON;                           in=CM0837LEXI;  eval $cmd
+ex=ERASABLE_ASSIGNMENTS;                    in=CM0037ERASE; eval $cmd
+ex=EXECUTIVE;                               in=CM1208EXEC;  eval $cmd
+ex=EXTENDED_VERBS;                          in=CM0236VERBS; eval $cmd
+ex=FIXED_FIXED_CONSTANT_POOL;               in=CM1200FIXED; eval $cmd
+ex=FRESH_START_AND_RESTART;                 in=CM0181FRESH; eval $cmd
+ex=GIMBAL_LOCK_AVOIDANCE;                   in=CM0412AVOID; eval $cmd
+ex=GROUND_TRACKING_DETERMINATION_PROGRAM;   in=CM0456GRND;  eval $cmd
+ex=IMU_CALIBRATION_AND_ALIGNMENT;           in=CM0423CALIB; eval $cmd
+ex=IMU_COMPENSATION_PACKAGE;                in=CM0297ICOMP; eval $cmd
+ex=IMU_MODE_SWITCHING_ROUTINES;             in=CM1420IMODE; eval $cmd
+ex=INFLIGHT_ALIGNMENT_ROUTINES;             in=CM1355INFLT; eval $cmd
+ex=INTEGRATION_INITIALIZATION;              in=CM1309INTEG; eval $cmd
+ex=INTER-BANK_COMMUNICATION;                in=CM1103BKCOM; eval $cmd
+ex=INTERPRETER;                             in=CM1107TRPRT; eval $cmd
+ex=INTERPRETIVE_CONSTANTS;                  in=CM1205ICONS; eval $cmd
+ex=INTERRUPT_LEAD_INS;                      in=CM0131LEAD;  eval $cmd
+ex=JET_SELECTION_LOGIC;                     in=CM1039JET;   eval $cmd
+ex=KALCMANU_STEERING;                       in=CM0414STEER; eval $cmd
+ex=KEYRUPT_UPRUPT;                          in=CM1449KEYRP; eval $cmd
+ex=LATITUDE_LONGITUDE_SUBROUTINES;          in=CM1236LAT;   eval $cmd
+ex=LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES; in=CM0785EPHEM; eval $cmd
+ex=LUNAR_LANDMARK_SELECTION_FOR_CM;         in=CM0936LAND;  eval $cmd
+ex=MAIN;                                    in=CM0000MAIN;  eval $cmd
+ex=MEASUREMENT_INCORPORATION;               in=CM1252MEAS;  eval $cmd
+ex=MYSUBS;                                  in=CM0999MYSUB; eval $cmd
+ex=ORBITAL_INTEGRATION;                     in=CM1334ORBIT; eval $cmd
+ex=P11;                                     in=CM0533P11;   eval $cmd
+ex=P20-P25;                                 in=CM0562P20;   eval $cmd
+ex=P30-P37;                                 in=CM0635P30;   eval $cmd
+ex=P32-P33_P72-P73;                         in=CM0649P32;   eval $cmd
+ex=P34-35_P74-75;                           in=CM0460P34;   eval $cmd
+ex=P37_P70;                                 in=CM0890P37;   eval $cmd
+ex=P40-P47;                                 in=CM0684P40;   eval $cmd
+ex=P51-P53;                                 in=CM0737P51;   eval $cmd
+ex=P61-P67;                                 in=CM0789P61;   eval $cmd
+ex=P76;                                     in=CM0511P76;   eval $cmd
+ex=PHASE_TABLE_MAINTENANCE;                 in=CM1404PHASE; eval $cmd
+ex=PINBALL_GAME_BUTTONS_AND_LIGHTS;         in=CM0307GAME;  eval $cmd
+ex=PINBALL_NOUN_TABLES;                     in=CM0268NOUN;  eval $cmd
+ex=PLANETARY_INERTIAL_ORIENTATION;          in=CM1243INERT; eval $cmd
+ex=POWERED_FLIGHT_SUBROUTINES;              in=CM1365POWER; eval $cmd
+ex=R30;                                     in=CM0514R30;   eval $cmd
+ex=R31;                                     in=CM0505R31;   eval $cmd
+ex=R60_62;                                  in=CM0390R60;   eval $cmd
+ex=RCS-CSM_DAP_EXECUTIVE_PROGRAMS;          in=CM1037RCDAP; eval $cmd
+ex=RCS-CSM_DIGITAL_AUTOPILOT;               in=CM1002RCSDG; eval $cmd
+ex=REENTRY_CONTROL;                         in=CM0844REENT; eval $cmd
+ex=RESTARTS_ROUTINE;                        in=CM1414RESTR; eval $cmd
+ex=RESTART_TABLES;                          in=CM0211RETAB; eval $cmd
+ex=RT8_OP_CODES;                            in=CM1508CODES; eval $cmd
+ex=S-BAND_ANTENNA_FOR_CM;                   in=CM0934SBAND; eval $cmd
+ex=SERVICER207;                             in=CM0819SV207; eval $cmd
+ex=SERVICE_ROUTINES;                        in=CM1485SERV;  eval $cmd
+ex=SINGLE_PRECISION_SUBROUTINES;            in=CM1207SINGL; eval $cmd
+ex=STABLE_ORBIT;                            in=CM0525STABL; eval $cmd
+ex=STAR_TABLES;                             in=CM1389STARS; eval $cmd
+ex=SXTMARK;                                 in=CM0222SXTMK; eval $cmd
+ex=SYSTEM_TEST_STANDARD_LEAD_INS;           in=CM0420STEST; eval $cmd
+ex=T4RUPT_PROGRAM;                          in=CM0133T4RPT; eval $cmd
+ex=TAGS_FOR_RELATIVE_SETLOC;                in=CM0027TAGS;  eval $cmd
+ex=TIME_OF_FREE_FALL;                       in=CM1373FALL;  eval $cmd
+ex=TPI_SEARCH;                              in=CM0551TPI;   eval $cmd
+ex=TVCDAPS;                                 in=CM0961DAPS;  eval $cmd
+ex=TVCEXECUTIVE;                            in=CM0945TVCX;  eval $cmd
+ex=TVCINITIALIZE;                           in=CM0937TVCI;  eval $cmd
+ex=TVCMASSPROP;                             in=CM0951TVCM;  eval $cmd
+ex=TVCRESTARTS;                             in=CM0956TVCR;  eval $cmd
+ex=TVCROLLDAP;                              in=CM0984TROLL; eval $cmd
+ex=TVCSTROKETEST;                           in=CM0949STROK; eval $cmd
+ex=UPDATE_PROGRAM;                          in=CM1497UPDT;  eval $cmd
+ex=WAITLIST;                                in=CM1221WAIT;  eval $cmd
+
+sys=Luminary099;
+
+ex=AGC_BLOCK_TWO_SELF_CHECK;                in=LM1284SELF;  eval $cmd
+ex=AGS_INITIALIZATION;                      in=LM0206AGSI;  eval $cmd
+ex=ALARM_AND_ABORT;                         in=LM1381ALARM; eval $cmd
+ex=AOSTASK_AND_AOSJOB;                      in=LM1485AOST;  eval $cmd
+ex=AOTMARK;                                 in=LM0244AOTMK; eval $cmd
+ex=ASCENT_GUIDANCE;                         in=LM0843ASCNT; eval $cmd
+ex=ASSEMBLY_AND_OPERATION_INFORMATION;      in=LM0002ASM;   eval $cmd
+ex=ATTITUDE_MANEUVER_ROUTINE;               in=LM0342ATTIT; eval $cmd
+ex=BURN_BABY_BURN--MASTER_IGNITION_ROUTINE; in=LM0731BURN;  eval $cmd
+ex=CONIC_SUBROUTINES;                       in=LM1159CONIC; eval $cmd
+ex=CONTRACT_AND_APPROVALS;                  in=LM0001APPRV; eval $cmd
+ex=CONTROLLED_CONSTANTS;                    in=LM0038CONST; eval $cmd
+ex=DAPIDLER_PROGRAM;                        in=LM1410IDLER; eval $cmd
+ex=DAP_INTERFACE_SUBROUTINES;               in=LM1406DAP;   eval $cmd
+ex=DISPLAY_INTERFACE_ROUTINES;              in=LM1341DISP;  eval $cmd
+ex=DOWNLINK_LISTS;                          in=LM0193DOWN;  eval $cmd
+ex=DOWN_TELEMETRY_PROGRAM;                  in=LM0988TELEM; eval $cmd
+ex=ERASABLE_ASSIGNMENTS;                    in=LM0090ERASE; eval $cmd
+ex=EXECUTIVE;                               in=LM1103EXEC;  eval $cmd
+ex=EXTENDED_VERBS;                          in=LM0262VERBS; eval $cmd
+ex=FINDCDUW--GUIDAP_INTERFACE;              in=LM0908CDUW;  eval $cmd
+ex=FIXED_FIXED_CONSTANT_POOL;               in=LM1095FIXED; eval $cmd
+ex=FLAGWORD_ASSIGNMENTS;                    in=LM0061FLAG;  eval $cmd
+ex=FRESH_START_AND_RESTART;                 in=LM0211FRESH; eval $cmd
+ex=GIMBAL_LOCK_AVOIDANCE;                   in=LM0364AVOID; eval $cmd
+ex=GROUND_TRACKING_DETERMINATION_PROGRAM;   in=LM0654GRND;  eval $cmd
+ex=IMU_COMPENSATION_PACKAGE;                in=LM0326ICOMP; eval $cmd
+ex=IMU_MODE_SWITCHING_ROUTINES;             in=LM1309IMODE; eval $cmd
+ex=IMU_PERFORMANCE_TEST_2;                  in=LM0373TEST2; eval $cmd
+ex=IMU_PERFORMANCE_TESTS_4;                 in=LM0382TEST4; eval $cmd
+ex=INFLIGHT_ALIGNMENT_ROUTINES;             in=LM1249INFLT; eval $cmd
+ex=INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS;   in=LM0054INOUT; eval $cmd
+ex=INTEGRATION_INITIALIZATION;              in=LM1205INTEG; eval $cmd
+ex=INTER-BANK_COMMUNICATION;                in=LM0998BKCOM; eval $cmd
+ex=INTERPRETER;                             in=LM1002TRPRT; eval $cmd
+ex=INTERPRETIVE_CONSTANT;                   in=LM1100ICONS; eval $cmd
+ex=INTERRUPT_LEAD_INS;                      in=LM0153LEAD;  eval $cmd
+ex=KALCMANU_STEERING;                       in=LM0365STEER; eval $cmd
+ex=KALMAN_FILTER;                           in=LM1470KALMN; eval $cmd
+ex=KEYRUPT_UPRUPT;                          in=LM1338KEYRP; eval $cmd
+ex=LAMBERT_AIMPOINT_GUIDANCE;               in=LM0651LAMBT; eval $cmd
+ex=LANDING_ANALOG_DISPLAYS;                 in=LM0898ANALG; eval $cmd
+ex=LATITUDE_LONGITUDE_SUBROUTINES;          in=LM1133LAT;   eval $cmd
+ex=LEM_GEOMETRY;                            in=LM0320GEOM;  eval $cmd
+ex=LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES; in=LM0984EPHEM; eval $cmd
+ex=LUNAR_LANDING_GUIDANCE_EQUATIONS;        in=LM0798EQUAT; eval $cmd
+ex=MAIN;                                    in=LM0000MAIN;  eval $cmd
+ex=MEASUREMENT_INCORPORATION;               in=LM1149MEAS;  eval $cmd
+ex=ORBITAL_INTEGRATION;                     in=LM1227ORBIT; eval $cmd
+ex=P12;                                     in=LM0838P12;   eval $cmd
+ex=P20-P25;                                 in=LM0492P20;   eval $cmd
+ex=P30_P37;                                 in=LM0615P30;   eval $cmd
+ex=P32-P35_P72-P75;                         in=LM0618P32;   eval $cmd
+ex=P34-35_P74-75;                           in=LM0658P34;   eval $cmd
+ex=P40-P47;                                 in=LM0752P40;   eval $cmd
+ex=P51-P53;                                 in=LM0926P51;   eval $cmd
+ex=P70-P71;                                 in=LM0829P70;   eval $cmd
+ex=P76;                                     in=LM0709P76;   eval $cmd
+ex=P-AXIS_RCS_AUTOPILOT;                    in=LM1421PAXIS; eval $cmd
+ex=PHASE_TABLE_MAINTENANCE;                 in=LM1294PHASE; eval $cmd
+ex=PINBALL_GAME_BUTTONS_AND_LIGHTS;         in=LM0390GAME;  eval $cmd
+ex=PINBALL_NOUN_TABLES;                     in=LM0301NOUN;  eval $cmd
+ex=PLANETARY_INERTIAL_ORIENTATION;          in=LM1140INERT; eval $cmd
+ex=POWERED_FLIGHT_SUBROUTINES;              in=LM1259POWER; eval $cmd
+ex=Q_R-AXIS_RCS_AUTOPILOT;                  in=LM1442QRAXS; eval $cmd
+ex=R30;                                     in=LM0712R30;   eval $cmd
+ex=R31;                                     in=LM0703R31;   eval $cmd
+ex=R60_62;                                  in=LM0472R60;   eval $cmd
+ex=R63;                                     in=LM0338R63;   eval $cmd
+ex=RADAR_LEADIN_ROUTINES;                   in=LM0490RADAR; eval $cmd
+ex=RCS_FAILURE_MONITOR;                     in=LM0190FAIL;  eval $cmd
+ex=RESTARTS_ROUTINE;                        in=LM1303RESTR; eval $cmd
+ex=RESTART_TABLES;                          in=LM0238RETAB; eval $cmd
+ex=RTB_OP_CODES;                            in=LM1397CODES; eval $cmd
+ex=S-BAND_ANTENNA_FOR_LM;                   in=LM0486SBAND; eval $cmd
+ex=SERVICER;                                in=LM0857SERVR; eval $cmd
+ex=SERVICE_ROUTINES;                        in=LM1374SERV;  eval $cmd
+ex=SINGLE_PRECISION_SUBROUTINES;            in=LM1102SINGL; eval $cmd
+ex=SPS_BACK-UP_RCS_CONTROL;                 in=LM1507BKUP;  eval $cmd
+ex=STABLE_ORBIT;                            in=LM0723STABL; eval $cmd
+ex=SYSTEM_TEST_STANDARD_LEAD_INS;           in=LM0370STEST; eval $cmd
+ex=T4RUPT_PROGRAM;                          in=LM0155T4RPT; eval $cmd
+ex=T6-RUPT_PROGRAMS;                        in=LM1403T6RPT; eval $cmd
+ex=TAGS_FOR_RELATIVE_SETLOC;                in=LM0028TAGS;  eval $cmd
+ex=THE_LUNAR_LANDING;                       in=LM0785LANDG; eval $cmd
+ex=THROTTLE_CONTROL_ROUTINES;               in=LM0793THROT; eval $cmd
+ex=TIME_OF_FREE_FALL;                       in=LM1268FALL;  eval $cmd
+ex=TJET_LAW;                                in=LM1460TJET;  eval $cmd
+ex=TRIM_GIMBAL_CNTROL_SYSTEM;               in=LM1472TRIM;  eval $cmd
+ex=UPDATE_PROGRAM;                          in=LM1386UPDT;  eval $cmd
+ex=WAITLIST;                                in=LM1117WAIT;  eval $cmd
+@
+
 \section{Check for Changes}
 
 <<src/check.sh>>=
 #!/bin/bash
 
-orig=Luminary099/AGC_BLOCK_TWO_SELF_CHECK.agc; new=AGC-BLOCK-TWO-SELF-CHECK.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/AGC_BLOCK_TWO_SELF-CHECK.agc; new=AGC-BLOCK-TWO-SELF-CHECK.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/AGS_INITIALIZATION.agc; new=AGS-INITIALIZATION.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/ALARM_AND_ABORT.agc; new=ALARM-AND-ABORT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/ANGLFIND.agc; new=ANGLFIND.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/AOSTASK_AND_AOSJOB.agc; new=AOSTASK-AND-AOSJOB.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Luminary099/AOTMARK.agc; new=AOTMARK.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Luminary099/ASCENT_GUIDANCE.agc; new=ASCENT-GUIDANCE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc; new=CM0002INFO.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/ATTITUDE_MANEUVER_ROUTINE.agc; new=ATTITUDE-MANEUVER-ROUTINE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/AUTOMATIC_MANEUVERS.agc; new=AUTOMATIC-MANEUVERS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc; new=BURN-BABY-BURN--MASTER-IGNITION-ROUTINE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/CM_BODY_ATTITUDE.agc; new=CM-BODY-ATTITUDE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/CM_ENTRY_DIGITAL_AUTOPILOT.agc; new=CM-ENTRY-DIGITAL-AUTOPILOT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/CONIC_SUBROUTINES.agc; new=CONIC-SUBROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/CONTRACT_AND_APPROVALS.agc; new=CONTRACT-AND-APPROVALS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/CONTROLLED_CONSTANTS.agc; new=CONTROLLED-CONSTANTS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/CSM_GEOMETRY.agc; new=CSM-GEOMETRY.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/DAPIDLER_PROGRAM.agc; new=DAPIDLER-PROGRAM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Luminary099/DAP_INTERFACE_SUBROUTINES.agc; new=DAP-INTERFACE-SUBROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/DISPLAY_INTERFACE_ROUTINES.agc; new=DISPLAY-INTERFACE-ROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/DOWNLINK_LISTS.agc; new=DOWNLINK-LISTS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/DOWN_TELEMETRY_PROGRAM.agc; new=DOWN--TELEMETRY-PROGRAM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/DOWN-TELEMETRY_PROGRAM.agc; new=DOWN-TELEMETRY-PROGRAM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/ENTRY_LEXICON.agc; new=ENTRY-LEXICON.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/ERASABLE_ASSIGNMENTS.agc; new=ERASABLE-ASSIGNMENTS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/EXECUTIVE.agc; new=EXECUTIVE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/EXTENDED_VERBS.agc; new=EXTENDED-VERBS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/FINDCDUW--GUIDAP_INTERFACE.agc; new=FINDCDUW--GUIDAP-INTERFACE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/FIXED_FIXED_CONSTANT_POOL.agc; new=FIXED-FIXED-CONSTANT-POOL.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/FLAGWORD_ASSIGNMENTS.agc; new=FLAGWORD-ASSIGNMENTS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/FRESH_START_AND_RESTART.agc; new=FRESH-START-AND-RESTART.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/GIMBAL_LOCK_AVOIDANCE.agc; new=GIMBAL-LOCK-AVOIDANCE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/GROUND_TRACKING_DETERMINATION_PROGRAM.agc; new=GROUND-TRACKING-DETERMINATION-PROGRAM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/HeaderTemplate.agc; new=HeaderTemplate.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/IMU_CALIBRATION_AND_ALIGNMENT.agc; new=IMU-CALIBRATION-AND-ALIGNMENT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/IMU_COMPENSATION_PACKAGE.agc; new=IMU-COMPENSATION-PACKAGE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/IMU_MODE_SWITCHING_ROUTINES.agc; new=IMU-MODE-SWITCHING-ROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/IMU_PERFORMANCE_TEST_2.agc; new=IMU-PERFORMANCE-TEST-2.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Luminary099/IMU_PERFORMANCE_TESTS_4.agc; new=IMU-PERFORMANCE-TESTS-4.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/INFLIGHT_ALIGNMENT_ROUTINES.agc; new=INFLIGHT-ALIGNMENT-ROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc; new=INPUT-OUTPUT-CHANNEL-BIT-DESCRIPTIONS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/INTEGRATION_INITIALIZATION.agc; new=INTEGRATION-INITIALIZATION.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/INTER-BANK_COMMUNICATION.agc; new=INTER-BANK-COMMUNICATION.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/INTERPRETER.agc; new=INTERPRETER.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/INTERPRETIVE_CONSTANT.agc; new=INTERPRETIVE-CONSTANT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/INTERPRETIVE_CONSTANTS.agc; new=INTERPRETIVE-CONSTANTS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/INTERRUPT_LEAD_INS.agc; new=INTERRUPT-LEAD-INS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/JET_SELECTION_LOGIC.agc; new=JET-SELECTION-LOGIC.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/KALCMANU_STEERING.agc; new=KALCMANU-STEERING.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/KALMAN_FILTER.agc; new=KALMAN-FILTER.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/KEYRUPT_UPRUPT.agc; new=KEYRUPT-UPRUPT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/LAMBERT_AIMPOINT_GUIDANCE.agc; new=LAMBERT-AIMPOINT-GUIDANCE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Luminary099/LANDING_ANALOG_DISPLAYS.agc; new=LANDING-ANALOG-DISPLAYS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/LATITUDE_LONGITUDE_SUBROUTINES.agc; new=LATITUDE-LONGITUDE-SUBROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/LEM_GEOMETRY.agc; new=LEM-GEOMETRY.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc; new=LUNAR-AND-SOLAR-EPHEMERIDES-SUBROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc; new=LUNAR-LANDING-GUIDANCE-EQUATIONS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/LUNAR_LANDMARK_SELECTION_FOR_CM.agc; new=LUNAR-LANDMARK-SELECTION-FOR-CM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/MAIN.agc; new=MAIN.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/MEASUREMENT_INCORPORATION.agc; new=MEASUREMENT-INCORPORATION.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/MYSUBS.agc; new=MYSUBS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/ORBITAL_INTEGRATION.agc; new=ORBITAL-INTEGRATION.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/P11.agc; new=P11.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/P12.agc; new=P12.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/P20-P25.agc; new=P20-P25.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/P30_P37.agc; new=P30--P37.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/P30-P37.agc; new=P30-P37.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/P32-P33_P72-P73.agc; new=P32-P33-P72-P73.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/P32-P35_P72-P75.agc; new=P32-P35-P72-P75.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/P34-35_P74-75.agc; new=P34-35-P74-75.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/P37_P70.agc; new=P37-P70.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/P40-P47.agc; new=P40-P47.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/P51-P53.agc; new=P51-P53.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/P61-P67.agc; new=P61-P67.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/P70-P71.agc; new=P70-P71.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/P76.agc; new=P76.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/P-AXIS_RCS_AUTOPILOT.agc; new=P-AXIS-RCS-AUTOPILOT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/PHASE_TABLE_MAINTENANCE.agc; new=PHASE-TABLE-MAINTENANCE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/PINBALL_GAME_BUTTONS_AND_LIGHTS.agc; new=PINBALL-GAME-BUTTONS-AND-LIGHTS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/PINBALL_NOUN_TABLES.agc; new=PINBALL-NOUN-TABLES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/PLANETARY_INERTIAL_ORIENTATION.agc; new=PLANETARY-INERTIAL-ORIENTATION.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/POWERED_FLIGHT_SUBROUTINES.agc; new=POWERED-FLIGHT-SUBROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/Q_R-AXIS_RCS_AUTOPILOT.agc; new=Q-R-AXIS-RCS-AUTOPILOT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/R30.agc; new=R30.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/R31.agc; new=R31.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/R60_62.agc; new=R60-62.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/R63.agc; new=R63.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Luminary099/RADAR_LEADIN_ROUTINES.agc; new=RADAR-LEADIN-ROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/RCS-CSM_DAP_EXECUTIVE_PROGRAMS.agc; new=RCS-CSM-DAP-EXECUTIVE-PROGRAMS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/RCS-CSM_DIGITAL_AUTOPILOT.agc; new=RCS-CSM-DIGITAL-AUTOPILOT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/RCS_FAILURE_MONITOR.agc; new=RCS-FAILURE-MONITOR.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=README.md; new=README.md; echo "XX $orig XX"; diff origsrc/$orig src/$new
-orig=Comanche055/REENTRY_CONTROL.agc; new=REENTRY-CONTROL.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/RESTARTS_ROUTINE.agc; new=RESTARTS-ROUTINE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/RESTART_TABLES.agc; new=RESTART-TABLES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/RT8_OP_CODES.agc; new=RT8-OP-CODES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/RTB_OP_CODES.agc; new=RTB-OP-CODES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/S-BAND_ANTENNA_FOR_CM.agc; new=S-BAND-ANTENNA-FOR-CM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/S-BAND_ANTENNA_FOR_LM.agc; new=S-BAND-ANTENNA-FOR-LM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/SERVICER207.agc; new=SERVICER207.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/SERVICE_ROUTINES.agc; new=SERVICE-ROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/SERVICER.agc; new=SERVICER.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/SINGLE_PRECISION_SUBROUTINES.agc; new=SINGLE-PRECISION-SUBROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/SPS_BACK-UP_RCS_CONTROL.agc; new=SPS-BACK-UP-RCS-CONTROL.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/STABLE_ORBIT.agc; new=STABLE-ORBIT.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/STAR_TABLES.agc; new=STAR-TABLES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/SXTMARK.agc; new=SXTMARK.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/SYSTEM_TEST_STANDARD_LEAD_INS.agc; new=SYSTEM-TEST-STANDARD-LEAD-INS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/T4RUPT_PROGRAM.agc; new=T4RUPT-PROGRAM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/T6-RUPT_PROGRAMS.agc; new=T6-RUPT-PROGRAMS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/TAGS_FOR_RELATIVE_SETLOC.agc; new=TAGS-FOR-RELATIVE-SETLOC.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/THE_LUNAR_LANDING.agc; new=THE-LUNAR-LANDING.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Luminary099/THROTTLE_CONTROL_ROUTINES.agc; new=THROTTLE-CONTROL-ROUTINES.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/TIME_OF_FREE_FALL.agc; new=TIME-OF-FREE-FALL.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/TJET_LAW.agc; new=TJET-LAW.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/TPI_SEARCH.agc; new=TPI-SEARCH.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Luminary099/TRIM_GIMBAL_CNTROL_SYSTEM.agc; new=TRIM-GIMBAL-CNTROL-SYSTEM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Luminary099/$new
-orig=Comanche055/TVCDAPS.agc; new=TVCDAPS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/TVCEXECUTIVE.agc; new=TVCEXECUTIVE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/TVCINITIALIZE.agc; new=TVCINITIALIZE.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/TVCMASSPROP.agc; new=TVCMASSPROP.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/TVCRESTARTS.agc; new=TVCRESTARTS.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/TVCROLLDAP.agc; new=TVCROLLDAP.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/TVCSTROKETEST.agc; new=TVCSTROKETEST.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/UPDATE_PROGRAM.agc; new=UPDATE-PROGRAM.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
-orig=Comanche055/WAITLIST.agc; new=WAITLIST.agc; echo "XX $orig XX"; diff origsrc/$orig src/Comanche055/$new
+cmd='echo "XX $in XX"; diff origsrc/$sys/$ex.agc src/$sys/$in.agc'
+source generic.sh
+
 @
 
 \section{Export with Original File Names}
@@ -506,132 +639,19 @@ orig=Comanche055/WAITLIST.agc; new=WAITLIST.agc; echo "XX $orig XX"; diff origsr
 rm -r -f tmp
 mkdir -p tmp/{Comanche055,Luminary099}
 
-ex=Luminary099/AGC_BLOCK_TWO_SELF_CHECK.agc; in=Luminary099/AGC-BLOCK-TWO-SELF-CHECK.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/AGC_BLOCK_TWO_SELF-CHECK.agc; in=Comanche055/AGC-BLOCK-TWO-SELF-CHECK.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/AGS_INITIALIZATION.agc; in=Luminary099/AGS-INITIALIZATION.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/ALARM_AND_ABORT.agc; in=Comanche055/ALARM-AND-ABORT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/ANGLFIND.agc; in=Comanche055/ANGLFIND.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/AOSTASK_AND_AOSJOB.agc; in=Luminary099/AOSTASK-AND-AOSJOB.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/AOTMARK.agc; in=Luminary099/AOTMARK.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/ASCENT_GUIDANCE.agc; in=Luminary099/ASCENT-GUIDANCE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc; in=Comanche055/CM0002INFO.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/ATTITUDE_MANEUVER_ROUTINE.agc; in=Luminary099/ATTITUDE-MANEUVER-ROUTINE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/AUTOMATIC_MANEUVERS.agc; in=Comanche055/AUTOMATIC-MANEUVERS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc; in=Luminary099/BURN-BABY-BURN--MASTER-IGNITION-ROUTINE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/CM_BODY_ATTITUDE.agc; in=Comanche055/CM-BODY-ATTITUDE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/CM_ENTRY_DIGITAL_AUTOPILOT.agc; in=Comanche055/CM-ENTRY-DIGITAL-AUTOPILOT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/CONIC_SUBROUTINES.agc; in=Comanche055/CONIC-SUBROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/CONTRACT_AND_APPROVALS.agc; in=Comanche055/CONTRACT-AND-APPROVALS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/CONTROLLED_CONSTANTS.agc; in=Luminary099/CONTROLLED-CONSTANTS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/CSM_GEOMETRY.agc; in=Comanche055/CSM-GEOMETRY.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/DAPIDLER_PROGRAM.agc; in=Luminary099/DAPIDLER-PROGRAM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/DAP_INTERFACE_SUBROUTINES.agc; in=Luminary099/DAP-INTERFACE-SUBROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/DISPLAY_INTERFACE_ROUTINES.agc; in=Comanche055/DISPLAY-INTERFACE-ROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/DOWNLINK_LISTS.agc; in=Comanche055/DOWNLINK-LISTS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/DOWN_TELEMETRY_PROGRAM.agc; in=Luminary099/DOWN--TELEMETRY-PROGRAM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/DOWN-TELEMETRY_PROGRAM.agc; in=Comanche055/DOWN-TELEMETRY-PROGRAM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/ENTRY_LEXICON.agc; in=Comanche055/ENTRY-LEXICON.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/ERASABLE_ASSIGNMENTS.agc; in=Comanche055/ERASABLE-ASSIGNMENTS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/EXECUTIVE.agc; in=Comanche055/EXECUTIVE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/EXTENDED_VERBS.agc; in=Comanche055/EXTENDED-VERBS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/FINDCDUW--GUIDAP_INTERFACE.agc; in=Luminary099/FINDCDUW--GUIDAP-INTERFACE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/FIXED_FIXED_CONSTANT_POOL.agc; in=Comanche055/FIXED-FIXED-CONSTANT-POOL.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/FLAGWORD_ASSIGNMENTS.agc; in=Luminary099/FLAGWORD-ASSIGNMENTS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/FRESH_START_AND_RESTART.agc; in=Comanche055/FRESH-START-AND-RESTART.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/GIMBAL_LOCK_AVOIDANCE.agc; in=Comanche055/GIMBAL-LOCK-AVOIDANCE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/GROUND_TRACKING_DETERMINATION_PROGRAM.agc; in=Comanche055/GROUND-TRACKING-DETERMINATION-PROGRAM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/HeaderTemplate.agc; in=Luminary099/HeaderTemplate.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/IMU_CALIBRATION_AND_ALIGNMENT.agc; in=Comanche055/IMU-CALIBRATION-AND-ALIGNMENT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/IMU_COMPENSATION_PACKAGE.agc; in=Comanche055/IMU-COMPENSATION-PACKAGE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/IMU_MODE_SWITCHING_ROUTINES.agc; in=Comanche055/IMU-MODE-SWITCHING-ROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/IMU_PERFORMANCE_TEST_2.agc; in=Luminary099/IMU-PERFORMANCE-TEST-2.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/IMU_PERFORMANCE_TESTS_4.agc; in=Luminary099/IMU-PERFORMANCE-TESTS-4.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/INFLIGHT_ALIGNMENT_ROUTINES.agc; in=Comanche055/INFLIGHT-ALIGNMENT-ROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc; in=Luminary099/INPUT-OUTPUT-CHANNEL-BIT-DESCRIPTIONS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/INTEGRATION_INITIALIZATION.agc; in=Comanche055/INTEGRATION-INITIALIZATION.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/INTER-BANK_COMMUNICATION.agc; in=Comanche055/INTER-BANK-COMMUNICATION.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/INTERPRETER.agc; in=Comanche055/INTERPRETER.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/INTERPRETIVE_CONSTANT.agc; in=Luminary099/INTERPRETIVE-CONSTANT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/INTERPRETIVE_CONSTANTS.agc; in=Comanche055/INTERPRETIVE-CONSTANTS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/INTERRUPT_LEAD_INS.agc; in=Comanche055/INTERRUPT-LEAD-INS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/JET_SELECTION_LOGIC.agc; in=Comanche055/JET-SELECTION-LOGIC.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/KALCMANU_STEERING.agc; in=Comanche055/KALCMANU-STEERING.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/KALMAN_FILTER.agc; in=Luminary099/KALMAN-FILTER.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/KEYRUPT_UPRUPT.agc; in=Comanche055/KEYRUPT-UPRUPT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/LAMBERT_AIMPOINT_GUIDANCE.agc; in=Luminary099/LAMBERT-AIMPOINT-GUIDANCE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/LANDING_ANALOG_DISPLAYS.agc; in=Luminary099/LANDING-ANALOG-DISPLAYS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/LATITUDE_LONGITUDE_SUBROUTINES.agc; in=Comanche055/LATITUDE-LONGITUDE-SUBROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/LEM_GEOMETRY.agc; in=Luminary099/LEM-GEOMETRY.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc; in=Comanche055/LUNAR-AND-SOLAR-EPHEMERIDES-SUBROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/LUNAR_LANDING_GUIDANCE_EQUATIONS.agc; in=Luminary099/LUNAR-LANDING-GUIDANCE-EQUATIONS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/LUNAR_LANDMARK_SELECTION_FOR_CM.agc; in=Comanche055/LUNAR-LANDMARK-SELECTION-FOR-CM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/MAIN.agc; in=Comanche055/MAIN.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/MEASUREMENT_INCORPORATION.agc; in=Comanche055/MEASUREMENT-INCORPORATION.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/MYSUBS.agc; in=Comanche055/MYSUBS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/ORBITAL_INTEGRATION.agc; in=Comanche055/ORBITAL-INTEGRATION.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P11.agc; in=Comanche055/P11.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/P12.agc; in=Luminary099/P12.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P20-P25.agc; in=Comanche055/P20-P25.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/P30_P37.agc; in=Luminary099/P30--P37.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P30-P37.agc; in=Comanche055/P30-P37.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P32-P33_P72-P73.agc; in=Comanche055/P32-P33-P72-P73.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/P32-P35_P72-P75.agc; in=Luminary099/P32-P35-P72-P75.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P34-35_P74-75.agc; in=Comanche055/P34-35-P74-75.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P37_P70.agc; in=Comanche055/P37-P70.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P40-P47.agc; in=Comanche055/P40-P47.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P51-P53.agc; in=Comanche055/P51-P53.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P61-P67.agc; in=Comanche055/P61-P67.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/P70-P71.agc; in=Luminary099/P70-P71.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/P76.agc; in=Comanche055/P76.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/P-AXIS_RCS_AUTOPILOT.agc; in=Luminary099/P-AXIS-RCS-AUTOPILOT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/PHASE_TABLE_MAINTENANCE.agc; in=Comanche055/PHASE-TABLE-MAINTENANCE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/PINBALL_GAME_BUTTONS_AND_LIGHTS.agc; in=Comanche055/PINBALL-GAME-BUTTONS-AND-LIGHTS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/PINBALL_NOUN_TABLES.agc; in=Comanche055/PINBALL-NOUN-TABLES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/PLANETARY_INERTIAL_ORIENTATION.agc; in=Comanche055/PLANETARY-INERTIAL-ORIENTATION.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/POWERED_FLIGHT_SUBROUTINES.agc; in=Comanche055/POWERED-FLIGHT-SUBROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/Q_R-AXIS_RCS_AUTOPILOT.agc; in=Luminary099/Q-R-AXIS-RCS-AUTOPILOT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/R30.agc; in=Comanche055/R30.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/R31.agc; in=Comanche055/R31.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/R60_62.agc; in=Comanche055/R60-62.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/R63.agc; in=Luminary099/R63.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/RADAR_LEADIN_ROUTINES.agc; in=Luminary099/RADAR-LEADIN-ROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/RCS-CSM_DAP_EXECUTIVE_PROGRAMS.agc; in=Comanche055/RCS-CSM-DAP-EXECUTIVE-PROGRAMS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/RCS-CSM_DIGITAL_AUTOPILOT.agc; in=Comanche055/RCS-CSM-DIGITAL-AUTOPILOT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/RCS_FAILURE_MONITOR.agc; in=Luminary099/RCS-FAILURE-MONITOR.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/REENTRY_CONTROL.agc; in=Comanche055/REENTRY-CONTROL.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/RESTARTS_ROUTINE.agc; in=Comanche055/RESTARTS-ROUTINE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/RESTART_TABLES.agc; in=Comanche055/RESTART-TABLES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/RT8_OP_CODES.agc; in=Comanche055/RT8-OP-CODES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/RTB_OP_CODES.agc; in=Luminary099/RTB-OP-CODES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/S-BAND_ANTENNA_FOR_CM.agc; in=Comanche055/S-BAND-ANTENNA-FOR-CM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/S-BAND_ANTENNA_FOR_LM.agc; in=Luminary099/S-BAND-ANTENNA-FOR-LM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/SERVICER207.agc; in=Comanche055/SERVICER207.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/SERVICE_ROUTINES.agc; in=Comanche055/SERVICE-ROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/SERVICER.agc; in=Luminary099/SERVICER.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/SINGLE_PRECISION_SUBROUTINES.agc; in=Comanche055/SINGLE-PRECISION-SUBROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/SPS_BACK-UP_RCS_CONTROL.agc; in=Luminary099/SPS-BACK-UP-RCS-CONTROL.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/STABLE_ORBIT.agc; in=Comanche055/STABLE-ORBIT.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/STAR_TABLES.agc; in=Comanche055/STAR-TABLES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/SXTMARK.agc; in=Comanche055/SXTMARK.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/SYSTEM_TEST_STANDARD_LEAD_INS.agc; in=Comanche055/SYSTEM-TEST-STANDARD-LEAD-INS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/T4RUPT_PROGRAM.agc; in=Comanche055/T4RUPT-PROGRAM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/T6-RUPT_PROGRAMS.agc; in=Luminary099/T6-RUPT-PROGRAMS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TAGS_FOR_RELATIVE_SETLOC.agc; in=Comanche055/TAGS-FOR-RELATIVE-SETLOC.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/THE_LUNAR_LANDING.agc; in=Luminary099/THE-LUNAR-LANDING.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/THROTTLE_CONTROL_ROUTINES.agc; in=Luminary099/THROTTLE-CONTROL-ROUTINES.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TIME_OF_FREE_FALL.agc; in=Comanche055/TIME-OF-FREE-FALL.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/TJET_LAW.agc; in=Luminary099/TJET-LAW.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TPI_SEARCH.agc; in=Comanche055/TPI-SEARCH.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Luminary099/TRIM_GIMBAL_CNTROL_SYSTEM.agc; in=Luminary099/TRIM-GIMBAL-CNTROL-SYSTEM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TVCDAPS.agc; in=Comanche055/TVCDAPS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TVCEXECUTIVE.agc; in=Comanche055/TVCEXECUTIVE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TVCINITIALIZE.agc; in=Comanche055/TVCINITIALIZE.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TVCMASSPROP.agc; in=Comanche055/TVCMASSPROP.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TVCRESTARTS.agc; in=Comanche055/TVCRESTARTS.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TVCROLLDAP.agc; in=Comanche055/TVCROLLDAP.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/TVCSTROKETEST.agc; in=Comanche055/TVCSTROKETEST.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/UPDATE_PROGRAM.agc; in=Comanche055/UPDATE-PROGRAM.agc; echo "XX $ex XX"; cp $in tmp/$ex
-ex=Comanche055/WAITLIST.agc; in=Comanche055/WAITLIST.agc; echo "XX $ex XX"; cp $in tmp/$ex
+cmd='echo "XX $in XX"; cp $sys/$in.agc tmp/$sys/$ex.agc'
+source generic.sh
+
+@
+
+\section{Migrate to Internal File Names}
+
+<<src/migrate.sh>>=
+#!/bin/bash
+
+cmd='echo "XX $in XX"; git mv $sys/$ex.agc $sys/$in.agc'
+source generic.sh
+
 @
 
 \chapter{Notes, Bibliography and Indexes}
