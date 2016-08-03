@@ -21930,7 +21930,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{AGC BLOCK TWO SELF-CHECK}
 
-<<src/Luminary099/AGC-BLOCK-TWO-SELF-CHECK.agc>>=
+<<intern/Luminary099/AGC-BLOCK-TWO-SELF-CHECK.agc>>=
 # Copyright:	Public domain.
 # Filename:	AGC_BLOCK_TWO_SELF_CHECK.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -21981,7 +21981,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{AGS INITIALIZATION}
 
-<<src/Luminary099/AGS-INITIALIZATION.agc>>=
+<<intern/Luminary099/AGS-INITIALIZATION.agc>>=
 # Copyright:	Public domain.
 # Filename:	AGS_INITIALIZATION.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22022,7 +22022,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{AOSTASK AND AOSJOB}
 
-<<src/Luminary099/AOSTASK-AND-AOSJOB.agc>>=
+<<intern/Luminary099/AOSTASK-AND-AOSJOB.agc>>=
 # Copyright:	Public domain.
 # Filename:	AOSTASK_AND_AOSJOB.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22101,7 +22101,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{AOTMARK}
 
-<<src/Luminary099/AOTMARK.agc>>=
+<<intern/Luminary099/AOTMARK.agc>>=
 # Copyright:	Public domain.
 # Filename:	AOTMARK.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22170,7 +22170,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{ASCENT GUIDANCE}
 
-<<src/Luminary099/ASCENT-GUIDANCE.agc>>=
+<<intern/Luminary099/ASCENT-GUIDANCE.agc>>=
 # Copyright:	Public domain.
 # Filename:	ASCENT_GUIDANCE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22231,7 +22231,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{ATTITUDE MANEUVER ROUTINE}
 
-<<src/Luminary099/ATTITUDE-MANEUVER-ROUTINE.agc>>=
+<<intern/Luminary099/ATTITUDE-MANEUVER-ROUTINE.agc>>=
 # Copyright:	Public domain.
 # Filename:	ATTITUDE_MANEUVER_ROUTINE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22308,7 +22308,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{BURN BABY BURN--MASTER IGNITION ROUTINE}
 
-<<src/Luminary099/BURN-BABY-BURN--MASTER-IGNITION-ROUTINE.agc>>=
+<<intern/Luminary099/BURN-BABY-BURN--MASTER-IGNITION-ROUTINE.agc>>=
 # Copyright:	Public domain.
 # Filename:	BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22398,7 +22398,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{CONTROLLED CONSTANTS}
 
-<<src/Luminary099/CONTROLLED-CONSTANTS.agc>>=
+<<intern/Luminary099/CONTROLLED-CONSTANTS.agc>>=
 # Copyright:	Public domain.
 # Filename:	CONTROLLED_CONSTANTS.agc
 # Purpose:	Part of the source code for Luminary 1A build 099.
@@ -22461,7 +22461,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{DAPIDLER PROGRAM}
 
-<<src/Luminary099/DAPIDLER-PROGRAM.agc>>=
+<<intern/Luminary099/DAPIDLER-PROGRAM.agc>>=
 # Copyright:	Public domain.
 # Filename:	DAPIDLER_PROGRAM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22516,7 +22516,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{DAP INTERFACE SUBROUTINES}
 
-<<src/Luminary099/DAP-INTERFACE-SUBROUTINES.agc>>=
+<<intern/Luminary099/DAP-INTERFACE-SUBROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	DAP_INTERFACE_SUBROUTINES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22557,7 +22557,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{DOWN TELEMETRY PROGRAM}
 
-<<src/Luminary099/DOWN--TELEMETRY-PROGRAM.agc>>=
+<<intern/Luminary099/DOWN--TELEMETRY-PROGRAM.agc>>=
 # Copyright:	Public domain.
 # Filename:	DOWN_TELEMETRY_PROGRAM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22609,7 +22609,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{FINDCDUW--GUIDAP INTERFACE}
 
-<<src/Luminary099/FINDCDUW--GUIDAP-INTERFACE.agc>>=
+<<intern/Luminary099/FINDCDUW--GUIDAP-INTERFACE.agc>>=
 # Copyright:	Public domain.
 # Filename:	FINDCDUW--GUIDAP_INTERFACE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22676,7 +22676,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{FLAGWORD ASSIGNMENTS}
 
-<<src/Luminary099/FLAGWORD-ASSIGNMENTS.agc>>=
+<<intern/Luminary099/FLAGWORD-ASSIGNMENTS.agc>>=
 # Copyright:	Public domain.
 # Filename:	FLAGWORD_ASSIGNMENTS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22767,7 +22767,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{IMU PERFORMANCE TEST 2}
 
-<<src/Luminary099/IMU-PERFORMANCE-TEST-2.agc>>=
+<<intern/Luminary099/IMU-PERFORMANCE-TEST-2.agc>>=
 # Copyright:	Public domain.
 # Filename:	IMU_PERFORMANCE_TEST_2.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22818,7 +22818,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{IMU PERFORMANCE TESTS 4}
 
-<<src/Luminary099/IMU-PERFORMANCE-TESTS-4.agc>>=
+<<intern/Luminary099/IMU-PERFORMANCE-TESTS-4.agc>>=
 # Copyright:	Public domain.
 # Filename:	IMU_PERFORMANCE_TESTS_4.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22867,7 +22867,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{INPUT OUTPUT CHANNEL BIT DESCRIPTIONS}
 
-<<src/Luminary099/INPUT-OUTPUT-CHANNEL-BIT-DESCRIPTIONS.agc>>=
+<<intern/Luminary099/INPUT-OUTPUT-CHANNEL-BIT-DESCRIPTIONS.agc>>=
 # Copyright:	Public domain.
 # Filename:	INPUT_OUTPUT_CHANNEL_BIT_DESCRIPTIONS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22912,7 +22912,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{INTERPRETIVE CONSTANT}
 
-<<src/Luminary099/INTERPRETIVE-CONSTANT.agc>>=
+<<intern/Luminary099/INTERPRETIVE-CONSTANT.agc>>=
 # Copyright:	Public domain.
 # Filename:	INTERPRETIVE_CONSTANT.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22949,7 +22949,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{KALMAN FILTER}
 
-<<src/Luminary099/KALMAN-FILTER.agc>>=
+<<intern/Luminary099/KALMAN-FILTER.agc>>=
 # Copyright:	Public domain.
 # Filename:	KALMAN_FILTER.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -22986,7 +22986,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{LAMBERT AIMPOINT GUIDANCE}
 
-<<src/Luminary099/LAMBERT-AIMPOINT-GUIDANCE.agc>>=
+<<intern/Luminary099/LAMBERT-AIMPOINT-GUIDANCE.agc>>=
 # Copyright:	Public domain.
 # Filename:	LAMBERT_AIMPOINT_GUIDANCE.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23026,7 +23026,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{LANDING ANALOG DISPLAYS}
 
-<<src/Luminary099/LANDING-ANALOG-DISPLAYS.agc>>=
+<<intern/Luminary099/LANDING-ANALOG-DISPLAYS.agc>>=
 # Copyright:	Public domain.
 # Filename:	LANDING_ANALOG_DISPLAYS.agc
 # Purpose:	Part of the source code for Luminary, build 099. It
@@ -23079,7 +23079,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{LEM GEOMETRY}
 
-<<src/Luminary099/LEM-GEOMETRY.agc>>=
+<<intern/Luminary099/LEM-GEOMETRY.agc>>=
 # Copyright:	Public domain.
 # Filename:	LEM_GEOMETRY.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23124,7 +23124,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{LUNAR LANDING GUIDANCE EQUATIONS}
 
-<<src/Luminary099/LUNAR-LANDING-GUIDANCE-EQUATIONS.agc>>=
+<<intern/Luminary099/LUNAR-LANDING-GUIDANCE-EQUATIONS.agc>>=
 # Copyright:	Public domain.
 # Filename:	LUNAR_LANDING_GUIDANCE_EQUATIONS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23222,7 +23222,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{P12}
 
-<<src/Luminary099/P12.agc>>=
+<<intern/Luminary099/P12.agc>>=
 # Copyright:	Public domain.
 # Filename:	P12.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23263,7 +23263,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{P30 P37}
 
-<<src/Luminary099/P30--P37.agc>>=
+<<intern/Luminary099/P30--P37.agc>>=
 # Copyright:	Public domain.
 # Filename:	P30_P37.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23306,7 +23306,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{P32-P35 P72-P75}
 
-<<src/Luminary099/P32-P35-P72-P75.agc>>=
+<<intern/Luminary099/P32-P35-P72-P75.agc>>=
 # Copyright:	Public domain.
 # Filename:	P32-P35_P72-P75.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23405,7 +23405,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{P70-P71}
 
-<<src/Luminary099/P70-P71.agc>>=
+<<intern/Luminary099/P70-P71.agc>>=
 # Copyright:	Public domain.
 # Filename:	P70-P71.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23455,7 +23455,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{P-AXIS RCS AUTOPILOT}
 
-<<src/Luminary099/P-AXIS-RCS-AUTOPILOT.agc>>=
+<<intern/Luminary099/P-AXIS-RCS-AUTOPILOT.agc>>=
 # Copyright:	Public domain.
 # Filename:	P-AXIS_RCS_AUTOPILOT.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23533,7 +23533,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{Q R-AXIS RCS AUTOPILOT}
 
-<<src/Luminary099/Q-R-AXIS-RCS-AUTOPILOT.agc>>=
+<<intern/Luminary099/Q-R-AXIS-RCS-AUTOPILOT.agc>>=
 # Copyright:	Public domain.
 # Filename:	Q_R-AXIS_RCS_AUTOPILOT.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23604,7 +23604,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{R63}
 
-<<src/Luminary099/R63.agc>>=
+<<intern/Luminary099/R63.agc>>=
 # Copyright:	Public domain.
 # Filename:	R63.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23645,7 +23645,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{RADAR LEADIN ROUTINES}
 
-<<src/Luminary099/RADAR-LEADIN-ROUTINES.agc>>=
+<<intern/Luminary099/RADAR-LEADIN-ROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	RADAR_LEADIN_ROUTINES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23682,7 +23682,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{RCS FAILURE MONITOR}
 
-<<src/Luminary099/RCS-FAILURE-MONITOR.agc>>=
+<<intern/Luminary099/RCS-FAILURE-MONITOR.agc>>=
 # Copyright:	Public domain.
 # Filename:	RCS_FAILURE_MONITOR.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23719,7 +23719,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{RTB OP CODES}
 
-<<src/Luminary099/RTB-OP-CODES.agc>>=
+<<intern/Luminary099/RTB-OP-CODES.agc>>=
 # Copyright:	Public domain.
 # Filename:	RTB_OP_CODES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23764,7 +23764,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{S-BAND ANTENNA FOR LM}
 
-<<src/Luminary099/S-BAND-ANTENNA-FOR-LM.agc>>=
+<<intern/Luminary099/S-BAND-ANTENNA-FOR-LM.agc>>=
 # Copyright:	Public domain.
 # Filename:	S-BAND_ANTENNA_FOR_LM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23806,7 +23806,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{SERVICER}
 
-<<src/Luminary099/SERVICER.agc>>=
+<<intern/Luminary099/SERVICER.agc>>=
 # Copyright:	Public domain.
 # Filename:	SERVICER.agc
 # Purpose:	Part of the source code for Luminary, build 099. It
@@ -23923,7 +23923,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{SPS BACK-UP RCS CONTROL}
 
-<<src/Luminary099/SPS-BACK-UP-RCS-CONTROL.agc>>=
+<<intern/Luminary099/SPS-BACK-UP-RCS-CONTROL.agc>>=
 # Copyright:	Public domain.
 # Filename:	SPS_BACK-UP_RCS_CONTROL.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -23964,7 +23964,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{T6-RUPT PROGRAMS}
 
-<<src/Luminary099/T6-RUPT-PROGRAMS.agc>>=
+<<intern/Luminary099/T6-RUPT-PROGRAMS.agc>>=
 # Copyright:	Public domain.
 # Filename:	T6-RUPT_PROGRAMS.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -24003,7 +24003,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{THE LUNAR LANDING}
 
-<<src/Luminary099/THE-LUNAR-LANDING.agc>>=
+<<intern/Luminary099/THE-LUNAR-LANDING.agc>>=
 # Copyright:	Public domain.
 # Filename:	THE_LUNAR_LANDING.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -24050,7 +24050,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{THROTTLE CONTROL ROUTINES}
 
-<<src/Luminary099/THROTTLE-CONTROL-ROUTINES.agc>>=
+<<intern/Luminary099/THROTTLE-CONTROL-ROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	THROTTLE_CONTROL_ROUTINES.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -24091,7 +24091,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{TJET LAW}
 
-<<src/Luminary099/TJET-LAW.agc>>=
+<<intern/Luminary099/TJET-LAW.agc>>=
 # Copyright:	Public domain.
 # Filename:	TJET_LAW.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -24146,7 +24146,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{TRIM GIMBAL CNTROL SYSTEM}
 
-<<src/Luminary099/TRIM-GIMBAL-CNTROL-SYSTEM.agc>>=
+<<intern/Luminary099/TRIM-GIMBAL-CNTROL-SYSTEM.agc>>=
 # Copyright:	Public domain.
 # Filename:	TRIM_GIMBAL_CNTROL_SYSTEM.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.

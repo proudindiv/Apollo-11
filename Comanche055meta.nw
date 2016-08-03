@@ -68271,7 +68271,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{AGC BLOCK TWO SELF CHECK}
 
-<<src/Comanche055/AGC-BLOCK-TWO-SELF-CHECK.agc>>=
+<<intern/Comanche055/AGC-BLOCK-TWO-SELF-CHECK.agc>>=
 # Copyright:	Public domain.
 # Filename:	AGC_BLOCK_TWO_SELF-CHECK.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68326,7 +68326,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{ALARM AND ABORT}
 
-<<src/Comanche055/ALARM-AND-ABORT.agc>>=
+<<intern/Comanche055/ALARM-AND-ABORT.agc>>=
 # Copyright:    Public domain.
 # Filename:     ALARM_AND_ABORT.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -68372,7 +68372,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{ANGLFIND}
 
-<<src/Comanche055/ANGLFIND.agc>>=
+<<intern/Comanche055/ANGLFIND.agc>>=
 # Copyright:	Public domain.
 # Filename:	ANGLFIND.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68435,7 +68435,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{ASSEMBLY AND OPERATION INFORMATION}
 
-<<src/Comanche055/CM0002INFO.agc>>=
+<<intern/Comanche055/CM0002INFO.agc>>=
 # Copyright:	Public domain.
 # Filename:	ASSEMBLY_AND_OPERATION_INFORMATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68519,7 +68519,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{AUTOMATIC MANEUVERS}
 
-<<src/Comanche055/AUTOMATIC-MANEUVERS.agc>>=
+<<intern/Comanche055/AUTOMATIC-MANEUVERS.agc>>=
 # Copyright:	Public domain.
 # Filename:	AUTOMATIC_MANEUVERS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68577,7 +68577,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{CM BODY ATTITUDE}
 
-<<src/Comanche055/CM-BODY-ATTITUDE.agc>>=
+<<intern/Comanche055/CM-BODY-ATTITUDE.agc>>=
 # Copyright:    Public domain.
 # Filename:     CM_BODY_ATTITUDE.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -68626,7 +68626,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{CM ENTRY DIGITAL AUTOPILOT}
 
-<<src/Comanche055/CM-ENTRY-DIGITAL-AUTOPILOT.agc>>=
+<<intern/Comanche055/CM-ENTRY-DIGITAL-AUTOPILOT.agc>>=
 # Copyright:	Public domain.
 # Filename:	CM_ENTRY_DIGITAL_AUTOPILOT.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68723,7 +68723,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{CONIC SUBROUTINES}
 
-<<src/Comanche055/CONIC-SUBROUTINES.agc>>=
+<<intern/Comanche055/CONIC-SUBROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	CONIC_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68853,7 +68853,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{CONTRACT AND APPROVALS}
 
-<<src/Comanche055/CONTRACT-AND-APPROVALS.agc>>=
+<<intern/Comanche055/CONTRACT-AND-APPROVALS.agc>>=
 # Copyright:	Public domain.
 # Filename:	CONTRACT_AND_APPROVALS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68885,7 +68885,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{CSM GEOMETRY}
 
-<<src/Comanche055/CSM-GEOMETRY.agc>>=
+<<intern/Comanche055/CSM-GEOMETRY.agc>>=
 # Copyright:	Public domain.
 # Filename:	CSM_GEOMETRY.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -68943,7 +68943,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{DISPLAY INTERFACE ROUTINES}
 
-<<src/Comanche055/DISPLAY-INTERFACE-ROUTINES.agc>>=
+<<intern/Comanche055/DISPLAY-INTERFACE-ROUTINES.agc>>=
 # Copyright:    Public domain.
 # Filename:     DISPLAY_INTERFACE_ROUTINES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -69047,7 +69047,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{DOWNLINK LISTS}
 
-<<src/Comanche055/DOWNLINK-LISTS.agc>>=
+<<intern/Comanche055/DOWNLINK-LISTS.agc>>=
 # Copyright:	Public domain.
 # Filename:	DOWNLINK_LISTS.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -69104,7 +69104,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{DOWN-TELEMETRY PROGRAM}
 
-<<src/Comanche055/DOWN-TELEMETRY-PROGRAM.agc>>=
+<<intern/Comanche055/DOWN-TELEMETRY-PROGRAM.agc>>=
 # Copyright:    Public domain.
 # Filename:     DOWN-TELEMETRY_PROGRAM.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -69162,7 +69162,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{ENTRY LEXICON}
 
-<<src/Comanche055/ENTRY-LEXICON.agc>>=
+<<intern/Comanche055/ENTRY-LEXICON.agc>>=
 # Copyright:    Public domain.
 # Filename:     ENTRY_LEXICON.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -69211,7 +69211,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{ERASABLE ASSIGNMENTS}
 
-<<src/Comanche055/ERASABLE-ASSIGNMENTS.agc>>=
+<<intern/Comanche055/ERASABLE-ASSIGNMENTS.agc>>=
 # Copyright:	Public domain.
 # Filename:	ERASABLE_ASSIGNMENTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -69444,7 +69444,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{EXECUTIVE}
 
-<<src/Comanche055/EXECUTIVE.agc>>=
+<<intern/Comanche055/EXECUTIVE.agc>>=
 # Copyright:	Public domain.
 # Filename:	EXECUTIVE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -69504,7 +69504,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{EXTENDED VERBS}
 
-<<src/Comanche055/EXTENDED-VERBS.agc>>=
+<<intern/Comanche055/EXTENDED-VERBS.agc>>=
 # Copyright:	Public domain.
 # Filename:	EXTENDED_VERBS.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -69611,7 +69611,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{FIXED FIXED CONSTANT POOL}
 
-<<src/Comanche055/FIXED-FIXED-CONSTANT-POOL.agc>>=
+<<intern/Comanche055/FIXED-FIXED-CONSTANT-POOL.agc>>=
 # Copyright:	Public domain.
 # Filename:	FIXED_FIXED_CONSTANT_POOL.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -69655,7 +69655,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{FRESH START AND RESTART}
 
-<<src/Comanche055/FRESH-START-AND-RESTART.agc>>=
+<<intern/Comanche055/FRESH-START-AND-RESTART.agc>>=
 # Copyright:	Public domain.
 # Filename:	FRESH_START_AND_RESTART.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -69753,7 +69753,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{GIMBAL LOCK AVOIDANCE}
 
-<<src/Comanche055/GIMBAL-LOCK-AVOIDANCE.agc>>=
+<<intern/Comanche055/GIMBAL-LOCK-AVOIDANCE.agc>>=
 # Copyright:	Public domain.
 # Filename:	GIMBAL_LOCK_AVOIDANCE.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -69792,7 +69792,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{GROUND TRACKING DETERMINATION PROGRAM}
 
-<<src/Comanche055/GROUND-TRACKING-DETERMINATION-PROGRAM.agc>>=
+<<intern/Comanche055/GROUND-TRACKING-DETERMINATION-PROGRAM.agc>>=
 # Copyright:	Public domain.
 # Filename:	GROUND_TRACKING_DETERMINATION_PROGRAM.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -69835,7 +69835,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{IMU CALIBRATION AND ALIGNMENT}
 
-<<src/Comanche055/IMU-CALIBRATION-AND-ALIGNMENT.agc>>=
+<<intern/Comanche055/IMU-CALIBRATION-AND-ALIGNMENT.agc>>=
 # Copyright:	Public domain.
 # Filename:	IMU_CALIBRATION_AND_ALIGNMENT.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -69938,7 +69938,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{IMU COMPENSATION PACKAGE}
 
-<<src/Comanche055/IMU-COMPENSATION-PACKAGE.agc>>=
+<<intern/Comanche055/IMU-COMPENSATION-PACKAGE.agc>>=
 # Copyright:	Public domain.
 # Filename:	IMU_COMPENSATION_PACKAGE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -69993,7 +69993,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{IMU MODE SWITCHING ROUTINES}
 
-<<src/Comanche055/IMU-MODE-SWITCHING-ROUTINES.agc>>=
+<<intern/Comanche055/IMU-MODE-SWITCHING-ROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	IMU_MODE_SWITCHING_ROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70086,7 +70086,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{INFLIGHT ALIGNMENT ROUTINES}
 
-<<src/Comanche055/INFLIGHT-ALIGNMENT-ROUTINES.agc>>=
+<<intern/Comanche055/INFLIGHT-ALIGNMENT-ROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	INFLIGHT_ALIGNMENT_ROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70140,7 +70140,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{INTEGRATION INITIALIZATION}
 
-<<src/Comanche055/INTEGRATION-INITIALIZATION.agc>>=
+<<intern/Comanche055/INTEGRATION-INITIALIZATION.agc>>=
 # Copyright:	Public domain.
 # Filename:	INTEGRATION_INITIALIZATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70227,7 +70227,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{INTER-BANK COMMUNICATION}
 
-<<src/Comanche055/INTER-BANK-COMMUNICATION.agc>>=
+<<intern/Comanche055/INTER-BANK-COMMUNICATION.agc>>=
 # Copyright:    Public domain.
 # Filename:     INTER-BANK_COMMUNICATION.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -70273,7 +70273,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{INTERPRETER}
 
-<<src/Comanche055/INTERPRETER.agc>>=
+<<intern/Comanche055/INTERPRETER.agc>>=
 # Copyright:	Public domain.
 # Filename:	INTERPRETER.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70497,7 +70497,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{INTERPRETIVE CONSTANTS}
 
-<<src/Comanche055/INTERPRETIVE-CONSTANTS.agc>>=
+<<intern/Comanche055/INTERPRETIVE-CONSTANTS.agc>>=
 # Copyright:	Public domain.
 # Filename:	INTERPRETIVE_CONSTANTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70535,7 +70535,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{INTERRUPT LEAD INS}
 
-<<src/Comanche055/INTERRUPT-LEAD-INS.agc>>=
+<<intern/Comanche055/INTERRUPT-LEAD-INS.agc>>=
 # Copyright:	Public domain.
 # Filename:	INTERRUPT_LEAD_INS.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -70574,7 +70574,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{JET SELECTION LOGIC}
 
-<<src/Comanche055/JET-SELECTION-LOGIC.agc>>=
+<<intern/Comanche055/JET-SELECTION-LOGIC.agc>>=
 # Copyright:	Public domain.
 # Filename:	JET_SELECTION_LOGIC.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70656,7 +70656,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{KALCMANU STEERING}
 
-<<src/Comanche055/KALCMANU-STEERING.agc>>=
+<<intern/Comanche055/KALCMANU-STEERING.agc>>=
 # Copyright:	Public domain.
 # Filename:	KALCMANU_STEERING.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -70702,7 +70702,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{KEYRUPT UPRUPT}
 
-<<src/Comanche055/KEYRUPT-UPRUPT.agc>>=
+<<intern/Comanche055/KEYRUPT-UPRUPT.agc>>=
 # Copyright:    Public domain.
 # Filename:     KEYRUPT_UPRUPT.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -70746,7 +70746,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{LATITUDE LONGITUDE SUBROUTINES}
 
-<<src/Comanche055/LATITUDE-LONGITUDE-SUBROUTINES.agc>>=
+<<intern/Comanche055/LATITUDE-LONGITUDE-SUBROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	LATITUDE_LONGITUDE_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70794,7 +70794,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{LUNAR AND SOLAR EPHEMERIDES SUBROUTINES}
 
-<<src/Comanche055/LUNAR-AND-SOLAR-EPHEMERIDES-SUBROUTINES.agc>>=
+<<intern/Comanche055/LUNAR-AND-SOLAR-EPHEMERIDES-SUBROUTINES.agc>>=
 # Copyright:    Public domain.
 # Filename:     LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -70839,7 +70839,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{LUNAR LANDMARK SELECTION FOR CM}
 
-<<src/Comanche055/LUNAR-LANDMARK-SELECTION-FOR-CM.agc>>=
+<<intern/Comanche055/LUNAR-LANDMARK-SELECTION-FOR-CM.agc>>=
 # Copyright:	Public domain.
 # Filename:	LUNAR_LANDMARK_SELECTION_FOR_CM.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -70876,7 +70876,7 @@ QUALITY2	PDDL	DSQ		# SQUARE INTO 2D, B2
 
 \section{MAIN}
 
-<<src/Comanche055/MAIN.agc>>=
+<<intern/Comanche055/MAIN.agc>>=
 # Copyright:	Public domain.
 # Filename:	MAIN.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71049,7 +71049,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{MEASUREMENT INCORPORATION}
 
-<<src/Comanche055/MEASUREMENT-INCORPORATION.agc>>=
+<<intern/Comanche055/MEASUREMENT-INCORPORATION.agc>>=
 # Copyright:	Public domain.
 # Filename:	MEASUREMENT_INCORPORATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71103,7 +71103,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{MYSUBS}
 
-<<src/Comanche055/MYSUBS.agc>>=
+<<intern/Comanche055/MYSUBS.agc>>=
 # Copyright:	Public domain.
 # Filename:	MYSUBS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71144,7 +71144,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{ORBITAL INTEGRATION}
 
-<<src/Comanche055/ORBITAL-INTEGRATION.agc>>=
+<<intern/Comanche055/ORBITAL-INTEGRATION.agc>>=
 # Copyright:	Public domain.
 # Filename:	ORBITAL_INTEGRATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71222,7 +71222,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P11}
 
-<<src/Comanche055/P11.agc>>=
+<<intern/Comanche055/P11.agc>>=
 # Copyright:    Public domain.
 # Filename:     P11.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71296,7 +71296,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P20-P25}
 
-<<src/Comanche055/P20-P25.agc>>=
+<<intern/Comanche055/P20-P25.agc>>=
 # Copyright:	Public domain.
 # Filename:	P20-P25.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71484,7 +71484,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P30-P37}
 
-<<src/Comanche055/P30-P37.agc>>=
+<<intern/Comanche055/P30-P37.agc>>=
 # Copyright:	Public domain.
 # Filename:	P30-P37.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71550,7 +71550,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P32-P33 P72-P73}
 
-<<src/Comanche055/P32-P33-P72-P73.agc>>=
+<<intern/Comanche055/P32-P33-P72-P73.agc>>=
 # Copyright:	Public domain.
 # Filename:	P32-P33_P72-P73.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71662,7 +71662,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P34-35 P74-75}
 
-<<src/Comanche055/P34-35-P74-75.agc>>=
+<<intern/Comanche055/P34-35-P74-75.agc>>=
 # Copyright:	Public domain.
 # Filename:	P34-35_P74-75.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -71789,7 +71789,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P37 P70}
 
-<<src/Comanche055/P37-P70.agc>>=
+<<intern/Comanche055/P37-P70.agc>>=
 # Copyright:	Public domain.
 # Filename:	P37_P70.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -71915,7 +71915,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P40-P47}
 
-<<src/Comanche055/P40-P47.agc>>=
+<<intern/Comanche055/P40-P47.agc>>=
 # Copyright:	Public domain.
 # Filename:	P40-P47.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72061,7 +72061,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P51-P53}
 
-<<src/Comanche055/P51-P53.agc>>=
+<<intern/Comanche055/P51-P53.agc>>=
 # Copyright:    Public domain.
 # Filename:     P51-P53.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -72201,7 +72201,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P61-P67}
 
-<<src/Comanche055/P61-P67.agc>>=
+<<intern/Comanche055/P61-P67.agc>>=
 # Copyright:    Public domain.
 # Filename:     P61-P67.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -72300,7 +72300,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{P76}
 
-<<src/Comanche055/P76.agc>>=
+<<intern/Comanche055/P76.agc>>=
 # Copyright:    Public domain.
 # Filename:     P76.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72341,7 +72341,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{PHASE TABLE MAINTENANCE}
 
-<<src/Comanche055/PHASE-TABLE-MAINTENANCE.agc>>=
+<<intern/Comanche055/PHASE-TABLE-MAINTENANCE.agc>>=
 # Copyright:	Public domain.
 # Filename:	PHASE_TABLE_MAINTENANCE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72396,7 +72396,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{PINBALL GAME BUTTONS AND LIGHTS}
 
-<<src/Comanche055/PINBALL-GAME-BUTTONS-AND-LIGHTS.agc>>=
+<<intern/Comanche055/PINBALL-GAME-BUTTONS-AND-LIGHTS.agc>>=
 # Copyright:	Public domain.
 # Filename:	PINBALL_GAME_BUTTONS_AND_LIGHTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72599,7 +72599,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{PINBALL NOUN TABLES}
 
-<<src/Comanche055/PINBALL-NOUN-TABLES.agc>>=
+<<intern/Comanche055/PINBALL-NOUN-TABLES.agc>>=
 # Copyright:	Public domain.
 # Filename:	PINBALL_NOUN_TABLES.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -72669,7 +72669,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{PLANETARY INERTIAL ORIENTATION}
 
-<<src/Comanche055/PLANETARY-INERTIAL-ORIENTATION.agc>>=
+<<intern/Comanche055/PLANETARY-INERTIAL-ORIENTATION.agc>>=
 # Copyright:	Public domain.
 # Filename:	PLANETARY_INERTIAL_ORIENTATION.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72721,7 +72721,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{POWERED FLIGHT SUBROUTINES}
 
-<<src/Comanche055/POWERED-FLIGHT-SUBROUTINES.agc>>=
+<<intern/Comanche055/POWERED-FLIGHT-SUBROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	POWERED_FLIGHT_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72773,7 +72773,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{R30}
 
-<<src/Comanche055/R30.agc>>=
+<<intern/Comanche055/R30.agc>>=
 # Copyright:    Public domain.
 # Filename:     R30.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72831,7 +72831,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{R31}
 
-<<src/Comanche055/R31.agc>>=
+<<intern/Comanche055/R31.agc>>=
 # Copyright:	Public domain.
 # Filename:	R31.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -72879,7 +72879,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{R60 62}
 
-<<src/Comanche055/R60-62.agc>>=
+<<intern/Comanche055/R60-62.agc>>=
 # Copyright:	Public domain.
 # Filename:	R60_62.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72932,7 +72932,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{RCS-CSM DAP EXECUTIVE PROGRAMS}
 
-<<src/Comanche055/RCS-CSM-DAP-EXECUTIVE-PROGRAMS.agc>>=
+<<intern/Comanche055/RCS-CSM-DAP-EXECUTIVE-PROGRAMS.agc>>=
 # Copyright:	Public domain.
 # Filename:	RCS-CSM_DAP_EXECUTIVE_PROGRAMS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -72971,7 +72971,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{RCS-CSM DIGITAL AUTOPILOT}
 
-<<src/Comanche055/RCS-CSM-DIGITAL-AUTOPILOT.agc>>=
+<<intern/Comanche055/RCS-CSM-DIGITAL-AUTOPILOT.agc>>=
 # Copyright:	Public domain.
 # Filename:	RCS-CSM_DIGITAL_AUTOPILOT.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73051,7 +73051,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{REENTRY CONTROL}
 
-<<src/Comanche055/REENTRY-CONTROL.agc>>=
+<<intern/Comanche055/REENTRY-CONTROL.agc>>=
 # Copyright:	Public domain.
 # Filename:	REENTRY_CONTROL.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73163,7 +73163,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{RESTARTS ROUTINE}
 
-<<src/Comanche055/RESTARTS-ROUTINE.agc>>=
+<<intern/Comanche055/RESTARTS-ROUTINE.agc>>=
 # Copyright:    Public domain.
 # Filename:     RESTARTS_ROUTINE.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -73213,7 +73213,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{RESTART TABLES}
 
-<<src/Comanche055/RESTART-TABLES.agc>>=
+<<intern/Comanche055/RESTART-TABLES.agc>>=
 # Copyright:	Public domain.
 # Filename:	RESTART_TABLES.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -73273,7 +73273,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{RT8 OP CODES}
 
-<<src/Comanche055/RT8-OP-CODES.agc>>=
+<<intern/Comanche055/RT8-OP-CODES.agc>>=
 # Copyright:    Public domain.
 # Filename:     RT8_OP_CODES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -73327,7 +73327,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{S-BAND ANTENNA FOR CM}
 
-<<src/Comanche055/S-BAND-ANTENNA-FOR-CM.agc>>=
+<<intern/Comanche055/S-BAND-ANTENNA-FOR-CM.agc>>=
 # Copyright:	Public domain.
 # Filename:	S-BAND_ANTENNA_FOR_CM.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73366,7 +73366,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{SERVICER207}
 
-<<src/Comanche055/SERVICER207.agc>>=
+<<intern/Comanche055/SERVICER207.agc>>=
 # Copyright:    Public domain.
 # Filename:     SERVICER207.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -73437,7 +73437,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{SERVICE ROUTINES}
 
-<<src/Comanche055/SERVICE-ROUTINES.agc>>=
+<<intern/Comanche055/SERVICE-ROUTINES.agc>>=
 # Copyright:    Public domain.
 # Filename:     SERVICE_ROUTINES.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -73491,7 +73491,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{SINGLE PRECISION SUBROUTINES}
 
-<<src/Comanche055/SINGLE-PRECISION-SUBROUTINES.agc>>=
+<<intern/Comanche055/SINGLE-PRECISION-SUBROUTINES.agc>>=
 # Copyright:	Public domain.
 # Filename:	SINGLE_PRECISION_SUBROUTINES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73527,7 +73527,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{STABLE ORBIT}
 
-<<src/Comanche055/STABLE-ORBIT.agc>>=
+<<intern/Comanche055/STABLE-ORBIT.agc>>=
 # Copyright:    Public domain.
 # Filename:     STABLE_ORBIT.agc
 # Purpose:      Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73577,7 +73577,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{STAR TABLES}
 
-<<src/Comanche055/STAR-TABLES.agc>>=
+<<intern/Comanche055/STAR-TABLES.agc>>=
 # Copyright:	Public domain.
 # Filename:	STAR_TABLES.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73622,7 +73622,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{SXTMARK}
 
-<<src/Comanche055/SXTMARK.agc>>=
+<<intern/Comanche055/SXTMARK.agc>>=
 # Copyright:	Public domain.
 # Filename:	SXTMARK.agc
 # Purpose:	Part of the source code for Comanche, build 055. It
@@ -73685,7 +73685,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{SYSTEM TEST STANDARD LEAD INS}
 
-<<src/Comanche055/SYSTEM-TEST-STANDARD-LEAD-INS.agc>>=
+<<intern/Comanche055/SYSTEM-TEST-STANDARD-LEAD-INS.agc>>=
 # Copyright:	Public domain.
 # Filename:	SYSTEM_TEST_STANDARD_LEAD_INS.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -73726,7 +73726,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{T4RUPT PROGRAM}
 
-<<src/Comanche055/T4RUPT-PROGRAM.agc>>=
+<<intern/Comanche055/T4RUPT-PROGRAM.agc>>=
 # Copyright:	Public domain.
 # Filename:	T4RUPT_PROGRAM.agc
 # Purpose:	Part of the source code for Comanche, build 055.
@@ -73835,7 +73835,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TAGS FOR RELATIVE SETLOC}
 
-<<src/Comanche055/TAGS-FOR-RELATIVE-SETLOC.agc>>=
+<<intern/Comanche055/TAGS-FOR-RELATIVE-SETLOC.agc>>=
 # Copyright:	Public domain.
 # Filename:	TAGS_FOR_RELATIVE_SETLOC.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73908,7 +73908,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TIME OF FREE FALL}
 
-<<src/Comanche055/TIME-OF-FREE-FALL.agc>>=
+<<intern/Comanche055/TIME-OF-FREE-FALL.agc>>=
 # Copyright:	Public domain.
 # Filename:	TIME_OF_FREE_FALL.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -73975,7 +73975,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TPI SEARCH}
 
-<<src/Comanche055/TPI-SEARCH.agc>>=
+<<intern/Comanche055/TPI-SEARCH.agc>>=
 # Copyright:	Public domain.
 # Filename:	TPI_SEARCH.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74032,7 +74032,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TVCDAPS}
 
-<<src/Comanche055/TVCDAPS.agc>>=
+<<intern/Comanche055/TVCDAPS.agc>>=
 # Copyright:	Public domain.
 # Filename:	TVCDAPS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74107,7 +74107,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TVCEXECUTIVE}
 
-<<src/Comanche055/TVCEXECUTIVE.agc>>=
+<<intern/Comanche055/TVCEXECUTIVE.agc>>=
 # Copyright:	Public domain.
 # Filename:	TVCEXECUTIVE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74156,7 +74156,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TVCINITIALIZE}
 
-<<src/Comanche055/TVCINITIALIZE.agc>>=
+<<intern/Comanche055/TVCINITIALIZE.agc>>=
 # Copyright:	Public domain.
 # Filename:	TVCINITIALIZE.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74215,7 +74215,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TVCMASSPROP}
 
-<<src/Comanche055/TVCMASSPROP.agc>>=
+<<intern/Comanche055/TVCMASSPROP.agc>>=
 # Copyright:	Public domain.
 # Filename:	TVCMASSPROP.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74259,7 +74259,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TVCRESTARTS}
 
-<<src/Comanche055/TVCRESTARTS.agc>>=
+<<intern/Comanche055/TVCRESTARTS.agc>>=
 # Copyright:	Public domain.
 # Filename:	TVCRESTARTS.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74308,7 +74308,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TVCROLLDAP}
 
-<<src/Comanche055/TVCROLLDAP.agc>>=
+<<intern/Comanche055/TVCROLLDAP.agc>>=
 # Copyright:	Public domain.
 # Filename:	TVCROLLDAP.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74372,7 +74372,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{TVCSTROKETEST}
 
-<<src/Comanche055/TVCSTROKETEST.agc>>=
+<<intern/Comanche055/TVCSTROKETEST.agc>>=
 # Copyright:	Public domain.
 # Filename:	TVCSTROKETEST.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.
@@ -74416,7 +74416,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{UPDATE PROGRAM}
 
-<<src/Comanche055/UPDATE-PROGRAM.agc>>=
+<<intern/Comanche055/UPDATE-PROGRAM.agc>>=
 # Copyright:    Public domain.
 # Filename:     UPDATE_PROGRAM.agc
 # Purpose:      Part of the source code for Comanche, build 055. It
@@ -74476,7 +74476,7 @@ $RT8_OP_CODES.agc				# pp. 1508-1516
 
 \section{WAITLIST}
 
-<<src/Comanche055/WAITLIST.agc>>=
+<<intern/Comanche055/WAITLIST.agc>>=
 # Copyright:	Public domain.
 # Filename:	WAITLIST.agc
 # Purpose:	Part of the source code for Colossus 2A, AKA Comanche 055.

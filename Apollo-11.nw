@@ -317,7 +317,7 @@ This comment has been added recently on page CM0948:
 
 \section{README.md}
 
-<<src/README.md>>=
+<<intern/README.md>>=
 Apollo-11
 =========
 
@@ -401,7 +401,7 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 
 \section{HeaderTemplate}
 
-<<src/Luminary099/HeaderTemplate.agc>>=
+<<intern/Luminary099/HeaderTemplate.agc>>=
 # Copyright:	Public domain.
 # Filename:	XXXXXXXX.agc
 # Purpose: 	Part of the source code for Luminary 1A build 099.
@@ -436,7 +436,7 @@ Original Apollo 11 guidance computer (AGC) source code, in assembly, for Command
 
 \section{Internal vs External File Names}
 
-<<src/generic.sh>>=
+<<intern/generic.sh>>=
 
 sys=Comanche055;
 
@@ -623,17 +623,17 @@ ex=WAITLIST;                                in=LM1117WAIT;  eval $cmd
 
 \section{Check for Changes}
 
-<<src/check.sh>>=
+<<intern/check.sh>>=
 #!/bin/bash
 
-cmd='echo "XX $in XX"; diff origsrc/$sys/$ex.agc src/$sys/$in.agc'
+cmd='echo "XX $in XX"; diff extern/$sys/$ex.agc intern/$sys/$in.agc'
 source generic.sh
 
 @
 
 \section{Export with Original File Names}
 
-<<src/export.sh>>=
+<<intern/export.sh>>=
 #!/bin/bash
 
 rm -r -f tmp
@@ -646,7 +646,7 @@ source generic.sh
 
 \section{Migrate to Internal File Names}
 
-<<src/migrate.sh>>=
+<<intern/migrate.sh>>=
 #!/bin/bash
 
 cmd='echo "XX $in XX"; git mv $sys/$ex.agc $sys/$in.agc'

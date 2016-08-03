@@ -21,7 +21,7 @@ to submit PRs for issues I identify between the transcriptions in that repositor
    Luminary099.pdf and Luminary099.agc),
    are my in progress reverse engineering of the code in the original repository.
    Comanche055.card and Luminary099.card will be generated from the .agc files.
-1. **origsrc** and **src** contain generated files that are part of my process and
+1. **extern** and **intern** contain generated files that are part of my process and
    are not for human consumption.
 1. **README.md** is this explination and contains the content of the original repositry
    README.md below.
