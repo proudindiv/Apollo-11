@@ -23,6 +23,34 @@
 \tableofcontents
 \newpage
 
+<<latex header>>=
+echo "\documentclass{book}";
+echo "\usepackage{noweb}";
+echo "\usepackage{hyperref}";
+echo "\hypersetup{final=true}";
+echo "\usepackage[toc,page]{appendix}";
+echo "\usepackage{multicol}";
+echo "\usepackage{framed}";
+echo "\usepackage{graphicx}";
+echo "\usepackage{xcolor}";
+echo "\let\oldquote=\quote";
+echo "\let\endoldquote=\endquote";
+echo "\colorlet{shadecolor}{green!8}";
+echo "\renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}";
+echo "";
+echo "\title{Reverse Engineering\\The Apollo 11 Guidance Computer (AGC)\\$prog Source Code}";
+echo "\author{Edited by Gary Young \\ \\ \href{mailto:proudindiv@gmail.com}{proudindiv@gmail.com}}";
+echo "";
+echo "\begin{document}";
+echo "\pagestyle{noweb}";
+echo "";
+echo "\maketitle";
+echo "%\includegraphics{images/avatar.jpg}";
+echo "\tableofcontents";
+echo "\newpage";
+echo "";
+@
+
 \chapter{Introduction and Notes}
 
 \begin{quote}
@@ -313,7 +341,7 @@ This comment has been added recently on page CM0948:
 \begin{appendices}
 
 
-\chapter{Original Files}
+\chapter{Files Inserted For Transcription}
 
 \section{README.md}
 
@@ -434,14 +462,12 @@ If you are interested in compiling the original source code, check out [Virtual 
 
 @
 
+
 \chapter{Miscellaneous Files}
 
-\section{Internal vs External File Names}
+\section{External vs Internal File Names}
 
-<<intern/generic.sh>>=
-
-sys=Comanche055;
-
+<<Comanche055 files info>>=
 ex=AGC_BLOCK_TWO_SELF-CHECK;                in=CM1394SELF;  eval $cmd
 ex=ALARM_AND_ABORT;                         in=CM1493ALARM; eval $cmd
 ex=ANGLFIND;                                in=CM0399ANGL;  eval $cmd
@@ -527,9 +553,9 @@ ex=TVCROLLDAP;                              in=CM0984TROLL; eval $cmd
 ex=TVCSTROKETEST;                           in=CM0949STROK; eval $cmd
 ex=UPDATE_PROGRAM;                          in=CM1497UPDT;  eval $cmd
 ex=WAITLIST;                                in=CM1221WAIT;  eval $cmd
+@
 
-sys=Luminary099;
-
+<<Luminary099 files info>>=
 ex=AGC_BLOCK_TWO_SELF_CHECK;                in=LM1284SELF;  eval $cmd
 ex=AGS_INITIALIZATION;                      in=LM0206AGSI;  eval $cmd
 ex=ALARM_AND_ABORT;                         in=LM1381ALARM; eval $cmd
@@ -623,13 +649,25 @@ ex=UPDATE_PROGRAM;                          in=LM1386UPDT;  eval $cmd
 ex=WAITLIST;                                in=LM1117WAIT;  eval $cmd
 @
 
+<<commands for both programs>>=
+
+prog=Comanche055;
+
+<<Comanche055 files info>>
+
+prog=Luminary099;
+
+<<Luminary099 files info>>
+@
+
 \section{Check for Changes}
 
 <<intern/check.sh>>=
 #!/bin/bash
 
-cmd='echo "XX $in XX"; diff extern/$sys/$ex.agc intern/$sys/$in.agc'
-source generic.sh
+cmd='echo "XX $in XX"; diff extern/$prog/$ex.agc intern/$prog/$in.agc'
+
+<<commands for both programs>>
 
 @
 
@@ -641,8 +679,23 @@ source generic.sh
 rm -r -f tmp
 mkdir -p tmp/{Comanche055,Luminary099}
 
-cmd='echo "XX $in XX"; cp $sys/$in.agc tmp/$sys/$ex.agc'
-source generic.sh
+cmd='echo "XX $in XX"; cp $prog/$in.agc tmp/$prog/$ex.agc'
+
+<<commands for both programs>>
+
+@
+
+\section{Import from Original File Names}
+
+<<intern/import.sh>>=
+#!/bin/bash
+
+rm -r -f tmp
+mkdir -p tmp/{Comanche055,Luminary099}
+
+cmd='echo "XX $in XX"; cp $prog/$ex.agc tmp/$prog/$in.agc'
+
+<<commands for both programs>>
 
 @
 
@@ -651,10 +704,136 @@ source generic.sh
 <<intern/migrate.sh>>=
 #!/bin/bash
 
-cmd='echo "XX $in XX"; git mv $sys/$ex.agc $sys/$in.agc'
-source generic.sh
+cmd='echo "XX $in XX"; git mv $prog/$ex.agc $prog/$in.agc'
+
+<<commands for both programs>>
 
 @
+
+\section{Literation Tools}
+
+\subsection{Trial Literation}
+
+<<initial trial literation>>=
+cmd='echo \\section{$ex}|tr _ " ";
+     echo "";
+     echo "@<<intern/$prog/$in.agc@>>=";
+     cat "../extern/$prog/$ex.agc";
+     echo @;
+     echo "";'
+@
+
+<<intern/CMlit1.sh>>=
+#!/bin/bash
+
+prog=Comanche055
+<<initial trial literation>>
+<<Comanche055 files info>>
+@
+
+<<intern/LMlit1.sh>>=
+#!/bin/bash
+
+prog=Luminary099
+<<initial trial literation>>
+<<Luminary099 files info>>
+@
+
+\subsection{Program Literation}
+
+<<literate program>>=
+<<latex header>>
+
+echo "\chapter{Reverse Engineered $prog Transcribed Program}";
+echo "";
+
+echo "@<<$prog.agc@>>=";
+cmd='
+echo "@<<$prog $in@>>"
+'
+eval $ininfo
+echo "@";
+echo "";
+
+cmd='
+echo "@<<$prog $in@>>=";
+grep "^# Page " intern/$prog/$in.agc | sed "s/\t.*//" | sed "s/^# /@<</" | sed "s/ *$/>>/";
+echo "@";
+echo "";
+'
+eval $ininfo
+echo "@";
+echo "";
+
+cmd='
+echo "\section{$in}";
+echo "";
+echo "@<<$in.agc@>>=";
+echo "@<<Page ${id}0063@>>";
+echo "@";
+echo "";
+'
+eval $ininfo
+
+echo "\chapter{$prog Listing Pages}";
+echo "";
+
+cmd='
+echo "\section{$in}";
+echo "";
+echo "@<<Page ${id}0063@>>=";
+echo "@";
+echo "";
+'
+eval $ininfo
+
+echo "\chapter{Program Transcription Information}"
+echo "";
+
+cmd='
+echo "\section{$in}";
+echo "";
+echo "@<<${ex}.agc@>>=";
+sed  -e "/^# Page /,\$ d" intern/$prog/$in.agc;
+echo "# Page 63";
+echo "@<<Page LM0063@>>";
+echo "@";
+echo "";
+'
+eval $exinfo
+
+@
+
+<<Comanche055.sh>>=
+#!/bin/bash
+id=CM;
+prog=Comanche055;
+exinfo=$(cat <<EOF
+<<Comanche055 files info>>
+EOF
+)
+ininfo=$(sort -k 2,2 <<EOF
+<<Comanche055 files info>>
+EOF
+)
+<<literate program>>
+@
+
+<<Luminary099.sh>>=
+#!/bin/bash
+id=LM;
+prog=Luminary099;
+exinfo=$(cat <<EOF
+<<Luminary099 files info>>
+EOF
+)
+ininfo=$(sort -k 2,2 <<EOF
+<<Luminary099 files info>>
+EOF
+)
+<<literate program>>
+@
+
 
 \chapter{Notes, Bibliography and Indexes}
 
