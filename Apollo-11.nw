@@ -432,6 +432,12 @@ Once transcribed the process of verification started:
            {Space Guidance Analysis (SGA) memos}
 \item \href{http://web.archive.org/web/20101024223709/http://forth.gsfc.nasa.gov/}
            {Space-Related Applications of Forth}
+\item \href{https://www.ibiblio.org/apollo/yaYUL.html}
+           {yaYUL: The AGC Cross-Assembler}
+\item \href{https://www.ibiblio.org/apollo/listings/}{yaYUL Apollo listings}
+\item \href{http://www.klabs.org/}
+           {klags.org: A scientific study of the problems of digital engineering
+            for space flight systems, with a view to their practical solution.}
 \end{itemize}
 
 
