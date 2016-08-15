@@ -16,13 +16,16 @@ to submit PRs for issues I identify between the transcriptions in that repositor
 ### Contents of my Apollo-11 Repository:
 
 1. **Comanche055** and **Luminary099** directory contents track the original repository.
-1. The noweb file **Apollo-11.nw**, which creates the files that generate the others
-   (Comanche055.sh, and Luminary099.sh and in turn Comanche055.nw,
-   Luminary099.nw, Comanche055.pdf, Luminary099.pdf, Comanche055.agc, Luminary099.agc, and Apollo-11.pdf), are my in progress reverse engineering of the code in the original repository.  Comanche055.card and Luminary099.card will be generated from the .agc files.
-   The interesting output products are the **.pdf files**.
+1. The noweb file **Apollo-11.nw**, which creates **Apollo-11.pdf**, README.md, and
+   the files that generate the others (Comanche055.sh, and Luminary099.sh and
+   in turn Comanche055.nw, Luminary099.nw, **Comanche055.pdf**, **Luminary099.pdf**,
+   Comanche055.agc, and Luminary099.agc), is my in progress reverse engineering
+   of the code in the original repository.
+   **Comanche055.card** and **Luminary099.card** will be generated from the .agc files.
+   The interesting output products are the .pdf files.
 1. **extern** and **intern** contain generated files that are part of my process and
    are not for human consumption.
-1. **README.md** is this explination and contains the content of the original repositry
+1. **README.md** is this explanation and contains the content of the original repositry
    README.md below.
 
 ### Tools Used:
