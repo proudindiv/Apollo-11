@@ -27,8 +27,7 @@
 
 <<Luminary099.agc>>=
 <<Luminary099 LM0000MAIN>>
-<<Luminary099 LM0001APPRV>>
-<<Luminary099 LM0002ASM>>
+<<Luminary099 LM0001ASM>>
 <<Luminary099 LM0028TAGS>>
 <<Luminary099 LM0038CONST>>
 <<Luminary099 LM0054INOUT>>
@@ -124,35 +123,10 @@
 <<Luminary099 LM0000MAIN>>=
 @
 
-\section{CONTRACT AND APPROVALS}
-
-<<Luminary099 LM0001APPRV>>=
-<<Page 1>>
-@
-
-<<Page 1>>=
-
-# THIS LGC PROGRAM IS INTENDED FOR USE IN THE LM DURING THE MANNED LUNAR
-# LANDING MISSION OR ANY SUBSET THEREOF.  THE DETAILS OF IMPLEMENTATION ARE
-# SPECIFIED IN REPORT R-567, AS AMENDED.
-#
-#			GUIDANCE SYSTEM OPERATIONS PLAN
-#		FOR MANNED LM EARTH ORBITAL AND LUNAR MISSIONS
-#			    USING PROGRAM LUMINARY
-#
-# THIS PROGRAM AND R-567 HAVE BEEN PREPARED BY THE INSTRUMENTATION LABORATORY,
-# MASSACHUSETTS INSTITUTE OF TECHNOLOGY  75 CAMBRIDGE PARKWAY, CAMBRIDGE, 
-# MASSACHUSETTS UNDER PROJECT 55-238-70.  SPONSORED BY THE MANNED SPACECRAFT
-# CENTER OF THE NATIONAL AERONAUTICS AND SPACE ADMINISTRATION, CONTRACT 
-# NAS 9-4065.
-#
-#		THIS PROGRAM IS REFERRED TO AS LUMINARY 1A
-
-@
-
 \section{ASSEMBLY AND OPERATION INFORMATION}
 
-<<Luminary099 LM0002ASM>>=
+<<Luminary099 LM0001ASM>>=
+<<Page 1>>
 <<Page 2>>
 <<Page 3>>
 <<Page 4>>
@@ -179,6 +153,23 @@
 <<Page 25>>
 <<Page 26>>
 <<Page 27>>
+@
+
+<<Page 1>>=
+
+# THIS LGC PROGRAM IS INTENDED FOR USE IN THE LM DURING THE MANNED LUNAR LANDING MISSION OR ANY SUBSET THEREOF.
+# THE DETAILS OF IMPLEMENTATION ARE SPECIFIED IN REPORT R-567, AS AMENDED.
+
+# 				GUIDANCE SYSTEM OPERATIONS PLAN
+#			FOR MANNED LM EARTH ORBITAL AND LUNAR MISSIONS
+#				    USING PROGRAM LUMINARY
+
+# THIS PROGRAM AND R-567 HAVE BEEN PREPARED BY THE INSTRUMENTATION LABORATORY, MASSACHUSETTS INSTITUTE OF 
+# TECHNOLOGY, 75 CAMBRIDGE PARKWAY, CAMBRIDGE, MASSACHUSETTS, UNDER PROJECT 55-238-70, SPONSORED BY THE MANNED
+# SPACECRAFT CENTER OF THE NATIONAL AERONAUTICS AND SPACE ADMINISTRATION, CONTRACT NAS 9-4065.
+
+#			  THIS PROGRAM IS REFERRED TO AS LUMINARY 1A
+
 @
 
 <<Page 2>>=
@@ -74826,7 +74817,7 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 
 \section{ASSEMBLY AND OPERATION INFORMATION}
 
-<<intern/Luminary099/LM0002ASM.agc>>=
+<<intern/Luminary099/LM0001ASM.agc>>=
 # Copyright:	Public domain.
 # Filename:	ASSEMBLY_AND_OPERATION_INFORMATION.agc
 # Purpose:	Part of the source code for Luminary 1A build 099.
@@ -74853,6 +74844,8 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 #    Assemble revision 001 of AGC program LMY99 by NASA 2021112-061
 #    16:27 JULY 14, 1969
 
+# Page 1
+<<Page 1>>
 # Page 2
 <<Page 2>>
 # Page 3
@@ -75186,37 +75179,6 @@ RATEDB1		=	TBUILDFX	# = 00045, CORRESPONDS TO 0.101 DEG/SEC
 <<Page 1203>>
 # Page 1204
 <<Page 1204>>
-@
-
-\section{CONTRACT AND APPROVALS}
-
-<<intern/Luminary099/LM0001APPRV.agc>>=
-# Copyright:	Public domain.
-# Filename:	CONTRACT_AND_APPROVALS.agc
-# Purpose:	Part of the source code for Luminary 1A build 099.
-#		It is part of the source code for the Lunar Module's (LM)
-#		Apollo Guidance Computer (AGC), for Apollo 11.
-# Assembler:	yaYUL
-# Contact:	Ron Burkey <info@sandroid.org>.
-# Website:	www.ibiblio.org/apollo.
-# Mod history:	2009-05-06 RSB	Transcribed from page images.
-#
-# This source code has been transcribed or otherwise adapted from digitized
-# images of a hardcopy from the MIT Museum.  The digitization was performed
-# by Paul Fjeld, and arranged for by Deborah Douglas of the Museum.  Many
-# thanks to both.  The images (with suitable reduction in storage size and
-# consequent reduction in image quality as well) are available online at
-# www.ibiblio.org/apollo.  If for some reason you find that the images are
-# illegible, contact me at info@sandroid.org about getting access to the 
-# (much) higher-quality images which Paul actually created.
-#
-# Notations on the hardcopy document read, in part:
-#
-#	Assemble revision 001 of AGC program LMY99 by NASA 2021112-61
-#	16:27 JULY 14, 1969  
-
-# Page 1
-<<Page 1>>
 @
 
 \section{CONTROLLED CONSTANTS}
@@ -77582,7 +77544,7 @@ $FLAGWORD_ASSIGNMENTS.agc			# pp. 61-88
 $ERASABLE_ASSIGNMENTS.agc			# pp. 90-152
 $INTERRUPT_LEAD_INS.agc				# pp. 153-154
 $T4RUPT_PROGRAM.agc				# pp. 155-189
-$RCS_FAILURE_MONITOR.agc				# pp. 190-192
+$RCS_FAILURE_MONITOR.agc			# pp. 190-192
 $DOWNLINK_LISTS.agc				# pp. 193-205
 $AGS_INITIALIZATION.agc				# pp. 206-210
 $FRESH_START_AND_RESTART.agc			# pp. 211-237
